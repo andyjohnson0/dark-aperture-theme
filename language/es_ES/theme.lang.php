@@ -1,4 +1,9 @@
 <?php
+
+/*
+** Modified by Andrew Johnson for Dark Aperture theme
+*/
+
 // +-----------------------------------------------------------------------+
 // | Piwigo - a PHP based photo gallery                                    |
 // +-----------------------------------------------------------------------+
@@ -20,16 +25,19 @@
 // | Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA 02111-1307, |
 // | USA.                                                                  |
 // +-----------------------------------------------------------------------+
+
+// Spanish
+
 $lang['Show image caption'] = 'Mostrar el pie de foto';
 $lang['Sidebar (like Boostrap Default)'] = 'Mostrar la barra lateral (como en Bootstrap por defecto)';
 $lang['Simple'] = 'Simple';
-$lang['Site logo'] = 'Logo del sitio';
+$lang['Use site logo'] = 'Utilice el logotipo del sitio';
 $lang['Span the full viewport height'] = 'Abarcar toda la altura del área de visión';
 $lang['Tabs below the image'] = 'Pestañas debajo de la imagen';
 $lang['The path to the image, relative to your Piwigo installation folder'] = 'La ruta a la imagen, relativa a su carpeta de instalación de Piwigo';
-$lang['This will display categories as media wells with squared thumbnails, similar to the smartpocket mobile theme.'] = 'Esto mostrará las categorías como pozos de medios con miniaturas cuadradas, de forma similar al tema móvil de smartpocket.';
+$lang['Display albums as media wells with squared thumbnails, similar to the smartpocket mobile theme.'] = 'Muestra los álbumes como espacios multimedia con miniaturas cuadradas, similar al tema móvil de SmartPocket.';
 $lang['Thumbnail Link Target'] = 'Destino del enlace de la miniatura';
-$lang['Thumbnail page display'] = 'Visualización de la página de miniaturas';
+$lang['Album page display'] = 'Visualización de la página del álbum';
 $lang['URL or releative path to the image'] = 'URL o ruta relativa a la imagen';
 $lang['Use 6 colums for viewports >= 1680px'] = 'Utilizar 6 columnas para visualizaciones >= 1680px';
 $lang['Use colored share buttons instead of icons'] = 'Utilizar botones para compartir coloreados en lugar de iconos';
@@ -52,7 +60,7 @@ $lang['Enable the slick carousel below the main image on the picture page'] = 'H
 $lang['Enabled'] = 'Habilitado';
 $lang['Endlessly scroll through album images'] = 'Desplazamiento sin fin a través de las imágenes';
 $lang['For more information on metadata visit'] = 'Para más información sobre los metadatos visita ';
-$lang['Full width layout'] = 'Diseño de ancho completo';
+$lang['Use full width layout'] = 'Utilice un diseño de ancho completo';
 $lang['Fullscreen'] = 'Pantalla completa';
 $lang['Grid view'] = 'Vista de rejilla';
 $lang['HTML 5 canvas'] = 'Lienzo de HTML 5';
@@ -70,11 +78,11 @@ $lang['PhotoSwipe Slideshow'] = 'Presentación de diapositivas de PhotoSwipe';
 $lang['Photoswipe Slideshow (Mobile devices only)'] = 'Presentación de diapositivas de PhotoSwipe (sólo dispositivos móviles)';
 $lang['Picture details page'] = 'Página de detalles de la foto';
 $lang['Picture info display position'] = 'Posición de visualización de la información de la foto';
-$lang['Display category description in grid view'] = 'Visualizar las categorías en forma de rejilla';
+$lang['Display album description when in grid view'] = 'Mostrar la descripción del álbum en la vista de cuadrícula';
 $lang['Display number of images in album and subalbums'] = 'Mostrar el número de imágenes en el álbum y los sub-álbumes';
 $lang['Display the currently selected image in the middle. Works best with infinite looping enabled.'] = 'Mostrar la imagen seleccionada actualmente en el centro. Funciona mejor con el bucle infinito habilitado.';
 $lang['Enable PhotoSwipe fullscreen slideshow. Disable if you prefer to use Plugins like Fotorama or Piwigo\'s default slideshow.'] = 'Habilitar la presentación de diapositivas a pantalla completa de PhotoSwipe. Inhabilítelo si prefiere utilizar plug-ins como Fotorama o la presentación de diapositivas por defecto de Piwigo.';
-$lang['Display categories as Bootstrap media wells'] = 'Visualizar las categorías como pozos de medios de Bootstrap';
+$lang['Display albums as Bootstrap media wells'] = 'Mostrar álbumes como repositorios de medios Bootstrap';
 $lang['Display a site logo image instead of plain text'] = 'Visualizar una imagen de logo del sitio en lugar de texto simple';
 $lang['Discover'] = 'Descubrir';
 $lang['Description display style'] = 'Estilo de visualización de la descripción';
@@ -83,13 +91,13 @@ $lang['Components'] = 'Componentes';
 $lang['By'] = 'Por';
 $lang['Center mode'] = 'Modo de centrado';
 $lang['Color theme'] = 'Tema de color';
-$lang['Category page display'] = 'Visualización de la página de categorías';
+$lang['Main page display'] = 'Visualización de la página principal';
 $lang['Card grid below the image'] = 'Rejilla de cartas bajo la imagen';
 $lang['Bug reports and feature requests'] = 'Informe de errores y peticiones de características';
 $lang['Bootswatch theme'] = 'Tema de Bootswatch';
 $lang['Bootstrap theme'] = 'Tema de Bootstrap';
 $lang['Bootstrap\'s default theme'] = 'Tema por defecto de Bootstrap';
-$lang['Bootstrap Darkroom\'s custom dark color theme'] = 'Tema de colores oscuros personalizado de Bootstrap Darkroom';
+$lang['Dark Aperture\'s custom dark color theme'] = 'Tema de colores oscuros personalizado de Dark Aperture';
 $lang['Basic'] = 'Básico';
 $lang['Banner style'] = 'Estilo de banner';
 $lang['Autoplay interval'] = 'Intervalo de reproducción automática';
@@ -106,3 +114,15 @@ $lang['Picture details'] = 'Detalles de la imagen';
 $lang['Next (arrow right)'] = 'Siguiente (Flecha derecha)';
 $lang['Close (Esc)'] = 'Cerrar (Esc)';
 $lang['AutoPlay'] = 'Reproducción automática';
+$lang['Based on original work by'] = 'Basado en el trabajo original de';
+$lang['Source'] = 'Fuente';
+
+$lang['Page layout'] = 'Diseño de página';
+$lang['Page footer'] = 'Pie de página';
+$lang['Theme'] = 'Tema';
+$lang['Show theme link'] = 'Mostrar enlace del tema';
+$lang['Contact'] = 'Contacto';
+$lang['Show contact link'] = 'Mostrar enlace de contacto';
+$lang['Show extended metadata'] = 'Mostrar metadatos ampliados';
+$lang['Show EXIF data'] = 'Mostrar datos EXIF';
+$lang['Hide EXIF data'] = 'Ocultar datos EXIF';

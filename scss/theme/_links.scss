@@ -1,0 +1,11 @@
+// A plain link with no underline or greying-out after visit
+.link-plain {
+    color: inherit;
+  
+    &:visited,
+    &:hover,
+    &:active {
+      color: inherit;
+    }
+  }
+  

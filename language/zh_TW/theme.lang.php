@@ -1,10 +1,18 @@
 <?php
+
+/*
+** Modified by Andrew Johnson for Dark Aperture theme
+*/
+
 // +-----------------------------------------------------------------------+
 // | This file is part of Piwigo.                                          |
 // |                                                                       |
 // | For copyright and license information, please view the COPYING.txt    |
 // | file that was distributed with this source code.                      |
 // +-----------------------------------------------------------------------+
+
+// Chinese (Simplified) (Taiwan)
+
 $lang['A color theme from'] = '一個顏色主題來自';
 $lang['A mobile-ready theme based on Bootstrap 4'] = '一個基於Bootstrap 4並相容於手機的主題';
 $lang['Advanced'] = '進階';
@@ -14,14 +22,14 @@ $lang['AutoPlay'] = '自動播放';
 $lang['Autoplay interval'] = '自動播放時長';
 $lang['Banner style'] = '橫幅樣式';
 $lang['Basic'] = '基本';
-$lang['Bootstrap Darkroom\'s custom dark color theme'] = 'Bootstrap Sarkroom的自訂暗色主題';
+$lang['Dark Aperture\'s custom dark color theme'] = 'Bootstrap Sarkroom的自訂暗色主題';
 $lang['Bootstrap theme'] = 'Bootstrap主題';
 $lang['Bootstrap\'s default theme'] = 'Bootstrap的預設主題';
 $lang['Bootswatch theme'] = 'Bootswatch主題';
 $lang['Bug reports and feature requests'] = '錯誤回報與功能請求';
 $lang['By'] = '來自';
 $lang['Card grid below the image'] = '圖片下方的卡片網格';
-$lang['Category page display'] = '分類頁面展示';
+$lang['Main page display'] = '分類頁面展示';
 $lang['Center mode'] = '置中模式';
 $lang['Close (Esc)'] = '關閉 (Esc)';
 $lang['Color theme'] = '顏色主題';
@@ -33,15 +41,15 @@ $lang['milliseconds'] = '毫秒';
 $lang['will load the image as soon as you slide to it'] = '當畫面到照片位置時加載圖片';
 $lang['Sidebar (like Boostrap Default)'] = '邊欄(像Bootstrap預設)';
 $lang['Simple'] = '簡單';
-$lang['Site logo'] = '網站Logo';
+$lang['Use site logo'] = '使用站点徽标';
 $lang['Social Media Integration'] = '社交媒體整合';
 $lang['Social integration'] = '社交媒體整合';
 $lang['Span the full viewport height'] = '跨越整個視口高度';
 $lang['Tabs below the image'] = '照片下方的標籤頁';
 $lang['The path to the image, relative to your Piwigo installation folder'] = '照片的路徑，相對於您的 Piwigo 安裝文件夾';
-$lang['This will display categories as media wells with squared thumbnails, similar to the smartpocket mobile theme.'] = '這會以方型的小縮圖顯示分類，有點像smartpocket行動裝置主題。';
+$lang['Display albums as media wells with squared thumbnails, similar to the smartpocket mobile theme.'] = '将相册显示为带有方形缩略图的媒体井，类似于 smartpocket 移动主题。';
 $lang['Thumbnail Link Target'] = '縮圖連結目標';
-$lang['Thumbnail page display'] = '縮圖頁面顯示';
+$lang['Album page display'] = '相册页面显示';
 $lang['Toggle fullscreen'] = '調整全螢幕';
 $lang['URL or releative path to the image'] = '照片的URL或相對路徑';
 $lang['Use 6 colums for viewports >= 1680px'] = '視口>= 1680px時使用6列';
@@ -76,8 +84,8 @@ $lang['Description display style'] = '描述顯示樣式';
 $lang['Disabled'] = '停用';
 $lang['Discover'] = '探索';
 $lang['Display a site logo image instead of plain text'] = '顯示網頁圖標取代純文字';
-$lang['Display categories as Bootstrap media wells'] = '以Bootstrap樣式顯示類別';
-$lang['Display category description in grid view'] = '以網格樣式顯示類別敘述';
+$lang['Display albums as Bootstrap media wells'] = '将相册显示为 Bootstrap 媒体井';
+$lang['Display album description when in grid view'] = '在网格视图中显示相册描述';
 $lang['Display number of images in album and subalbums'] = '顯示相簿及子相簿的照片數量';
 $lang['Display the currently selected image in the middle. Works best with infinite looping enabled.'] = '將選取的照片顯示在中間。建議開啟無限循環。';
 $lang['Enable PhotoSwipe fullscreen slideshow. Disable if you prefer to use Plugins like Fotorama or Piwigo\'s default slideshow.'] = '啟用PhotoSwipe全螢幕投影片播放。如果傾向使用如Fotorama的插件及Piwigo預設的投影片播放請停用。';
@@ -85,9 +93,21 @@ $lang['Enable the slick carousel below the main image on the picture page'] = '�
 $lang['Enabled'] = '啟用';
 $lang['Endlessly scroll through album images'] = '無限滾動相簿照片';
 $lang['For more information on metadata visit'] = '更多中繼資料內容請看';
-$lang['Full width layout'] = '全寬度介面';
+$lang['Use full width layout'] = '使用全宽布局';
 $lang['Fullscreen'] = '全螢幕';
 $lang['Grid view'] = '網格顯示';
 $lang['HTML 5 canvas'] = 'HTML5畫布';
 $lang['Hero image'] = '主頁橫幅';
 $lang['If you find any issues, please report them to the'] = '如果有問題，請回報至';
+$lang['Based on original work by'] = '根据原作';
+$lang['Source'] = '来源';
+
+$lang['Page footer'] = '页面布局';
+$lang['Page footer'] = '页脚';
+$lang['Theme'] = '主题';
+$lang['Show theme link'] = '显示主题链接';
+$lang['Contact'] = '联系方式';
+$lang['Show contact link'] = '显示联系方式链接';
+$lang['Show extended metadata'] = '显示扩展元数据';
+$lang['Show EXIF data'] = '显示 EXIF 数据';
+$lang['Hide EXIF data'] = '隐藏 EXIF 数据';

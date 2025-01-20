@@ -1,7 +1,9 @@
-{combine_css path="themes/bootstrap_darkroom/admin/css/admin.css"}
+{* Modified by Andrew Johnson for Dark Aperture theme *}
+
+{combine_css path="themes/dark_aperture/admin/css/admin.css"}
 {combine_script id='common' load='footer' path='admin/themes/default/js/common.js'}
 <div class="titrePage">
-    <h2>Bootstrap Darkroom {$TABSHEET_TITLE}</h2>
+    <h2>Dark Aperture {$TABSHEET_TITLE}</h2>
 </div>
 
 <ul class="tabs">
@@ -12,7 +14,7 @@
   
 
 <form method="post" class="properties">
-    <input type="hidden" name="boostrap_darkroom_settings" value="true" />
+    <input type="hidden" name="dark_aperture_settings" value="true" />
     <div id="configContent">
       <div id="appearance" class="tab-content current">
         <fieldset class="mainConf">
@@ -21,7 +23,7 @@
                 <li>
                     <label labelfor="bootstrap_theme">{'Color theme'|@translate}</label>
                     <select name="bootstrap_theme">
-                        <option value="bootstrap-darkroom"{if $theme_config->bootstrap_theme == 'bootstrap-darkroom'} selected="selected"{/if}>Bootstrap Darkroom</option>
+                        <option value="dark-aperture"{if $theme_config->bootstrap_theme == 'dark-aperture'} selected="selected"{/if}>Dark Aperture</option>
                         <option value="bootstrap-default"{if $theme_config->bootstrap_theme == 'bootstrap-default'} selected="selected"{/if}>Bootstrap Default</option>
                         <option value="material-darkroom"{if $theme_config->bootstrap_theme == 'material-darkroom'} selected="selected"{/if}>Material Darkroom</option>
                         <option value="material-amber"{if $theme_config->bootstrap_theme == 'material-amber'} selected="selected"{/if}>Material Amber</option>
@@ -64,7 +66,7 @@
             <select id="bootswatch_theme" name="bootswatch_theme"></select>
             <div id="theme_preview"></div>
             <dl id="boostrap_theme_descr" class="dl-horizontal">
-                <dt>Darkroom</dt><dd>{'Bootstrap Darkroom\'s custom dark color theme'|@translate}</dd>
+                <dt>Dark Aperture</dt><dd>{'Dark Aperture\'s custom dark color theme'|@translate}</dd>
                 <dt>Bootswatch</dt><dd>{'A color theme from'|@translate} <a href="https://bootswatch.com">https://bootswatch.com</a></dd>
                 <dt>Material</dt><dd>Material design {'from'|@translate} <a href="http://fezvrasta.github.io/bootstrap-material-design">http://fezvrasta.github.io/bootstrap-material-design</a></dd>
             </dl>
@@ -74,13 +76,13 @@
             <input type="hidden" name="navbar_contextual_bg" value="{$theme_config->navbar_contextual_bg}">
         </fieldset>
         <fieldset>
-            <legend>{'Full width layout'|@translate}</legend>
+            <legend>{'Page layout'|@translate}</legend>
             <ul>
                 <li>
                     <label class="font-checkbox">
                         <span class="icon-check"></span>
                         <input type="checkbox" name="fluid_width"{if $theme_config->fluid_width} checked="checked"{/if}>
-                        {'Enabled'|@translate}
+                        {'Use full width layout'|@translate}
                     </label>
                     <span class="info">{'Use full width containers that span the entire width of the viewport'|@translate}</span>
                 </li>
@@ -92,15 +94,12 @@
                     </label>
                 </li>
             </ul>
-        </fieldset>
-        <fieldset>
-            <legend>{'Site logo'|@translate}</legend>
             <ul>
                 <li>
                     <label class="font-checkbox">
                         <span class="icon-check"></span>
                         <input type="checkbox" name="logo_image_enabled"{if $theme_config->logo_image_enabled} checked="checked"{/if}>
-                        {'Enabled'|@translate}
+                        {'Show site logo'|@translate}
                     </label>
                     <span class="info">{'Display a site logo image instead of plain text'|@translate}</span>
                 </li>
@@ -147,36 +146,50 @@
                 </li>
             </ul>
         </fieldset>
+
         <fieldset>
-            <legend>{'Category page display'|@translate}</legend>
+            <legend>{'Page footer'|@translate}</legend>
+            <ul>
+                <li id="page_footer_theme_link">
+                    <label class="font-checkbox">
+                      <span class="icon-check"></span>
+                      <input type="checkbox" name="theme_link_enabled"{if $theme_config->theme_link_enabled} checked=checked{/if}>
+                        {'Show theme link'|@translate}
+                    </label>
+                </li>
+                <li id="page_footer_contact_link">
+                    <label class="font-checkbox">
+                      <span class="icon-check"></span>
+                      <input type="checkbox" name="contact_link_enabled"{if $theme_config->contact_link_enabled} checked=checked{/if}>
+                        {'Show contact link'|@translate}
+                    </label>
+                </li>
+            </ul>
+        </fieldset>
+
+        <fieldset>
+            <legend>{'Main page display'|@translate}</legend>
             <ul>
                 <li>
-                    <label labelfor="category_wells">{'Display categories as Bootstrap media wells'|@translate}</label>
+                    <label labelfor="category_wells">{'Display albums as Bootstrap media wells'|@translate}</label>
                     <select name="category_wells">
                         <option value="never"{if $theme_config->category_wells == 'never'} selected="selected"{/if}>{'Never'|@translate}</option>
                         <option value="always"{if $theme_config->category_wells == 'always'} selected="selected"{/if}>{'Always'|@translate}</option>
                         <option value="mobile_only"{if $theme_config->category_wells == 'mobile_only'} selected="selected"{/if}>{'On mobile devices only'|@translate}</option>
                     </select>
-                    <span class="info">{'This will display categories as media wells with squared thumbnails, similar to the smartpocket mobile theme.'|@translate}</span>
+                    <span class="info">{'Display albums as media wells with squared thumbnails, similar to the smartpocket mobile theme.'|@translate}</span>
                 </li>
                 <li>
                     <label class="font-checkbox">
                        <span class="icon-check"></span>
-                       <input type="checkbox" name="cat_descriptions"{if $theme_config->cat_descriptions} checked=checked{/if}>
-                       {'Display category description in grid view'|@translate}
-                    </label>
-                </li>
-                <li>
-                    <label class="font-checkbox">
-                       <span class="icon-check"></span>
-                       <input type="checkbox" name="cat_nb_images"{if $theme_config->cat_nb_images} checked=checked{/if}>
-                       {'Display number of images in album and subalbums'|@translate}
+                       <input type="checkbox" name="cat_show_descriptions"{if $theme_config->cat_show_descriptions} checked=checked{/if}>
+                       {'Display album description when in grid view'|@translate}
                     </label>
                 </li>
             </ul>
         </fieldset>
         <fieldset>
-            <legend>{'Thumbnail page display'|@translate}</legend>
+            <legend>{'Album page display'|@translate}</legend>
             <ul>
                 <li>
                     <label class="font-checkbox">
@@ -187,46 +200,30 @@
                 </li>
                 <li>
                     <label class="font-checkbox">
-                        <span class="icon-check"></span>
-                        <input type="checkbox" name="thumbnail_desc"{if $theme_config->thumbnail_desc} checked="checked"{/if}>
-                        {'Use description rather than title for images'|@translate}
+                    <span class="icon-check"></span>
+                    <input type="checkbox" name="thumbnail_nb_images" {if $theme_config->thumbnail_nb_images}checked="checked"{/if}>
+                    {'Display number of images in breadcrumb'|@translate}
                     </label>
-                </li>
-                <li>
-                    <label labelfor="thumbnail_linkto">{'Link thumbnail to'|@translate}</label>
-                    <select name="thumbnail_linkto">
-                        <option value="picture"{if $theme_config->thumbnail_linkto == 'picture'} selected="selected"{/if}>{'Picture details page'|@translate}</option>
-                        <option value="photoswipe"{if $theme_config->thumbnail_linkto == 'photoswipe'} selected="selected"{/if}>{'PhotoSwipe Slideshow'|@translate}</option>
-                        <option value="photoswipe_mobile_only"{if $theme_config->thumbnail_linkto == 'photoswipe_mobile_only'} selected="selected"{/if}>{'Photoswipe Slideshow (Mobile devices only)'|@translate}</option>
-                    </select>
-                </li>
-                <li>
-                    <label>{'Description display style'|@translate}</label>
-                    <blockquote>
-                        <label class="radio" style="display: inline-block; width: 100px;">
-                            <input type="radio" name="thumbnail_cat_desc" value="simple"{if $theme_config->thumbnail_cat_desc == 'simple'} checked="checked"{/if} />
-                            {'Simple'|@translate}
-                        </label>
-                        <span class="info">{'center-aligned h5 heading'|@translate}</span><br/>
-                        <label class="radio" style="display: inline-block; width: 100px;">
-                            <input type="radio" name="thumbnail_cat_desc" value="advanced"{if $theme_config->thumbnail_cat_desc == 'advanced'} checked="checked"{/if} />
-                            {'Advanced'|@translate}
-                        </label>
-                        <span class="info">{'left-aligned free text for advanced descriptions'|@translate}
-                    </blockquote>
-                </li>
-                <li>
-                <label class="font-checkbox">
-                   <span class="icon-check"></span>
-                   <input type="checkbox" name="thumbnail_nb_images" {if $theme_config->thumbnail_nb_images}checked="checked"{/if}>
-                   {'Display number of images in breadcrumb'|@translate}
-                </label>
             </li>
             </ul>
         </fieldset>
         <fieldset>
             <legend>{'Picture page display'|@translate}</legend>
             <ul>
+                <li>
+                    <label class="font-checkbox">
+                        <span class="icon-check"></span>
+                        <input type="checkbox" name="picture_caption"{if $theme_config->picture_caption} checked="checked"{/if}>
+                        {'Show image caption'|@translate}
+                    </label>
+                </li>
+                <li>
+                    <label class="font-checkbox">
+                        <span class="icon-check"></span>
+                        <input type="checkbox" name="picture_desc"{if $theme_config->picture_desc} checked="checked"{/if}>
+                        {'Use description rather than title for images'|@translate}
+                    </label>
+                </li>
                 <li>
                     <label labelfor="picture_info">{'Picture info display position'|@translate}</label>
                     <select name="picture_info">
@@ -235,6 +232,13 @@
                         <option value="sidebar"{if $theme_config->picture_info == 'sidebar'} selected="selected"{/if}>{'Sidebar (like Boostrap Default)'|@translate}</option>
                         <option value="disabled"{if $theme_config->picture_info == 'disabled'} selected="selected"{/if}>{'Disabled'|@translate}</option>
                     </select>
+                </li>
+                <li id="picture_show_extended_metadata">
+                    <label class="font-checkbox">
+                      <span class="icon-check"></span>
+                      <input type="checkbox" name="picture_show_extended_metadata"{if $theme_config->picture_show_extended_metadata} checked=checked{/if}>
+                        {'Show extended metadata'|@translate}
+                    </label>
                 </li>
             </ul>
         </fieldset>
@@ -462,7 +466,7 @@ function getBootswatchThemes() {
            $('option[value=' + $lname + ']').attr('selected', 'selected');
         }
       });
-      preview.html('<img src="themes/bootstrap_darkroom/components/bootswatch/' + select_bootswatch.val() + '/thumbnail.png" width="50%" style="padding: 10px 0;"/>');
+      preview.html('<img src="themes/dark_aperture/components/bootswatch/' + select_bootswatch.val() + '/thumbnail.png" width="50%" style="padding: 10px 0;"/>');
       preview.show();
 
     }, "json").fail(function(){
@@ -476,17 +480,9 @@ $(document).ready(function() {
   if ($('select[name=bootstrap_theme]').val() === 'bootswatch') {
     getBootswatchThemes();
   } else {
-    preview.html('<img src="themes/bootstrap_darkroom/admin/img/' + $('select[name=bootstrap_theme]').val() + '.png" style="padding: 10px 0;"/>');
+    preview.html('<img src="themes/dark_aperture/admin/img/' + $('select[name=bootstrap_theme]').val() + '.png" style="padding: 10px 0;"/>');
     preview.show();
   }
- 
-  link_target = $('select[name=thumbnail_linkto]').val();
-  if (!$('input[name=photoswipe]').is(':checked') && link_target !== 'photoswipe') {
-    $('select[name=thumbnail_linkto]').val('picture');
-    $('select[name=thumbnail_linkto] option[value=photoswipe]').attr('disabled', 'disabled');
-    $('select[name=thumbnail_linkto] option[value=photoswipe_mobile_only]').attr('disabled', 'disabled');
-  }
-
 
   if ($('select[name=page_header]').val() === 'fancy') {
     $('#page_header_image').show();
@@ -556,7 +552,7 @@ $('select[name=bootstrap_theme]').change(function() {
       break;
   }
 
-  preview.html('<img src="themes/bootstrap_darkroom/admin/img/' + $('select[name=bootstrap_theme]').val() + '.png" style="padding: 10px 0;"/>');
+  preview.html('<img src="themes/dark_aperture/admin/img/' + $('select[name=bootstrap_theme]').val() + '.png" style="padding: 10px 0;"/>');
 
   $('input[name=navbar_main_style]').attr('value', navbar_main_style);
   $('input[name=navbar_main_bg]').attr('value', navbar_main_bg);
@@ -564,18 +560,7 @@ $('select[name=bootstrap_theme]').change(function() {
   $('input[name=navbar_contextual_bg]').attr('value', navbar_contextual_bg);
 });
 $(select_bootswatch).change(function() {
-    preview.html('<img src="themes/bootstrap_darkroom/components/bootswatch/' + select_bootswatch.val() + '/thumbnail.png" width="50%" style="padding: 10px 0;"/>');
+    preview.html('<img src="themes/dark_aperture/components/bootswatch/' + select_bootswatch.val() + '/thumbnail.png" width="50%" style="padding: 10px 0;"/>');
 });
 
-$('input[name=photoswipe]').change(function() {
-  curr = $('select[name=thumbnail_linkto]').val();
-  if (!$(this).is(':checked') && curr !== 'picture') {
-    $('select[name=thumbnail_linkto]').val('picture');
-    $('select[name=thumbnail_linkto] option[value=photoswipe]').attr('disabled', 'disabled');
-    $('select[name=thumbnail_linkto] option[value=photoswipe_mobile_only]').attr('disabled', 'disabled');
-  } else {
-    $('select[name=thumbnail_linkto] option[value=photoswipe]').removeAttr('disabled');
-    $('select[name=thumbnail_linkto] option[value=photoswipe_mobile_only]').removeAttr('disabled');
-  }
-});
 {/footer_script}

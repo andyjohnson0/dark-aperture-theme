@@ -1,6 +1,6 @@
 <!-- Start of picture.tpl -->
 {if get_device() != 'desktop'}
-{combine_script id='jquery.mobile-events' path='themes/bootstrap_darkroom/node_modules/jQuery-Touch-Events/src/jquery.mobile-events.min.js' require='jquery' load='footer'}
+{combine_script id='jquery.mobile-events' path='themes/dark_aperture/node_modules/jQuery-Touch-Events/src/jquery.mobile-events.min.js' require='jquery' load='footer'}
 {/if}
 
 {if !empty($PLUGIN_PICTURE_BEFORE)}{$PLUGIN_PICTURE_BEFORE}{/if}
@@ -33,6 +33,14 @@ $('#theImage img').bind('swipeleft swiperight', function (event) {
 
 {if $theme_config->picture_info == 'sidebar'}
     {include file='picture_info_sidebar.tpl'}
+{/if}
+
+<!-- Caption -->
+{if $theme_config->picture_caption}
+  {assign var="COMMENT_IMG" value=$current.name|escape:'html'}
+  {if $theme_config->picture_desc && isset($metadata) && isset($metadata[1].lines) && isset($metadata[1].lines.iptc_description)}
+    {assign var="COMMENT_IMG" value=$metadata[1].lines.iptc_description|escape:'html'}
+  {/if}
 {/if}
 
   <div id="theImageComment" class="row justify-content-center mb-3">

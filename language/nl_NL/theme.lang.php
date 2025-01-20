@@ -1,4 +1,9 @@
 <?php
+
+/*
+** Modified by Andrew Johnson for Dark Aperture theme
+*/
+
 // +-----------------------------------------------------------------------+
 // | Piwigo - a PHP based photo gallery                                    |
 // +-----------------------------------------------------------------------+
@@ -20,8 +25,11 @@
 // | Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA 02111-1307, |
 // | USA.                                                                  |
 // +-----------------------------------------------------------------------+
+
+// Dutch
+
 $lang['Tabs below the image'] = 'Tabs onder de foto';
-$lang['Thumbnail page display'] = 'Miniatuur paginaweergave';
+$lang['Album page display'] = 'Weergave van albumpagina';
 $lang['directly in the navigation bar'] = 'direct in de navigatiebalk';
 $lang['lazyLoad method'] = 'lazyLoad methode';
 $lang['loads all images one after another when the page loads (use carefully!)'] = 'laadt alle foto\'s achter elkaar wanneer de pagina wordt geladen (voorzichtig gebruiken!)';
@@ -38,16 +46,16 @@ $lang['Picture info display position'] = 'Positie van afbeeldinginformatie';
 $lang['Picture page display'] = 'Afbeelding paginaweergave';
 $lang['A color theme from'] = 'Een kleurenthema van';
 $lang['Autoplay interval'] = 'Interval automatisch afspelen';
-$lang['Bootstrap Darkroom\'s custom dark color theme'] = 'Bootstrap Darkroom aangepast donker kleurthema';
+$lang['Dark Aperture\'s custom dark color theme'] = 'Dark Aperture aangepast donker kleurthema';
 $lang['Bootstrap theme'] = 'Bootstrap thema';
 $lang['Bootstrap\'s default theme'] = 'Bootstrap\'s standaard thema';
 $lang['Bootswatch theme'] = 'Bootswatch thema';
 $lang['Bug reports and feature requests'] = 'Bugrapporten en functieverzoeken';
-$lang['Category page display'] = 'Categoriepagina weergeven';
+$lang['Main page display'] = 'Weergave van de hoofdpagina';
 $lang['Color theme'] = 'Kleurthema';
 $lang['Disabled'] = 'Uitgeschakeld';
 $lang['Display a site logo image instead of plain text'] = 'Geef een websitelogo weer in plaats van tekst';
-$lang['Display category description in grid view'] = 'Geef categorie-beschrijving weer in rasterweergave';
+$lang['Display album description when in grid view'] = 'Albumbeschrijving weergeven in rasterweergave';
 $lang['Display the currently selected image in the middle. Works best with infinite looping enabled.'] = 'Toon de geselecteerde foto in het midden. Dit werkt het beste met oneindige loop ingeschakeld.';
 $lang['Enable PhotoSwipe fullscreen slideshow. Disable if you prefer to use Plugins like Fotorama or Piwigo\'s default slideshow.'] = 'Schakel PhotoSwipe volle schermgrootte in. Uitschakelen als u liever plugins zoals Fotorama of Piwigo\'s standaard diashow wilt gebruiken.';
 $lang['Enable the slick carousel below the main image on the picture page'] = 'Schakel de slick carrousel onder de hoofd-afbeelding op de fotopagina in';
@@ -57,11 +65,11 @@ $lang['milliseconds'] = 'milliseconden';
 $lang['Always'] = 'Altijd';
 $lang['By'] = 'Door';
 $lang['The path to the image, relative to your Piwigo installation folder'] = 'Het pad naar de foto, relatief ten opzichte van de Piwigo installatiemap';
-$lang['This will display categories as media wells with squared thumbnails, similar to the smartpocket mobile theme.'] = 'Hierdoor worden categorieën weergegeven als media-bronnen met vierkante miniaturen, vergelijkbaar met het smartpocket mobiele thema.';
+$lang['Display albums as media wells with squared thumbnails, similar to the smartpocket mobile theme.'] = 'Geef albums weer als mediabronnen met vierkante miniaturen, vergelijkbaar met het mobiele thema SmartPocket.';
 $lang['Thumbnail Link Target'] = 'Miniatuur link-doel';
 $lang['Basic'] = 'Basis';
 $lang['Center mode'] = 'Midden-mode';
-$lang['Display categories as Bootstrap media wells'] = 'Categorieën weergeven als Bootstrap media-bronnen';
+$lang['Display albums as Bootstrap media wells'] = 'Albums weergeven als Bootstrap-mediabronnen';
 $lang['Enabled'] = 'Ingeschakeld';
 $lang['Endlessly scroll through album images'] = 'Eindeloos bladeren door album-foto\'s';
 $lang['If you find any issues, please report them to the'] = 'Indien je problemen tegenkomt, rapporteer deze dan aan de';
@@ -70,7 +78,7 @@ $lang['Show a jumbotron banner on the categroy pages.'] = 'Toon een jumbotron ba
 $lang['Show basic EXIF metadata'] = 'Toon basis EXIF metadata';
 $lang['Show image caption'] = 'Toon foto-onderschrift';
 $lang['Sidebar (like Boostrap Default)'] = 'Sidebar (zoals bij Bootstrap Default)';
-$lang['Site logo'] = 'Logo van site';
+$lang['Use site logo'] = 'Gebruik sitelogo';
 $lang['Social integration'] = 'Sociale integratie';
 $lang['Fullscreen'] = 'Volledig scherm';
 $lang['Grid view'] = 'Raster-weergave';
@@ -86,7 +94,7 @@ $lang['Components'] = 'Onderdelen';
 $lang['Description display style'] = 'Beschrijving schermstijl';
 $lang['Discover'] = 'Ontdek';
 $lang['Display number of images in album and subalbums'] = 'Toont aantal foto\'s in album en subalbums';
-$lang['Full width layout'] = 'Volledige breedte lay-out';
+$lang['Use full width layout'] = 'Gebruik volledige breedte-indeling';
 $lang['Hero image'] = 'Helden foto';
 $lang['Integrate lower navbar'] = 'Integreert de lagere navigatiebalk';
 $lang['Page header'] = 'Kop van de pagina';
@@ -106,3 +114,15 @@ $lang['Previous (arrow left)'] = 'Vorige (links pijltje)';
 $lang['Share'] = 'Deel';
 $lang['Toggle fullscreen'] = 'Schele volledig scherm in';
 $lang['Zoom in/out'] = 'Zoem in/uit';
+$lang['Based on original work by'] = 'Gebaseerd op origineel werk van';
+$lang['Source'] = 'Bron';
+
+$lang['Page layout'] = 'Pagina-indeling';
+$lang['Page footer'] = 'Pagina footer';
+$lang['Theme'] = 'Thema';
+$lang['Show theme link'] = 'Toon themalink';
+$lang['Contact'] = 'Contact';
+$lang['Show contact link'] = 'Toon contactlink';
+$lang['Show extended metadata'] = 'Uitgebreide metagegevens weergeven';
+$lang['Show EXIF data'] = 'EXIF-gegevens weergeven';
+$lang['Hide EXIF data'] = 'EXIF-gegevens verbergen';

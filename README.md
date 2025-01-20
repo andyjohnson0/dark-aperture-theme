@@ -1,8 +1,15 @@
-Piwigo Bootstrap Darkroom
--------------------
-A mobile-ready [Piwigo](http://piwigo.org) theme based on [Bootstrap 4](https://getbootstrap.com)
+# Dark Aperture Theme for Piwigo
 
-### Features
+A mobile-ready [Piwigo](http://piwigo.org) theme based on [Bootstrap 4](https://getbootstrap.com).
+
+By [Andrew Johnson](http://andyjohnson.uk). See the repo at [https://github.com/andyjohnson0/dark-aperture-theme](https://github.com/andyjohnson0/dark-aperture-theme)
+
+Based on [Bootstrap Darkroom theme](https://github.com/Piwigo/piwigo-bootstrap-darkroom) which is Copyright 2017 by Thomas Kuther. 
+The original author and contributors are thanked for their work.
+This derivative work created in accordance with the Apache 2.0 [licence](LICENSE.txt).
+
+
+## Features
 
 * Various color styles
   * [Bootswatch](https://bootswatch.com)
@@ -15,92 +22,89 @@ A mobile-ready [Piwigo](http://piwigo.org) theme based on [Bootstrap 4](https://
   * Supports auto play
   * Supports HTML5 video
   * Album thumbnails can be linked to PhotoSwipe directly (like smartpocket)
-* Configurable carousel album navigation on the picture page using [slick slider](http://kenwheeler.github.io/slick/)
+* Configurable carousel album navigation on the picture page using [slick slider](https://kenwheeler.github.io/slick/)
 * 100% mobile ready
   * fully responsive Navbars, Carousel, PhotoSwipe slideshow, video content
   * async/ondemand loading of carousel & PhotoSwipe content, adaptive image size selection, swipe & tap events
 * Various configuration options
 * Easy customization using CSS overrides or SASS custom build for advanced needs.
+* Localised in 25 languages using [Smarty](https://www.smarty.net/) support in Piwigo
  
 
-### Usage
+## Usage
 
-1. Installation:
- * Use the Piwigo built-in extension manager (preferred)
- * or git clone and move to piwigo/themes/bootstrap_darkroom
- * or download from http://piwigo.org/ext/extension_view.php?eid=831
-2. Enable Bootstrap Darkroom
-3. Disable the smartpocket theme (it's enabled by default). This is required in order to use Bootstrap Darkroom by default on mobile devices, too.
+1. Build as described below
+2. Upload or copy the repo root directory, excluding the `.git` directory into `themes/dark_aperture` on the target
+system.
+3. Enable Dark Aperture theme
+4. Disable the smartpocket theme (it's enabled by default). This is required in order to use Dark Aperture by default on mobile devices, too.
 
-### Demo
 
-A demo is available at https://demo2.piwigo.com/ and another one at https://demo4.piwigo.com/
+## Development & Customizing
 
-### Documentation, Support and Issue tracker
-* [Github Wiki](https://github.com/tkuther/piwigo-bootstrap-darkroom/wiki)
-* [Forum thread](http://piwigo.org/forum/viewtopic.php?id=26624)
-* [Issue tracker](https://github.com/tkuther/piwigo-bootstrap-darkroom/issues)
+This fork has been modified to build on Windows. The `build:material` and `build:bootswatch` node scripts will need to
+be modified to build on other operating systems. See the [forked repo](https://github.com/Piwigo/piwigo-dark-aperture) for information.
 
-### Recommended Plugins for best mobile user experience
-* [GThumb+](http://piwigo.org/ext/extension_view.php?eid=591) or [gdThumb](http://piwigo.org/ext/extension_view.php?eid=771): this will give you masonry-style thumbnail pages that make most use of valuable space.
-* [RV Thumbnail Scroller](http://piwigo.org/ext/extension_view.php?eid=493): this one will load items on the thumbnails page as they are requested using ajax, ideal for swiping through albums while keeping the initial page load size small. Avoids pagination.
+### Dependencies
 
-### Known issues
+Many of the dependencies are quite old. For this reason, dependencies in `package.json` have been pinned to specific versions numbers
+to prevent automatic upgrade to non-compatible versions.
 
-* In IE11, the navbars only display correctly if using fluid-width layout.
-* On iOS the PhotoSwipe fullscreen mode isn't supported. On iPhone it does work in landscape orientation only, on iPad it doesn't work at all. That's an iOS bug. Works just fine on Android
-* Plugins that add buttons to the Navbar might not (yet) be supported, see [Plugin Support Matrix](https://github.com/tkuther/piwigo-bootstrap-darkroom/wiki/Plugin-Support-Matrix)
-* Portrait mode videos (e.g. from mobile phones) need to be recoded in actual portrait orientation, rotation tags won't work.
+### Prerequisites
 
-### Preview
+1. Install [node.js v11.15.0-x64](https://nodejs.org/download/release/v11.15.0/).
+This is the most recent version that [supports none-sass v4.11.0](https://github.com/sass/node-sass#node-version-support-policy)
 
-![Preview](https://raw.githubusercontent.com/tkuther/piwigo-bootstrap-darkroom/master/screenshot.png)
+2. In Visual Studio Installer, install “Desktop development with C++” workload. Ensure that "Windows 10 SDK" is installed.
+This is required to enable some packages to be re-built.
 
-### Components
+3. Install [Python-2.7.18](https://www.python.org/downloads/release/python-2718/) in `C:\Program Files (x86)\Python27\`.
+Some dependencies require Python 2 and this is the latest, and likely the last, version. Do not add it to the path unless
+you understand the implications of doing so.
 
-* [Bootstrap 4](https://getbootstrap.com)
-* [Bootswatch](https://bootswatch.com)
-* [Bootstrap Material Design](https://mdbootstrap.com/)
-* [PhotoSwipe](http://photoswipe.com/)
-* [Slick](http://kenwheeler.github.io/slick/)
-* [jQuery-Touch-Events](https://github.com/benmajor/jQuery-Touch-Events)
-* [Photography Icons](https://thenounproject.com/DmitryBaranovskiy/collection/photo/) by [Dmitry Baranovskiy](https://thenounproject.com/DmitryBaranovskiy/), licensed under [Creative Commons 3.0](https://creativecommons.org/licenses/by/3.0/us/)
+4. Install and configure Yarn with:
+- `npm install yarn -g`
+- `yarn config set python "C:\Program Files (x86)\Python27\python.exe"`
 
-### Development & Customizing
-* All stylesheets are compiled from Bootstrap's Sass source files using node-sass.
-* Dependencies are managed using yarn. Dist dependencies are separated from the usual npm bloat using .gitignore tricks
-* To install build dependencies, use
-```
-npm install yarn && yarn install
-```
+### Build Process
 
-The build process is based on npm scripts and uses common shell functions, so it might not work on Windows.
+To build for development:
 
-To build everything, use
-```
-npm run build
-```
-To build only bootswatch, for example, use
-```
-npm run build:bootswatch
-```
-See [package.json](https://raw.githubusercontent.com/tkuther/piwigo-bootstrap-darkroom/master/package.json) for available script commands.
+1. `yarn install`
 
-There is built-in support for a custom Sass build.
-* Create the file _scss/custom/custom.scss_
-* Include all required Boostrap stuff in there, override variables as you wish, just like any custom bootstrap build
-* Compile with `npm run build:custom`
-* Select "Custom" style in the theme's configuration
+2. In an admin command window, execute the Windows command `mklink /d "%CD%\node_modules\~bootstrap" "%CD%\node_modules\bootstrap"`
+from the repo root directory. This aliases `node_modules\~bootstrap` to `node_modules\bootstrap` and is required to be able to build
+Bootstrap Material Design, which contains paths with a `~` suffix.
 
-### Thanks
-* Phil Bayfield for his work on the Bootstrap Default theme, which this theme was initiallly based on as a child theme. It's grown up now.
-* The Piwigo Team for a great gallery software
-* The Piwigo translation team
+3. `yarn build`
 
-### License
+To build for deployment:
+
+1. Yarn install
+
+2. Alias `~bootstrap` to `bootstrap` as described above.
+
+3. `yarn install --production`
+
+4. Upload or copy the repo root directory, excluding the `.git` directory into `themes/dark_aperture` on the target
+system.
+
+
+## Credits
+
+Based on [Bootstrap Darkroom theme](https://github.com/Piwigo/piwigo-dark-aperture) by Thomas Kuther. The original author is thanked
+for their work. This derivative work created in accordance with the [licence](LICENSE.txt).
+
+Logo by [Gabriele Malaspina](https://www.svgrepo.com/svg/488838/camera). Public domain licensed.
+
+Photography icons by [Dmitry Baranovskiy](https://thenounproject.com/DmitryBaranovskiy/)</a>,
+licensed under [Creative Commons 3.0](https://creativecommons.org/licenses/by/3.0/us/)
+
+
+## License
 
 ```
-Copyright 2017 Thomas Kuther
+Based on original work copyright 2017 Thomas Kuther
 
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.

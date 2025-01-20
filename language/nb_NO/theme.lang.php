@@ -1,4 +1,9 @@
 <?php
+
+/*
+** Modified by Andrew Johnson for Dark Aperture theme
+*/
+
 // +-----------------------------------------------------------------------+
 // | Piwigo - a PHP based photo gallery                                    |
 // +-----------------------------------------------------------------------+
@@ -20,17 +25,20 @@
 // | Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA 02111-1307, |
 // | USA.                                                                  |
 // +-----------------------------------------------------------------------+
+
+// Norwegian
+
 $lang['Show a jumbotron banner on the categroy pages.'] = 'Vis en storskjerms banner på kategori siden.';
 $lang['Show basic EXIF metadata'] = 'Vis grunnleggende EXIF metadata';
 $lang['Show image caption'] = 'Vis bildes bildetekst';
 $lang['Sidebar (like Boostrap Default)'] = 'Sidestolpe (som Bootstrap standard)';
-$lang['Site logo'] = 'Nettside logo ';
+$lang['Use site logo'] = 'Bruk nettstedets logo';
 $lang['Social integration'] = 'Sosial integrering';
 $lang['Tabs below the image'] = 'Knapper under bilde';
 $lang['The path to the image, relative to your Piwigo installation folder'] = 'Stien til bilde, i forhold til din Piwigo installasjonsmappe';
-$lang['This will display categories as media wells with squared thumbnails, similar to the smartpocket mobile theme.'] = 'Dette vil vise kategorier som mediebrønner med firkantede miniatybilder som ligner på smartpocket mobil tema.';
+$lang['Display albums as media wells with squared thumbnails, similar to the smartpocket mobile theme.'] = 'Vis album som mediebrønner med kvadratiske miniatyrbilder, som ligner på smartpocket-mobiltemaet.';
 $lang['Thumbnail Link Target'] = 'Miniatyrbildes Lenke Mål';
-$lang['Thumbnail page display'] = 'Miniatyrbilders side visning';
+$lang['Album page display'] = 'Albumsidevisning';
 $lang['directly in the navigation bar'] = 'direkt i navigasjonsfeltet';
 $lang['from'] = 'fra';
 $lang['lazyLoad method'] = 'treg laste metode';
@@ -58,19 +66,19 @@ $lang['A color theme from'] = 'Et farge tema fra';
 $lang['Always'] = 'Alltid';
 $lang['Autoplay interval'] = 'Automatisk avspillings intervall';
 $lang['Basic'] = 'Grunnleggende';
-$lang['Bootstrap Darkroom\'s custom dark color theme'] = 'Bootstrap Darkroom\'s tilpasset mørk farge tema';
+$lang['Dark Aperture\'s custom dark color theme'] = 'Dark Aperture\'s tilpasset mørk farge tema';
 $lang['Bootstrap theme'] = 'Bootstrap tema';
 $lang['Bootstrap\'s default theme'] = 'Bootstrap\'s standard tema';
 $lang['Bootswatch theme'] = 'Bootswatch tema';
 $lang['Bug reports and feature requests'] = 'Feilrapporter og funksjonsforespørsler';
 $lang['By'] = 'Av';
-$lang['Category page display'] = 'Kategorisk sidevisning';
+$lang['Main page display'] = 'Hovedsidevisning';
 $lang['Center mode'] = 'Senter modus';
 $lang['Color theme'] = 'Farge tema';
 $lang['Disabled'] = 'Deaktivert';
 $lang['Display a site logo image instead of plain text'] = 'Vis nettside logo som bilde i stedet for ren tekst';
-$lang['Display categories as Bootstrap media wells'] = 'Vis kategorier som Bootstrap medie brønner';
-$lang['Display category description in grid view'] = 'Vis kategori beskrivelse i rutenettvisning';
+$lang['Display albums as Bootstrap media wells'] = 'Vis album som Bootstrap-mediebrønner';
+$lang['Display album description when in grid view'] = 'Vis albumbeskrivelse i rutenettvisning';
 $lang['Display the currently selected image in the middle. Works best with infinite looping enabled.'] = 'Vis valgte bilde i midten. Fungerer best med uendelig looping aktivert';
 $lang['Fullscreen'] = 'Full skjerm';
 $lang['Grid view'] = 'Rutenett visning';
@@ -87,7 +95,7 @@ $lang['Social Media Integration'] = 'Sosial integrering';
 $lang['Span the full viewport height'] = 'Utvid til full visningshøyde';
 $lang['Discover'] = 'Oppdag';
 $lang['Display number of images in album and subalbums'] = 'Vis antall bilder i alle albumer';
-$lang['Full width layout'] = 'Full bredde visning';
+$lang['Use full width layout'] = 'Bruk oppsett i full bredde';
 $lang['Hero image'] = 'Favoritt bilde';
 $lang['Integrate lower navbar'] = 'Integrerer lavere navigerings bar';
 $lang['Description display style'] = 'Vis stil beskrivelse ';
@@ -106,3 +114,15 @@ $lang['Previous (arrow left)'] = 'Forrige (pil venstre)';
 $lang['Share'] = 'Dele';
 $lang['Toggle fullscreen'] = 'Slå på fullskjerm';
 $lang['Zoom in/out'] = 'Zoom inn/ut';
+$lang['Based on original work by'] = 'Basert på originalt verk av';
+$lang['Source'] = 'Kilde';
+
+$lang['Page layout'] = 'Sidelayout';
+$lang['Page footer'] = 'Sidebunntekst';
+$lang['Theme'] = 'Tema';
+$lang['Show theme link'] = 'Vis temakobling';
+$lang['Contact'] = 'Kontakt';
+$lang['Show contact link'] = 'Vis kontaktlenke';
+$lang['Show extended metadata'] = 'Vis utvidede metadata';
+$lang['Show EXIF data'] = 'Vis EXIF-data';
+$lang['Hide EXIF data'] = 'Skjul EXIF-data';

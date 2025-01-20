@@ -1,4 +1,9 @@
 <?php
+
+/*
+** Modified by Andrew Johnson for Dark Aperture theme
+*/
+
 // +-----------------------------------------------------------------------+
 // | Piwigo - a PHP based photo gallery                                    |
 // +-----------------------------------------------------------------------+
@@ -20,20 +25,23 @@
 // | Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA 02111-1307, |
 // | USA.                                                                  |
 // +-----------------------------------------------------------------------+
+
+// Chinese (Simplified) (China)
+
 $lang['Thumbnail Link Target'] = '缩略图链接目标';
-$lang['Thumbnail page display'] = '缩略图页面';
+$lang['Album page display'] = '相册页面显示';
 $lang['directly in the navigation bar'] = '直接显示于导航栏';
 $lang['from'] = '来自';
 $lang['lazyLoad method'] = '惰性加载方式';
 $lang['loads all images one after another when the page loads (use carefully!)'] = '页面打开时，依次加载全部图片（慎用！）';
 $lang['milliseconds'] = '毫秒';
 $lang['will load the image as soon as you slide to it'] = '当页面滚动到图片位置时，加载图片';
-$lang['This will display categories as media wells with squared thumbnails, similar to the smartpocket mobile theme.'] = '左侧为正方形缩略图、右侧为文字信息的列表样式，与 SmartPocket 移动设备主题类似。';
+$lang['Display albums as media wells with squared thumbnails, similar to the smartpocket mobile theme.'] = '将相册显示为带有方形缩略图的媒体井，类似于 smartpocket 移动主题。';
 $lang['The path to the image, relative to your Piwigo installation folder'] = '图片的相对路径（相对于 Piwigo 安装目录）';
 $lang['Show basic EXIF metadata'] = '显示基础的 EXIF 元数据';
 $lang['Show image caption'] = '显示图片名称';
 $lang['Sidebar (like Boostrap Default)'] = '页面右侧边栏（Boostrap 默认）';
-$lang['Site logo'] = '网站 Logo';
+$lang['Use site logo'] = '使用站点徽标';
 $lang['Social integration'] = '分享到社交媒体';
 $lang['Tabs below the image'] = '图片下方标签';
 $lang['Picture page display'] = '图片详情页面';
@@ -55,20 +63,20 @@ $lang['HTML 5 canvas'] = 'HTML 5 canvas';
 $lang['If you find any issues, please report them to the'] = '如果发现任何问题，请将问题提交到';
 $lang['Infinite looping'] = '无限循环';
 $lang['Enable PhotoSwipe fullscreen slideshow. Disable if you prefer to use Plugins like Fotorama or Piwigo\'s default slideshow.'] = '启用 PhotoSwipe 全屏幻灯。如果你更喜欢使用 Fotorama 之类的插件或 Piwigo 的默认幻灯，则禁用它。';
-$lang['Display categories as Bootstrap media wells'] = '将目录显示为 Bootstrap Media Wells';
+$lang['Display albums as Bootstrap media wells'] = '将相册显示为 Bootstrap 媒体井';
 $lang['Display the currently selected image in the middle. Works best with infinite looping enabled.'] = '在中间显示当前选中图片。启用无限循环模式时效果最好。';
-$lang['Display category description in grid view'] = '在网格视图中显示目录描述';
+$lang['Display album description when in grid view'] = '在网格视图中显示相册描述';
 $lang['A color theme from'] = '一组彩色主题，来自';
 $lang['Always'] = '始终';
 $lang['Autoplay interval'] = '自动播放时间间隔';
 $lang['Basic'] = '基础';
-$lang['Bootstrap Darkroom\'s custom dark color theme'] = 'Bootstrap Darkroom 定制的暗色主题';
+$lang['Dark Aperture\'s custom dark color theme'] = 'Dark Aperture 定制的暗色主题';
 $lang['Bootstrap theme'] = 'Bootstrap 主题';
 $lang['Bootstrap\'s default theme'] = 'Bootstrap 默认主题';
 $lang['Bootswatch theme'] = 'Bootswatch 主题';
 $lang['Bug reports and feature requests'] = 'Bug 报告和用户建议';
 $lang['By'] = '作者';
-$lang['Category page display'] = '目录页面';
+$lang['Main page display'] = '主页显示';
 $lang['Center mode'] = '中心模式';
 $lang['Color theme'] = '颜色主题';
 $lang['Disabled'] = '禁用';
@@ -83,7 +91,7 @@ $lang['Integrate lower navbar'] = '背景图片涵盖下方导航栏';
 $lang['Span the full viewport height'] = '占据整个可视区域的高度';
 $lang['URL or releative path to the image'] = '图片的相对路径或 URL';
 $lang['Use 6 colums for viewports >= 1680px'] = '浏览器可视区域宽度 >= 1680px 时，使用 6 栏布局';
-$lang['Full width layout'] = '全屏宽度';
+$lang['Use full width layout'] = '使用全宽布局';
 $lang['Use full width containers that span the entire width of the viewport'] = '在大屏设备上，让内容占据整个页面，两侧不留白';
 $lang['Page header'] = '页面顶栏';
 $lang['Simple'] = '简单';
@@ -107,3 +115,15 @@ $lang['Share'] = '分享';
 $lang['Toggle fullscreen'] = '切换全屏';
 $lang['Zoom in/out'] = '放大/缩小';
 $lang['Display number of images in breadcrumb'] = '在面包屑导航中显示图片数量';
+$lang['Based on original work by'] = '根据原作';
+$lang['Source'] = '来源';
+
+$lang['Page footer'] = '页面布局';
+$lang['Page footer'] = '页脚';
+$lang['Theme'] = '主题';
+$lang['Show theme link'] = '显示主题链接';
+$lang['Contact'] = '联系方式';
+$lang['Show contact link'] = '显示联系方式链接';
+$lang['Show extended metadata'] = '显示扩展元数据';
+$lang['Show EXIF data'] = '显示 EXIF 数据';
+$lang['Hide EXIF data'] = '隐藏 EXIF 数据';

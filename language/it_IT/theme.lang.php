@@ -1,25 +1,33 @@
 <?php
+
+/*
+** Modified by Andrew Johnson for Dark Aperture theme
+*/
+
 // +-----------------------------------------------------------------------+
 // | This file is part of Piwigo.                                          |
 // |                                                                       |
 // | For copyright and license information, please view the COPYING.txt    |
 // | file that was distributed with this source code.                      |
 // +-----------------------------------------------------------------------+
+
+// Italian
+
 $lang['loads all images one after another when the page loads (use carefully!)'] = 'carica tutte le immagini una dopo l\'altra quando la pagina carica (usare attentamente!)';
 $lang['milliseconds'] = 'millisecondi';
 $lang['Link thumbnail to'] = 'Collega thumbnail a';
 $lang['Infinite looping'] = 'Loop infinito';
 $lang['If you find any issues, please report them to the'] = 'In caso di problemi, segnalali a';
-$lang['Thumbnail page display'] = 'Mostra pagina Thumbnail';
+$lang['Album page display'] = 'Visualizzazione della pagina dell\'album';
 $lang['Tabs below the image'] = 'Tabs sotto l\'immagine';
 $lang['Social integration'] = 'Integrazione social';
 $lang['Social Media Integration'] = 'Integrazione social';
-$lang['Site logo'] = 'Logo sito';
+$lang['Use site logo'] = 'Usa il logo del sito';
 $lang['Show basic EXIF metadata'] = 'Mostra metadati EXIF principali';
 $lang['Page header'] = 'Intestazione pagina';
 $lang['On mobile devices only'] = 'Solo su dispositivi mobili';
 $lang['Description display style'] = 'Stile di visualizzazione descrizione';
-$lang['Display category description in grid view'] = 'Mostra la descrizione della categoria in visualizzazione griglia';
+$lang['Display album description when in grid view'] = 'Visualizza la descrizione dell\'album quando sei in visualizzazione griglia';
 $lang['Fullscreen'] = 'Schermo intero';
 $lang['Advanced'] = 'Avanzato';
 $lang['Basic'] = 'Base';
@@ -42,7 +50,7 @@ $lang['directly in the navigation bar'] = 'Direttamente nella barra di navigazio
 $lang['lazyLoad method'] = 'Metodo di caricamento lento (lazyLoad).';
 $lang['left-aligned free text for advanced descriptions'] = 'Testo libero allineato a sinistra per descrizioni avanzate.';
 $lang['will load the image as soon as you slide to it'] = 'Caricherà le immagini appena le farai scorrere.';
-$lang['This will display categories as media wells with squared thumbnails, similar to the smartpocket mobile theme.'] = 'Questo visualizzerà le categorie come media well, con miniature quadrate, simili al tema mobile smartpocket.';
+$lang['Display albums as media wells with squared thumbnails, similar to the smartpocket mobile theme.'] = 'Visualizza gli album come contenitori multimediali con miniature quadrate, simili al tema mobile Smartpocket.';
 $lang['Use 6 colums for viewports >= 1680px'] = 'Utilizza 6 colonne per finestra >= 1680px';
 $lang['Use colored share buttons instead of icons'] = 'Utilizza bottoni colorati anziché icone per la condivisione.';
 $lang['center-aligned h5 heading'] = 'Intestazione h5 allineata in centro.';
@@ -69,7 +77,7 @@ $lang['Previous (arrow left)'] = 'Precedente (freccia sinistra).';
 $lang['Share'] = 'Condividi.';
 $lang['Next (arrow right)'] = 'Prossima (freccia destra)';
 $lang['List view'] = 'Vista a lista.';
-$lang['Bootstrap Darkroom\'s custom dark color theme'] = 'Colorazione scura personalizzata del tema Bootstrap Darkroom.';
+$lang['Dark Aperture\'s custom dark color theme'] = 'Colorazione scura personalizzata del tema Dark Aperture.';
 $lang['HTML 5 canvas'] = 'HTML 5 canvas.';
 $lang['Hero image'] = 'Immagine dell\'eroe.';
 $lang['AutoPlay'] = 'Riproduzione automatica.';
@@ -80,15 +88,26 @@ $lang['Bootswatch theme'] = 'Tema Bootswatch.';
 $lang['Bug reports and feature requests'] = 'Report di problemi e richiesta caratteristiche.';
 $lang['By'] = 'Di';
 $lang['Card grid below the image'] = 'Griglia delle schede sotto l\'immagine.';
-$lang['Category page display'] = 'Mostra la pagina delle categorie.';
+$lang['Main page display'] = 'Visualizzazione della pagina principale';
 $lang['Center mode'] = 'Modalità centrata.';
 $lang['Close (Esc)'] = 'Chiudi (Esc).';
 $lang['Components'] = 'Componenti.';
-$lang['Display categories as Bootstrap media wells'] = 'Mostra le categorie come media wells Bootstrap';
+$lang['Display albums as Bootstrap media wells'] = 'Visualizza gli album come pozzi multimediali Bootstrap';
 $lang['Display the currently selected image in the middle. Works best with infinite looping enabled.'] = 'Mostra l\'immagine attualmente selezionata nel mezzo. Funziona meglio se il ciclo infinito è attivato.';
 $lang['Enable PhotoSwipe fullscreen slideshow. Disable if you prefer to use Plugins like Fotorama or Piwigo\'s default slideshow.'] = 'Abilita la presentazione PhotoSwipe a schermo pieno.. Disabilita se preferisci utilizzare plugin come Fotorama oppure la presentazione predefinita di Piwigo.';
-$lang['Enable the slick carousel below the main image on the picture page'] = 'Abilita il carosello slick sotto l\'immagine principale nella pagina delle immagini.
-';
+$lang['Enable the slick carousel below the main image on the picture page'] = 'Abilita il carosello slick sotto l\'immagine principale nella pagina delle immagini.';
 $lang['Endlessly scroll through album images'] = 'Scorri all\'infinito le immagini dell\'album.';
-$lang['Full width layout'] = 'Impaginazione a tutta larghezza.';
+$lang['Use full width layout'] = 'Usa layout a larghezza intera';
 $lang['Grid view'] = 'Vista a griglia.';
+$lang['Based on original work by'] = 'Basato sul lavoro originale di';
+$lang['Source'] = 'Fonte';
+
+$lang['Page layout'] = 'Impaginazione';
+$lang['Page footer'] = 'Piè di pagina';
+$lang['Theme'] = 'Tema';
+$lang['Show theme link'] = 'Mostra link tema';
+$lang['Contact'] = 'Contatto';
+$lang['Show contact link'] = 'Mostra collegamento contatto';
+$lang['Show extended metadata'] = 'Mostra metadati estesi';
+$lang['Show EXIF data'] = 'Mostra dati EXIF';
+$lang['Hide EXIF data'] = 'Nascondi dati EXIF';

@@ -1,8 +1,15 @@
 <?php
+
+/*
+** Modified by Andrew Johnson for Dark Aperture theme
+*/
+
+// English
+
 $lang['Enabled'] = 'Enabled';
 $lang['Disabled'] = 'Disabled';
 $lang['Color theme'] = 'Color theme';
-$lang['Bootstrap Darkroom\'s custom dark color theme'] = 'Bootstrap Darkroom\'s custom dark color theme';
+$lang['Dark Aperture\'s custom dark color theme'] = 'Dark Aperture\'s custom dark color theme';
 $lang['A color theme from'] = 'A color theme from';
 $lang['Bootstrap\'s default theme'] = 'Bootstrap\'s default theme';
 $lang['Bootswatch theme'] = 'Bootswatch theme';
@@ -28,19 +35,19 @@ $lang['Link thumbnail to'] = 'Link thumbnail to';
 $lang['Picture details page'] = 'Picture details page';
 $lang['PhotoSwipe Slideshow'] = 'PhotoSwipe Slideshow';
 $lang['Photoswipe Slideshow (Mobile devices only)'] = 'Photoswipe Slideshow (Mobile devices only)';
-$lang['Category page display'] = 'Category page display';
-$lang['Display categories as Bootstrap media wells'] = 'Display categories as Bootstrap media wells';
+$lang['Main page display'] = 'Main page display';
+$lang['Display albums as Bootstrap media wells'] = 'Display albums as Bootstrap media wells';
 $lang['Never'] = 'Never';
 $lang['Always'] = 'Always';
 $lang['On mobile devices only'] = 'On mobile devices only';
-$lang['This will display categories as media wells with squared thumbnails, similar to the smartpocket mobile theme.'] = 'This will display categories as media wells with squared thumbnails, similar to the smartpocket mobile theme.';
+$lang['Display albums as media wells with squared thumbnails, similar to the smartpocket mobile theme.'] = 'Display albums as media wells with squared thumbnails, similar to the smartpocket mobile theme.';
 $lang['Show basic EXIF metadata'] = 'Show basic EXIF metadata';
 $lang['For more information on metadata visit'] = 'For more information on metadata visit';
-$lang['Thumbnail page display'] = 'Thumbnail page display';
+$lang['Album page display'] = 'Album page display';
 $lang['Show image caption'] = 'Show image caption';
 $lang['Use description rather than title for images'] = 'Use description rather than title for images';
 $lang['from'] = 'from';
-$lang['Site logo'] = 'Site logo';
+$lang['Use site logo'] = 'Use site logo';
 $lang['Display a site logo image instead of plain text'] = 'Display a site logo image instead of plain text';
 $lang['The path to the image, relative to your Piwigo installation folder'] = 'The path to the image, relative to your Piwigo installation folder';
 $lang['directly in the navigation bar'] = 'directly in the navigation bar';
@@ -52,12 +59,12 @@ $lang['A mobile-ready theme based on Bootstrap 4'] = 'A mobile-ready theme based
 $lang['If you find any issues, please report them to the'] = 'If you find any issues, please report them to the';
 $lang['Issue tracker'] = 'Issue tracker';
 $lang['Bug reports and feature requests'] = 'Bug reports and feature requests';
-$lang['Display category description in grid view'] = 'Display category description in grid view';
+$lang['Display album description when in grid view'] = 'Display album description when in grid view';
 $lang['Fullscreen'] = 'Fullscreen';
 $lang['Grid view'] = 'Grid view';
 $lang['List view'] = 'List view';
 $lang['Discover'] = 'Discover';
-$lang['Full width layout'] = 'Full width layout';
+$lang['Use full width layout'] = 'Use full width layout';
 $lang['Use full width containers that span the entire width of the viewport'] = 'Use full width containers that span the entire width of the viewport';
 $lang['Appearance'] = 'Appearance';
 $lang['Components'] = 'Components';
@@ -86,3 +93,15 @@ $lang['AutoPlay'] = 'AutoPlay';
 $lang['Previous (arrow left)'] = 'Previous (arrow left)';
 $lang['Next (arrow right)'] = 'Next (arrow right)';
 $lang['Display number of images in breadcrumb'] = 'Display number of images in breadcrumb';
+$lang['Based on original work by'] = 'Based on original work by';
+$lang['Source'] = 'Source';
+
+$lang['Page layout'] = 'Page layout';
+$lang['Page footer'] = 'Page footer';
+$lang['Theme'] = 'Theme';
+$lang['Show theme link'] = 'Show theme link';
+$lang['Contact'] = 'Contact';
+$lang['Show contact link'] = 'Show contact link';
+$lang['Show extended metadata'] = 'Show extended metadata';
+$lang['Show EXIF data'] = 'Show EXIF data';
+$lang['Hide EXIF data'] = 'Hide EXIF data';

@@ -1,10 +1,15 @@
 <?php
-namespace BootstrapDarkroom;
+
+/*
+** Modified by Andrew Johnson for Dark Aperture theme
+*/
+
+namespace DarkAperture;
 
 class Config {
 
-    const CONF_PARAM = 'bootstrap_darkroom';
-    const CONF_VERSION = 20;
+    const CONF_PARAM = 'dark_aperture';
+    const CONF_VERSION = 1;
 
     const TYPE_BOOL = 'bool';
     const TYPE_STRING = 'string';
@@ -31,21 +36,22 @@ class Config {
     const KEY_PAGE_HEADER_FULL = 'page_header_full';
     const KEY_PAGE_HEADER_IMAGE = 'page_header_image';
     const KEY_PAGE_HEADER_BOTH_NAVS = 'page_header_both_navs';
+    const KEY_PICTURE_CAPTION = 'picture_caption';
+    const KEY_PICTURE_DESC = 'picture_desc';
     const KEY_PICTURE_INFO = 'picture_info';
+    const KEY_PICTURE_SHOW_EXTENDED_METADATA = 'picture_show_extended_metadata';
     const KEY_PHOTOSWIPE = 'photoswipe';
     const KEY_PHOTOSWIPE_INTERVAL = 'photoswipe_interval';
-    const KEY_THUMBNAIL_LINKTO = 'thumbnail_linkto';
     const KEY_THUMBNAIL_CAPTION = 'thumbnail_caption';
-    const KEY_THUMBNAIL_DESC = 'thumbnail_desc';
     const KEY_THUMBNAIL_CAT_DESC = 'thumbnail_cat_desc';
     const KEY_CATEGORY_WELLS = 'category_wells';
     const KEY_LOGO_IMAGE_ENABLED = 'logo_image_enabled';
     const KEY_LOGO_IMAGE_PATH = 'logo_image_path';
     const KEY_QUICKSEARCH_NAVBAR = 'quicksearch_navbar';
-    const KEY_CAT_DESCRIPTIONS = 'cat_descriptions';
-    const KEY_CAT_NB_IMAGES = 'cat_nb_images';
+    const KEY_CAT_SHOW_DESCRIPTIONS = 'cat_show_descriptions';
     const KEY_THUMBNAIL_NB_IMAGES = 'thumbnail_nb_images';
-
+    const KEY_THEME_LINK_ENABLED = 'theme_link_enabled';
+    const KEY_CONTACT_LINK_ENABLED = 'contact_link_enabled';
     const KEY_SOCIAL_ENABLED = 'social_enabled';
     const KEY_SOCIAL_BUTTONS = 'social_buttons';
     const KEY_SOCIAL_TWITTER = 'social_twitter';
@@ -77,19 +83,21 @@ class Config {
         self::KEY_PAGE_HEADER_FULL => false,
         self::KEY_PAGE_HEADER_IMAGE => '',
         self::KEY_PAGE_HEADER_BOTH_NAVS => true,
+        self::KEY_PICTURE_CAPTION => true,
+        self::KEY_PICTURE_DESC => false,
         self::KEY_PICTURE_INFO => 'cards',
+        self::KEY_PICTURE_SHOW_EXTENDED_METADATA => true,
         self::KEY_PHOTOSWIPE => true,
         self::KEY_PHOTOSWIPE_INTERVAL => '3500',
-        self::KEY_THUMBNAIL_LINKTO => 'picture',
         self::KEY_THUMBNAIL_CAPTION => true,
-        self::KEY_THUMBNAIL_DESC => false,
         self::KEY_THUMBNAIL_CAT_DESC => 'simple',
         self::KEY_CATEGORY_WELLS => 'never',
         self::KEY_LOGO_IMAGE_ENABLED => false,
         self::KEY_LOGO_IMAGE_PATH => '',
         self::KEY_QUICKSEARCH_NAVBAR => true,
-        self::KEY_CAT_DESCRIPTIONS => false,
-        self::KEY_CAT_NB_IMAGES => true,
+        self::KEY_CAT_SHOW_DESCRIPTIONS => false,
+        self::KEY_THEME_LINK_ENABLED => true,
+        self::KEY_CONTACT_LINK_ENABLED => false,
         self::KEY_SOCIAL_ENABLED => true,
         self::KEY_SOCIAL_BUTTONS => false,
         self::KEY_SOCIAL_TWITTER => true,
@@ -121,19 +129,21 @@ class Config {
         self::KEY_PAGE_HEADER_FULL => self::TYPE_BOOL,
         self::KEY_PAGE_HEADER_IMAGE => self::TYPE_STRING,
         self::KEY_PAGE_HEADER_BOTH_NAVS => self::TYPE_BOOL,
+        self::KEY_PICTURE_CAPTION => self::TYPE_BOOL,
+        self::KEY_PICTURE_DESC => self::TYPE_BOOL,
         self::KEY_PICTURE_INFO => self::TYPE_STRING,
+        self::KEY_PICTURE_SHOW_EXTENDED_METADATA => self::TYPE_BOOL,
         self::KEY_PHOTOSWIPE => self::TYPE_BOOL,
         self::KEY_PHOTOSWIPE_INTERVAL => self::TYPE_NUM,
-        self::KEY_THUMBNAIL_LINKTO => self::TYPE_STRING,
         self::KEY_THUMBNAIL_CAPTION => self::TYPE_BOOL,
-        self::KEY_THUMBNAIL_DESC => self::TYPE_BOOL,
         self::KEY_THUMBNAIL_CAT_DESC => self::TYPE_STRING,
         self::KEY_CATEGORY_WELLS => self::TYPE_STRING,
         self::KEY_LOGO_IMAGE_ENABLED => self::TYPE_BOOL,
         self::KEY_LOGO_IMAGE_PATH => self::TYPE_STRING,
         self::KEY_QUICKSEARCH_NAVBAR => self::TYPE_BOOL,
-        self::KEY_CAT_DESCRIPTIONS => self::TYPE_BOOL,
-        self::KEY_CAT_NB_IMAGES => self::TYPE_BOOL,
+        self::KEY_CAT_SHOW_DESCRIPTIONS => self::TYPE_BOOL,
+        self::KEY_THEME_LINK_ENABLED => self::TYPE_BOOL,
+        self::KEY_CONTACT_LINK_ENABLED => self::TYPE_BOOL,
         self::KEY_SOCIAL_ENABLED => self::TYPE_BOOL,
         self::KEY_SOCIAL_BUTTONS => self::TYPE_BOOL,
         self::KEY_SOCIAL_TWITTER => self::TYPE_BOOL,
@@ -181,7 +191,7 @@ class Config {
     }
 
     private function initFiles() {
-        $this->files[self::KEY_CUSTOM_CSS] = PHPWG_ROOT_PATH . PWG_LOCAL_DIR . 'bootstrap_darkroom/custom.css';
+        $this->files[self::KEY_CUSTOM_CSS] = PHPWG_ROOT_PATH . PWG_LOCAL_DIR . 'dark_aperture/custom.css';
     }
 
     public function __set($key, $value) {

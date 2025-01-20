@@ -1,3 +1,5 @@
+{* Modified by Andrew Johnson for Dark Aperture theme *}
+
 <nav class="navbar navbar-expand-lg navbar-contextual {$theme_config->navbar_contextual_style} {$theme_config->navbar_contextual_bg} sticky-top mb-5">
     <div class="container{if $theme_config->fluid_width}-fluid{/if}">
         <div class="navbar-brand mr-auto"><a href="{$U_HOME}">{'Home'|@translate}</a>{$LEVEL_SEPARATOR}<a href>{'About'|@translate}</a></div>
@@ -23,8 +25,14 @@
 {$elt}
 {/foreach}
 {/if}
-          <div><a href="https://github.com/tkuther/piwigo-bootstrap-darkroom">Bootstrap Darkroom Theme</a> by Thomas Kuther.</div>
-          <div><a href="https://thenounproject.com/DmitryBaranovskiy/collection/photo/">Photography Icons</a> by <a href="https://thenounproject.com/DmitryBaranovskiy/">Dmitry Baranovskiy</a>, licensed under <a href="https://creativecommons.org/licenses/by/3.0/us/">Creative Commons 3.0</a>.
-        </div>
+          <div>
+            <p><a href="https://github.com/tkuther/piwigo-dark-aperture">Dark Aperture Theme</a> by Andrew Johnson.<br>
+            Based on Bootstap Darkroom theme copyright Thumas Kuther.</p>
+          </div>
+          <div>
+            <p>Logo by [Gabriele Malaspina](https://www.svgrepo.com/svg/488838/camera). Public domain licensed.</p>
+            <p><a href="https://thenounproject.com/DmitryBaranovskiy/collection/photo/">Photography Icons</a> by <a href="https://thenounproject.com/DmitryBaranovskiy/">Dmitry Baranovskiy</a>, 
+            licensed under <a href="https://creativecommons.org/licenses/by/3.0/us/">Creative Commons 3.0</a>.</p>
+          </div>
     </div>
 </div>

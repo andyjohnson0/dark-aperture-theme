@@ -1,15 +1,20 @@
 <?php
+
+/*
+** Modified by Andrew Johnson for Dark Aperture theme
+*/
+
 // Check whether we are indeed included by Piwigo.
 if (!defined('PHPWG_ROOT_PATH')) die('Hacking attempt!');
 
 // Includes
 include_once(PHPWG_ROOT_PATH . 'admin/include/tabsheet.class.php');
-require_once(PHPWG_THEMES_PATH . 'bootstrap_darkroom/include/config.php');
+require_once(PHPWG_THEMES_PATH . 'dark_aperture/include/config.php');
 
-load_language('theme.lang', PHPWG_THEMES_PATH.'bootstrap_darkroom/');
+load_language('theme.lang', PHPWG_THEMES_PATH.'dark_aperture/');
 
 // Constants
-define('THEME_ID', basename(dirname(dirname(__FILE__))));
+define('THEME_ID', "dark_aperture");
 define('ADMIN_PATH',   get_root_url() . 'admin.php?page=theme&theme=' . THEME_ID);
 define('TAB_SETTINGS', 'settings');
 define('TAB_ABOUT', 'about');
@@ -20,16 +25,16 @@ if (!in_array($page['tab'], array(TAB_SETTINGS, TAB_ABOUT))) {
     $page['tab'] = TAB_SETTINGS;
 }
 
-$themeconfig = new \BootstrapDarkroom\Config();
+$themeconfig = new \DarkAperture\Config();
 
 //Add check for new config settings added after 2024-12
 //This allows us to avoid unset variable errors in php 8
 //We force the object parameter to be added using the default value set in config.php,
-$ReflectionClass = new ReflectionClass('\BootstrapDarkroom\Config');
+$ReflectionClass = new ReflectionClass('\DarkAperture\Config');
 $themeconfig_vars = $ReflectionClass->getDefaultProperties();
 $themeconfig_defaults = $themeconfig_vars['defaults'];
 
-if (!isset($themeconfig->thumbnail_nb_images) and !isset($_POST['boostrap_darkroom_settings']))
+if (!isset($themeconfig->thumbnail_nb_images) and !isset($_POST['dark_aperture_settings']))
 {
   $themeconfig->thumbnail_nb_images = $themeconfig_defaults['thumbnail_nb_images'];
   $themeconfig->save();
@@ -37,7 +42,7 @@ if (!isset($themeconfig->thumbnail_nb_images) and !isset($_POST['boostrap_darkro
 
 // Save settings
 if ($page['tab'] == TAB_SETTINGS) {
-    if (isset($_POST['boostrap_darkroom_settings'])) {
+    if (isset($_POST['dark_aperture_settings'])) {
         $themeconfig->fromPost($_POST);
         $themeconfig->save();
     }

@@ -1,10 +1,18 @@
 <?php
+
+/*
+** Modified by Andrew Johnson for Dark Aperture theme
+*/
+
 // +-----------------------------------------------------------------------+
 // | This file is part of Piwigo.                                          |
 // |                                                                       |
 // | For copyright and license information, please view the COPYING.txt    |
 // | file that was distributed with this source code.                      |
 // +-----------------------------------------------------------------------+
+
+// Slovenian
+
 $lang['Color theme'] = 'Barvna tema';
 $lang['Use colored share buttons instead of icons'] = 'Namesto ikon uporabite barvne gumbe za skupno rabo';
 $lang['Use 6 colums for viewports >= 1680px'] = 'Uporabite 6 stolpcev za vidna polja >= 1680px';
@@ -22,11 +30,11 @@ $lang['Card grid below the image'] = 'Mreža kartic pod sliko';
 $lang['Components'] = 'Komponente';
 $lang['Use full width containers that span the entire width of the viewport'] = 'Uporabite vsebnike polne širine, ki pokrivajo celotno širino prikaznega polja';
 $lang['Discover'] = 'Odkrij';
-$lang['Full width layout'] = 'Postavitev celotne širine';
+$lang['Use full width layout'] = 'Uporabi postavitev polne širine';
 $lang['List view'] = 'Pogled seznama';
 $lang['Grid view'] = 'Mrežni pogled';
 $lang['Fullscreen'] = 'Celozaslonsko';
-$lang['Display category description in grid view'] = 'Prikaži opis kategorije v mrežnem pogledu';
+$lang['Display album description when in grid view'] = 'Prikaži opis albuma v mrežnem pogledu';
 $lang['Issue tracker'] = 'Sledilnik težav';
 $lang['If you find any issues, please report them to the'] = 'Če najdete težave, jih prijavite na';
 $lang['HTML 5 canvas'] = 'HTML 5 platno';
@@ -35,17 +43,17 @@ $lang['Social integration'] = 'Družbeno vključevanje';
 $lang['directly in the navigation bar'] = 'neposredno v navigacijski vrstici';
 $lang['The path to the image, relative to your Piwigo installation folder'] = 'Pot do slike glede na vašo namestitveno mapo Piwigo';
 $lang['Display a site logo image instead of plain text'] = 'Prikažite sliko logotipa spletnega mesta namesto golega besedila';
-$lang['Site logo'] = 'Logotip spletnega mesta';
+$lang['Use site logo'] = 'Uporabite logotip spletnega mesta';
 $lang['Use description rather than title for images'] = 'Za slike uporabite opis namesto naslova';
 $lang['Show image caption'] = 'Pokaži napis slike';
-$lang['Thumbnail page display'] = 'Prikaz strani s sličicami';
+$lang['Album page display'] = 'Prikaz strani albuma';
 $lang['For more information on metadata visit'] = 'Za več informacij o metapodatkih obiščite';
 $lang['Show basic EXIF metadata'] = 'Pokaži osnovne EXIF metapodatke';
-$lang['This will display categories as media wells with squared thumbnails, similar to the smartpocket mobile theme.'] = 'Tako bodo kategorije prikazane kot medijski vodnjaki s kvadratnimi sličicami, podobno kot v mobilni temi smartpocket.';
+$lang['Display albums as media wells with squared thumbnails, similar to the smartpocket mobile theme.'] = 'Prikažite albume kot medijske vrtine s kvadratnimi sličicami, podobno kot pri mobilni temi smartpocket.';
 $lang['On mobile devices only'] = 'Samo na mobilnih napravah';
 $lang['Never'] = 'Nikoli';
-$lang['Display categories as Bootstrap media wells'] = 'Prikaži kategorije Bootstrap kot medijske vodnjake';
-$lang['Category page display'] = 'Prikaz strani kategorije';
+$lang['Display albums as Bootstrap media wells'] = 'Prikaži albume kot medijske vrtine Bootstrap';
+$lang['Main page display'] = 'Prikaz glavne strani';
 $lang['Photoswipe Slideshow (Mobile devices only)'] = 'PhotoSwipe diaprojekcija (samo mobilne naprave)';
 $lang['PhotoSwipe Slideshow'] = 'PhotoSwipe diaprojekcija';
 $lang['Picture details page'] = 'Stran s podrobnostmi o sliki';
@@ -74,7 +82,7 @@ $lang['Bootswatch theme'] = 'Bootswatch tema';
 $lang['Bootstrap\'s default theme'] = 'Privzeta tema Bootstrap-a';
 $lang['Bootstrap theme'] = 'Bootstrap tema';
 $lang['By'] = 'Od';
-$lang['Bootstrap Darkroom\'s custom dark color theme'] = 'Tema temne barve po meri Bootstrap Darkroom';
+$lang['Dark Aperture\'s custom dark color theme'] = 'Tema temne barve po meri Dark Aperture';
 $lang['Basic'] = 'Osnovni';
 $lang['Banner style'] = 'Slog pasice';
 $lang['Autoplay interval'] = 'Interval samodejnega predvajanja';
@@ -91,3 +99,15 @@ $lang['Previous (arrow left)'] = 'Nazaj (puščica levo)';
 $lang['Share'] = 'Delite';
 $lang['Toggle fullscreen'] = 'Preklop na celozaslonski način';
 $lang['Zoom in/out'] = 'Povečanje/pomanjšanje';
+$lang['Based on original work by'] = 'Na podlagi izvirnega dela avtorja';
+$lang['Source'] = 'Vir';
+
+$lang['Page layout'] = 'Postavitev strani';
+$lang['Page footer'] = 'Noga strani';
+$lang['Theme'] = 'Cuspair';
+$lang['Show theme link'] = 'Seall ceangal cuspair';
+$lang['Contact'] = 'Kontakt';
+$lang['Show contact link'] = 'Prikaži povezavo do kontakta';
+$lang['Show extended metadata'] = 'Pokaži razširjene metapodatke';
+$lang['Show EXIF data'] = 'Prikaži podatke EXIF';
+$lang['Hide EXIF data'] = 'Skrij podatke EXIF';

@@ -1,4 +1,9 @@
 <?php
+
+/*
+** Modified by Andrew Johnson for Dark Aperture theme
+*/
+
 // +-----------------------------------------------------------------------+
 // | Piwigo - a PHP based photo gallery                                    |
 // +-----------------------------------------------------------------------+
@@ -20,21 +25,24 @@
 // | Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA 02111-1307, |
 // | USA.                                                                  |
 // +-----------------------------------------------------------------------+
+
+// Catalan (Spain)
+
 $lang['Picture page display'] = 'Visualització de la pàgina de fotos';
 $lang['Show a jumbotron banner on the categroy pages.'] = 'Mostra una pancarta de jumbotron a la pàgina de categories.';
 $lang['Show basic EXIF metadata'] = 'Mostra les metadades EXIF bàsiques';
 $lang['Show image caption'] = 'Mostra el peu de foto';
 $lang['Sidebar (like Boostrap Default)'] = 'Barra lateral (com la predeterminada de Bootstrap)';
 $lang['Simple'] = 'Simple';
-$lang['Site logo'] = 'Logo del lloc';
+$lang['Use site logo'] = 'Utilitzeu el logotip del lloc';
 $lang['Social Media Integration'] = 'Integració social';
 $lang['Social integration'] = 'Integració social';
 $lang['Span the full viewport height'] = 'Abarca tota l\'alçada de la visualització';
 $lang['Tabs below the image'] = 'Pestanyes sota la imatge';
 $lang['The path to the image, relative to your Piwigo installation folder'] = 'Camí fins a la imatge, relatiu a la carpeta d\'instal·lació del Piwigo';
-$lang['This will display categories as media wells with squared thumbnails, similar to the smartpocket mobile theme.'] = 'Això mostrarà les categories com a pous de medis amb miniatures quadrades, de manera semblant al tema mòbil de smartpocket.';
+$lang['Display albums as media wells with squared thumbnails, similar to the smartpocket mobile theme.'] = 'Mostra els àlbums com a pous multimèdia amb miniatures quadrades, similar al tema mòbil de butxaca intel·ligent.';
 $lang['Thumbnail Link Target'] = 'Destinació de l\'enllaç de la miniatura';
-$lang['Thumbnail page display'] = 'Visualització de la pàgina de miniatures';
+$lang['Album page display'] = 'Visualització de la pàgina de l\'àlbum';
 $lang['URL or releative path to the image'] = 'URL o camí relatiu a la imatge';
 $lang['Use 6 colums for viewports >= 1680px'] = 'Utilitza 6 columnes per a visualitzacions >= 1680px';
 $lang['Use colored share buttons instead of icons'] = 'Utilitza botons de compartir en color en comptes d\'icones';
@@ -48,7 +56,7 @@ $lang['left-aligned free text for advanced descriptions'] = 'text lliure alineat
 $lang['loads all images one after another when the page loads (use carefully!)'] = 'carrega totes les imatges una rere l\'altra quan es carrega la pàgina (utilitzeu amb compte!)';
 $lang['milliseconds'] = 'mil·lisegons';
 $lang['will load the image as soon as you slide to it'] = 'carregarà la imatge tan bon punt us desplaceu cap a ella';
-$lang['Display category description in grid view'] = 'Mostra la descripció de les categories en la vista de reixeta';
+$lang['Display album description when in grid view'] = 'Mostra la descripció de l\'àlbum quan estiguis a la visualització de quadrícula';
 $lang['Display number of images in album and subalbums'] = 'Mostra el nombre d\'imatges a l\'àlbum i els sub-àlbums';
 $lang['Display the currently selected image in the middle. Works best with infinite looping enabled.'] = 'Mostra la imatge seleccionada actualment al mig. Funciona millor amb el bucle infinit activat.';
 $lang['Enable PhotoSwipe fullscreen slideshow. Disable if you prefer to use Plugins like Fotorama or Piwigo\'s default slideshow.'] = 'Habilita la presentació de diapositives a pantalla completa de PhotoSwipe. Inhabiliteu-lo si preferiu utilitzar connectors com Fotorama o la presentació de diapositives per defecte de Piwigo.';
@@ -56,7 +64,7 @@ $lang['Enable the slick carousel below the main image on the picture page'] = 'H
 $lang['Enabled'] = 'Habilitat';
 $lang['Endlessly scroll through album images'] = 'Desplaçament infinit a través de les imatges de l\'àlbum';
 $lang['For more information on metadata visit'] = 'Per a més informació sobre les metadades, visiteu';
-$lang['Full width layout'] = 'Disseny d\'amplada completa';
+$lang['Use full width layout'] = 'Utilitzeu un disseny d\'amplada completa';
 $lang['Fullscreen'] = 'Pantalla completa';
 $lang['Grid view'] = 'Vista de reixeta';
 $lang['HTML 5 canvas'] = 'Llenç d\'HTML 5';
@@ -74,7 +82,7 @@ $lang['PhotoSwipe Slideshow'] = 'Presentació de diapositives de PhotoSwipe';
 $lang['Photoswipe Slideshow (Mobile devices only)'] = 'Presentació de diapositives de PhotoSwipe (només dispositius mòbils)';
 $lang['Picture details page'] = 'Pàgina de detalls de la foto';
 $lang['Picture info display position'] = 'Posició de visualització de la informació de la foto';
-$lang['Display categories as Bootstrap media wells'] = 'Mostra les categories com a pous de mitjans de Bootstrap';
+$lang['Display albums as Bootstrap media wells'] = 'Mostra els àlbums com a pous multimèdia Bootstrap';
 $lang['Display a site logo image instead of plain text'] = 'Mostra una imatge del logo del lloc en comptes de text senzill';
 $lang['Discover'] = 'Descobreix';
 $lang['A color theme from'] = 'Un tema de color de';
@@ -85,7 +93,7 @@ $lang['Appearance'] = 'Apariència';
 $lang['Autoplay interval'] = 'Intèrval de reproducció automàtica';
 $lang['Banner style'] = 'Estil del banner';
 $lang['Basic'] = 'Bàsic';
-$lang['Bootstrap Darkroom\'s custom dark color theme'] = 'Tema de color fosc personalitzat de Bootstrap Darkroom';
+$lang['Dark Aperture\'s custom dark color theme'] = 'Tema de color fosc personalitzat de Dark Aperture';
 $lang['Bootstrap theme'] = 'Tema de Bootstrap';
 $lang['Bootstrap\'s default theme'] = 'Tema predeterminat de Bootstrap';
 $lang['Bootswatch theme'] = 'Tema de Bootswatch';
@@ -93,7 +101,7 @@ $lang['Bug reports and feature requests'] = 'Informe d\'errors i sol·licituds d
 $lang['Center mode'] = 'Mode centrat';
 $lang['By'] = 'Per';
 $lang['Card grid below the image'] = 'Reixeta de targetes a sota de la imatge';
-$lang['Category page display'] = 'Visualització de pàgina de categories';
+$lang['Main page display'] = 'Ana sayfa görüntüleme';
 $lang['Color theme'] = 'Tema de color';
 $lang['Description display style'] = 'Estil de visualització de la descripció';
 $lang['Components'] = 'Components';
@@ -106,3 +114,15 @@ $lang['Previous (arrow left)'] = 'Anterior (fletxa esquerra)';
 $lang['Share'] = 'Comparteix';
 $lang['Toggle fullscreen'] = 'Commuta la pantalla completa';
 $lang['Zoom in/out'] = 'Aproxima/allunya';
+$lang['Based on original work by'] = 'Basat en el treball original de';
+$lang['Source'] = 'Font';
+
+$lang['Page layout'] = 'Disseny de pàgina';
+$lang['Page footer'] = 'Peu de pàgina';
+$lang['Theme'] = 'Tema';
+$lang['Show theme link'] = 'Mostra l\'enllaç del tema';
+$lang['Contact'] = 'Contacte';
+$lang['Show contact link'] = 'Mostra l\'enllaç de contacte';
+$lang['Show extended metadata'] = 'Mostra les metadades ampliades';
+$lang['Show EXIF data'] = 'Mostra les dades EXIF';
+$lang['Hide EXIF data'] = 'Amaga les dades EXIF';

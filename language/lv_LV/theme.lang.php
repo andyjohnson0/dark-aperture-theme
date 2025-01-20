@@ -1,4 +1,9 @@
 <?php
+
+/*
+** Modified by Andrew Johnson for Dark Aperture theme
+*/
+
 // +-----------------------------------------------------------------------+
 // | Piwigo - a PHP based photo gallery                                    |
 // +-----------------------------------------------------------------------+
@@ -20,12 +25,15 @@
 // | Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA 02111-1307, |
 // | USA.                                                                  |
 // +-----------------------------------------------------------------------+
+
+// Latvian
+
 $lang['Disabled'] = 'Atspējots';
 $lang['Basic'] = 'Pamata';
 $lang['Always'] = 'Vienmēr';
 $lang['Enabled'] = 'Iespējots';
 $lang['Autoplay interval'] = 'Autorādīšans intervāls';
-$lang['Display category description in grid view'] = 'Rādīt kategorijas aprakstu skalas skatā';
+$lang['Display album description when in grid view'] = 'Rādīt albuma aprakstu režģa skatā';
 $lang['Endlessly scroll through album images'] = 'Bezgalīgi ritināt albuma attēlus';
 $lang['Thumbnail Link Target'] = 'Sīkbildes Saites Mērķis';
 $lang['Show image caption'] = 'Rādīt sagūstīto attēlu';
@@ -36,7 +44,7 @@ $lang['directly in the navigation bar'] = 'tieši navigācijas joslā';
 $lang['milliseconds'] = 'milisekundes';
 $lang['from'] = 'no';
 $lang['Social integration'] = 'sociālā integrācija';
-$lang['Site logo'] = 'Lapas logo';
+$lang['Use site logo'] = 'Izmantojiet vietnes logotipu';
 $lang['Picture details page'] = 'Attēla informācijas lapa';
 $lang['Issue tracker'] = 'Problēmu izsekotājs';
 $lang['On mobile devices only'] = 'Tikai mobīlajām iekārtām';
@@ -56,23 +64,22 @@ $lang['By'] = 'Ar';
 $lang['Show a jumbotron banner on the categroy pages.'] = 'Rādīt jumbotron banneri kategoriju lapās.';
 $lang['Photoswipe Slideshow (Mobile devices only)'] = 'Photoswipe Slaidrāde (Tikai Mobilām ierīcēm)';
 $lang['Display the currently selected image in the middle. Works best with infinite looping enabled.'] = 'Attēlot patlaban izvēlēto attēlu vidū. Vislabāk darbojas ar iespējotu bezgalīgu atkārtošanu.';
-$lang['Display categories as Bootstrap media wells'] = 'Attēlot kategorijas kā Sāknēšanas mediju krātuves';
+$lang['Display albums as Bootstrap media wells'] = 'Parādiet albumus kā Bootstrap multivides iedobes';
 $lang['Display a site logo image instead of plain text'] = 'Rādīt vietnes logo attēlu gludā teksta vietā';
-$lang['Bootstrap Darkroom\'s custom dark color theme'] = 'Sāknēšanas Darkroom pielāgotā tumšās krāsas tēma';
+$lang['Dark Aperture\'s custom dark color theme'] = 'Sāknēšanas Darkroom pielāgotā tumšās krāsas tēma';
 $lang['Enable the slick carousel below the main image on the picture page'] = 'Iespējojiet slīdošo karuseli zem galvenā attēla uz attēla lapas';
 $lang['PhotoSwipe Slideshow'] = 'PhotoSwipe Slaidrāde';
 $lang['Picture info display position'] = 'Attēla informācijas attēlošanas pozīcija';
 $lang['The path to the image, relative to your Piwigo installation folder'] = 'Ceļš uz attēlu, līdzīgi kā uz jūsu Piwigo instalācijas mapi';
 $lang['Picture page display'] = 'Attēla lapas attēlojums';
-$lang['For more information on metadata visit'] = '
-Lai iegūtu vairāk informāciju par metadatiem, apmeklējiet';
+$lang['For more information on metadata visit'] = 'Lai iegūtu vairāk informāciju par metadatiem, apmeklējiet';
 $lang['Bug reports and feature requests'] = 'Kļūdu ziņojumi un funkciju pieprasījumi';
-$lang['This will display categories as media wells with squared thumbnails, similar to the smartpocket mobile theme.'] = 'Tas attēlos kategorijas kā mediju krātuves ar kvadrātveida sīktēliem, līdzīgi kā smartpocket mobilās tēmas.';
+$lang['Display albums as media wells with squared thumbnails, similar to the smartpocket mobile theme.'] = 'Parādiet albumus kā multivides iedobes ar kvadrātveida sīktēliem, līdzīgi kā viedpocket mobilajā motīvā.';
 $lang['loads all images one after another when the page loads (use carefully!)'] = 'ielādē visus attēlus vienu pēc otra, kad lapa ielādējas (lietot uzmanīgi!)';
-$lang['Thumbnail page display'] = 'Sīktēlu lapas atainojums';
+$lang['Album page display'] = 'Albuma lapas displejs';
 $lang['lazyLoad method'] = 'lazyLoad metode';
 $lang['will load the image as soon as you slide to it'] = 'attēls tiks ielādēts tiklīdz uzvadīsit uz tā kursoru';
-$lang['Category page display'] = 'Kategorijas lapas atainojums';
+$lang['Main page display'] = 'Galvenās lapas displejs';
 $lang['List view'] = 'Saraksta skats';
 $lang['Grid view'] = 'Režģa skats';
 $lang['Fullscreen'] = 'Pilnekrāna režīms';
@@ -91,7 +98,7 @@ $lang['Advanced'] = 'Papildus';
 $lang['left-aligned free text for advanced descriptions'] = 'pa kreisi līdzināts brīvās formas teksts papildu aprakstiem';
 $lang['Use colored share buttons instead of icons'] = 'Izmantojiet krāsainās koplietojuma pogas nevis ikonas';
 $lang['Simple'] = 'Vienkāršs';
-$lang['Full width layout'] = 'Pilna platuma izkārtojums';
+$lang['Use full width layout'] = 'Izmantojiet pilna platuma izkārtojumu';
 $lang['A mobile-ready theme based on Bootstrap 4'] = 'Mobilierīcēm pielāgotā tēma, kas balstīta uz Bootstrap 4';
 $lang['Description display style'] = 'Apraksts attēlojuma stils';
 $lang['Components'] = 'Komponentes';
@@ -99,3 +106,15 @@ $lang['Appearance'] = 'Izskats';
 $lang['Page header'] = 'Lapas galvene';
 $lang['Banner style'] = 'Banera stils';
 $lang['Use description rather than title for images'] = 'Lietot aprakstu nevis attēla nosaukumu';
+$lang['Based on original work by'] = 'Balstīts uz oriģinālo darbu autors';
+$lang['Source'] = 'Avots';
+
+$lang['Page layout'] = 'Lapas izkārtojums';
+$lang['Page footer'] = 'Lapas kājene';
+$lang['Theme'] = 'Tēma';
+$lang['Show theme link'] = 'Rādīt tēmas saiti';
+$lang['Contact'] = 'Sazināties';
+$lang['Show contact link'] = 'Rādīt kontaktpersonas saiti';
+$lang['Show extended metadata'] = 'Rādīt paplašinātos metadatus';
+$lang['Show EXIF data'] = 'Rādīt EXIF ​​datus';
+$lang['Hide EXIF data'] = 'Slēpt EXIF ​​datus';

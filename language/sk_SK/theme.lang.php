@@ -1,12 +1,23 @@
 <?php
+
+/*
+** Modified by Andrew Johnson for Dark Aperture theme
+*/
+
 // +-----------------------------------------------------------------------+
 // | This file is part of Piwigo.                                          |
 // |                                                                       |
 // | For copyright and license information, please view the COPYING.txt    |
 // | file that was distributed with this source code.                      |
 // +-----------------------------------------------------------------------+
+
+// Slovak
+
 $lang['Zoom in/out'] = 'Priblížiť/Oddialiť';
 $lang['from'] = 'z';
+$lang['Album page display'] = 'Zobrazenie stránky albumu';
+$lang['Display albums as media wells with squared thumbnails, similar to the smartpocket mobile theme.'] = 'Zobrazte albumy ako mediálne priečinky so štvorcovými miniatúrami, podobne ako pri téme smartpocket mobile.';
+$lang['Display albums as Bootstrap media wells'] = 'Zobrazte albumy ako zásobníky médií Bootstrap';
 $lang['Tabs below the image'] = 'Karty pod obrázkom';
 $lang['The path to the image, relative to your Piwigo installation folder'] = 'Cesta k obrázku, vzhľadom na váš priečinok s inštaláciou Piwigo';
 $lang['Toggle fullscreen'] = 'Prepnúť zobrazenie na celú obrazovku';
@@ -22,7 +33,7 @@ $lang['Show basic EXIF metadata'] = 'Zobraziť základné informácie EXIF';
 $lang['Show image caption'] = 'Zobraziť popis obrázka';
 $lang['Sidebar (like Boostrap Default)'] = 'Bočná lista (predvolený Bootstrap)';
 $lang['Simple'] = 'Jednoduché';
-$lang['Site logo'] = 'Logo webstránky';
+$lang['Use site logo'] = 'Použite logo stránky';
 $lang['HTML 5 canvas'] = 'Plátno HTML 5';
 $lang['If you find any issues, please report them to the'] = 'Ak nájdete akýkoľvek problém, nahláste ho prosím na';
 $lang['Infinite looping'] = 'Nekonečná slučka';
@@ -43,13 +54,13 @@ $lang['Description display style'] = 'Štýl zobrazenia popisu';
 $lang['Disabled'] = 'Vypnuté';
 $lang['Discover'] = 'Objavte';
 $lang['Display a site logo image instead of plain text'] = 'Zobraziť obrázok loga webstránky miesto obyčajného textu';
-$lang['Display category description in grid view'] = 'Zobraziť popis kategórie v zobrazení mriežky';
+$lang['Display album description when in grid view'] = 'Zobraziť popis albumu v zobrazení mriežky';
 $lang['Display number of images in album and subalbums'] = 'Zobraziť počet obrázkov a albumoch a podalbumoch';
 $lang['Display the currently selected image in the middle. Works best with infinite looping enabled.'] = 'Zobraziť aktuálne vybraný obrázok v strede. Najlepšie funguje pri povolení nekonečného skrolovania.';
 $lang['Enabled'] = 'Povolené';
 $lang['Endlessly scroll through album images'] = 'Nekonečné skrolovanie obrázkov v albume';
 $lang['For more information on metadata visit'] = 'Pre viac informácií o metadátach navštívte';
-$lang['Full width layout'] = 'Rozloženie na celú šírku';
+$lang['Use full width layout'] = 'Použite rozloženie na celú šírku';
 $lang['Fullscreen'] = 'Celá obrazovka';
 $lang['Grid view'] = 'Zobrazenie mriežky';
 $lang['A color theme from'] = 'Farebný motív z';
@@ -65,7 +76,19 @@ $lang['Bootstrap\'s default theme'] = 'Predvolený motív Bootstrap';
 $lang['Bootswatch theme'] = 'Motív Bootswatch';
 $lang['Bug reports and feature requests'] = 'Hlásenia chýb a žiadosti o pridanie funkcie';
 $lang['By'] = 'Od';
-$lang['Category page display'] = 'Zobrazenie stránky s kategóriami';
+$lang['Main page display'] = 'Zobrazenie hlavnej stránky';
 $lang['Center mode'] = 'Režim vystredenia';
 $lang['Close (Esc)'] = 'Zavrieť (Esc)';
 $lang['Color theme'] = 'Farebný motív';
+$lang['Based on original work by'] = 'Na základe pôvodnej tvorby od';
+$lang['Source'] = 'Zdroj';
+
+$lang['Page layout'] = 'Rozloženie stránky';
+$lang['Page footer'] = 'Päta stránky';
+$lang['Theme'] = 'Téma';
+$lang['Show theme link'] = 'Zobraziť odkaz na tému';
+$lang['Contact'] = 'Kontaktovať';
+$lang['Show contact link'] = 'Zobraziť odkaz na kontakt';
+$lang['Show extended metadata'] = 'Zobraziť rozšírené metadáta';
+$lang['Show EXIF data'] = 'Zobraziť EXIF ​​údaje';
+$lang['Hide EXIF data'] = 'Skryť údaje EXIF';
