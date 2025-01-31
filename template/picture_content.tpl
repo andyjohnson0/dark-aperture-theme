@@ -1,3 +1,5 @@
+{* Modified by Andrew Johnson for Dark Aperture theme *}
+
 {if !$current.selected_derivative->is_cached()}
     {combine_script id='jquery.ajaxmanager' path='themes/default/js/plugins/jquery.ajaxmanager.js' load='footer'}
     {combine_script id='thumbnails.loader' path='themes/default/js/thumbnails.loader.js' require='jquery.ajaxmanager' load='footer'}
@@ -27,7 +29,7 @@
   </div>
 
 {else}
-<img class="{if isset($current.path_ext)}path-ext-{$current.path_ext}{/if} {if isset($current.file_ext)}file-ext-{$current.file_ext}{/if}" {if $current.selected_derivative->is_cached()}src="{$current.selected_derivative->get_url()}" {$current.selected_derivative->get_size_htm()}{else}src="{$ROOT_URL}themes/bootstrap_darkroom/img/transparent.png" data-src="{$current.selected_derivative->get_url()}"{/if} alt="{$ALT_IMG}" id="theMainImage" usemap="#map{$current.selected_derivative->get_type()}" title="{if isset($COMMENT_IMG)}{$COMMENT_IMG|@strip_tags:false|@replace:'"':' '}{else}{$current.TITLE_ESC} - {$ALT_IMG}{/if}">
+<img class="{if isset($current.path_ext)}path-ext-{$current.path_ext}{/if} {if isset($current.file_ext)}file-ext-{$current.file_ext}{/if}" {if $current.selected_derivative->is_cached()}src="{$current.selected_derivative->get_url()}" {$current.selected_derivative->get_size_htm()}{else}src="{$ROOT_URL}themes/dark_aperture/img/transparent.png" data-src="{$current.selected_derivative->get_url()}"{/if} alt="{$ALT_IMG}" id="theMainImage" usemap="#map{$current.selected_derivative->get_type()}" title="{if isset($COMMENT_IMG)}{$COMMENT_IMG|@strip_tags:false|@replace:'"':' '}{else}{$current.TITLE_ESC} - {$ALT_IMG}{/if}">
   
   {if isset($current.path_ext) and $current.path_ext == 'pdf' and isset($PDF_VIEWER_FILESIZE_THRESHOLD) and $current.filesize > $PDF_VIEWER_FILESIZE_THRESHOLD}
     <div class="pdf-too-heavy">

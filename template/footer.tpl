@@ -1,3 +1,5 @@
+{* Modified by Andrew Johnson for Dark Aperture theme *}
+
         <!-- Start of footer.tpl -->
         <div class="copyright container{if $theme_config->fluid_width}-fluid{/if}">
             <div class="text-center">
@@ -9,10 +11,13 @@
                             contact us on http://piwigo.org to find a solution on how
                             to show the origin of the script...
                 *}
-                {'Powered by'|@translate}	<a href="{$PHPWG_URL}" class="Piwigo">Piwigo</a>
+                {'Powered by'|@translate} <a href="{$PHPWG_URL}" class="Piwigo">Piwigo</a>
 {$VERSION}
-{if isset($CONTACT_MAIL)}
-                | <a href="mailto:{$CONTACT_MAIL}?subject={'A comment on your site'|@translate|@escape:url}">{'Contact webmaster'|@translate}</a>
+{if isset($theme_config->theme_link_enabled) && $theme_config->theme_link_enabled}
+                | <a href="https://github.com/andyjohnson0/dark-aperture-theme" target="_blank">Dark Aperture {'Theme'|@translate|lower}</a>
+{/if}
+{if isset($CONTACT_MAIL) && isset($theme_config->contact_link_enabled) && $theme_config->contact_link_enabled}
+                | <a href="mailto:{$CONTACT_MAIL}">{'Contact'|@translate}</a>
 {/if}
 {if isset($TOGGLE_MOBILE_THEME_URL)}
                 | {'View in'|@translate} : <a href="{$TOGGLE_MOBILE_THEME_URL}">{'Mobile'|@translate}</a> | <b>{'Desktop'|@translate}</b>

@@ -464,6 +464,14 @@ body {
   }
 }
 
+.link-plain {
+  color: inherit;
+}
+
+.link-plain:visited, .link-plain:hover, .link-plain:active {
+  color: inherit;
+}
+
 #content {
   min-height: 100px;
 }

@@ -1,4 +1,9 @@
 <?php
+
+/*
+** Modified by Andrew Johnson for Dark Aperture theme
+*/
+
 // +-----------------------------------------------------------------------+
 // | Piwigo - a PHP based photo gallery                                    |
 // +-----------------------------------------------------------------------+
@@ -20,16 +25,19 @@
 // | Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA 02111-1307, |
 // | USA.                                                                  |
 // +-----------------------------------------------------------------------+
+
+// Danish
+
 $lang['Show basic EXIF metadata'] = 'Vis basale EXIF-metadata';
 $lang['Show image caption'] = 'Vis billedoverskrift';
 $lang['Sidebar (like Boostrap Default)'] = 'Sidebar (som Bootstrap Default)';
-$lang['Site logo'] = 'Webstedslogo';
+$lang['Use site logo'] = 'Brug webstedets logo';
 $lang['Social integration'] = 'Social integration';
 $lang['Tabs below the image'] = 'Faner under billedet';
 $lang['The path to the image, relative to your Piwigo installation folder'] = 'Stien til billedet, relativ til den mappe din Piwigo er installeret i';
-$lang['This will display categories as media wells with squared thumbnails, similar to the smartpocket mobile theme.'] = 'Dette vil vise albummer som mediekilder med kvadratiske miniaturebilleder, svarende til mobiltemaet smartpocket.';
+$lang['Display albums as media wells with squared thumbnails, similar to the smartpocket mobile theme.'] = 'Vis album som mediebrønde med firkantede miniaturebilleder, der ligner smartpockets mobiltema.';
 $lang['Thumbnail Link Target'] = 'Mål for miniaturebilledlink';
-$lang['Thumbnail page display'] = 'Vis miniaturebilledside';
+$lang['Album page display'] = 'Visning af albumside';
 $lang['directly in the navigation bar'] = 'direkte i navigeringsbjælken';
 $lang['from'] = 'fra';
 $lang['lazyLoad method'] = 'Doven indlæsning-metode';
@@ -56,22 +64,22 @@ $lang['Show a jumbotron banner on the categroy pages.'] = 'Vis et jumbotronbanne
 $lang['Always'] = 'Altid';
 $lang['Autoplay interval'] = 'Autoafspilningsinterval';
 $lang['Basic'] = 'Basal';
-$lang['Bootstrap Darkroom\'s custom dark color theme'] = 'Bootstrap Darkrooms skræddersyede farvetema';
+$lang['Dark Aperture\'s custom dark color theme'] = 'Dark Apertures skræddersyede farvetema';
 $lang['Bootstrap theme'] = 'Bootstrap-tema';
 $lang['Bootstrap\'s default theme'] = 'Bootstraps standardtema';
 $lang['Bootswatch theme'] = 'Bootswatch-tema';
 $lang['Bug reports and feature requests'] = 'Fejlrapporter og udvidelsesønsker';
 $lang['By'] = 'Af';
-$lang['Category page display'] = 'Visning af albumside';
+$lang['Main page display'] = 'Hovedsidevisning';
 $lang['Center mode'] = 'Centreret tilstand';
 $lang['Color theme'] = 'Farvetema';
 $lang['Disabled'] = 'Deaktiveret';
 $lang['Display a site logo image instead of plain text'] = 'Vis et webstedslogo i stedet for simpel tekst';
-$lang['Display categories as Bootstrap media wells'] = 'Vis albummer som Bootstrap-mediekilder';
+$lang['Display albums as Bootstrap media wells'] = 'Vis album som Bootstrap-mediebrønde';
 $lang['Display the currently selected image in the middle. Works best with infinite looping enabled.'] = 'Vis det aktuelt valgte billede i midten. Fungerer bedst når uendelig løkke er aktiveret.';
 $lang['Enable PhotoSwipe fullscreen slideshow. Disable if you prefer to use Plugins like Fotorama or Piwigo\'s default slideshow.'] = 'Aktiver PhotoSwipe-fuldskærmsslideshow. Deaktiver hvis du foretrækker at anvende plugins så som Fotorama eller Piwigos standardslideshow.';
 $lang['A color theme from'] = 'Et farvetema fra';
-$lang['Display category description in grid view'] = 'Vis albumbeskrivelse i gittervisning';
+$lang['Display album description when in grid view'] = 'Vis albumbeskrivelse i gittervisning';
 $lang['Fullscreen'] = 'Hele skærmen';
 $lang['Grid view'] = 'Gittervisning';
 $lang['List view'] = 'Listevisning';
@@ -80,7 +88,7 @@ $lang['Display number of images in album and subalbums'] = 'Vis antal billeder i
 $lang['Card grid below the image'] = 'Kortgitter under billedet';
 $lang['Use full width containers that span the entire width of the viewport'] = 'Anvender containere i fuld bredde; de benytter viewport\'ens totale bredde';
 $lang['Social Media Integration'] = 'Social integration';
-$lang['Full width layout'] = 'Layout i fuld bredde';
+$lang['Use full width layout'] = 'Brug layout i fuld bredde';
 $lang['Appearance'] = 'Udseende';
 $lang['Components'] = 'Komponenter';
 $lang['A mobile-ready theme based on Bootstrap 4'] = 'Et mobilparat tema baseret på Bootstrap 4';
@@ -106,3 +114,15 @@ $lang['Previous (arrow left)'] = 'Foregående (pil til venstre)';
 $lang['Share'] = 'Del';
 $lang['Toggle fullscreen'] = 'Fuldskærm til/fra';
 $lang['Zoom in/out'] = 'Zoom ind/ud';
+$lang['Based on original work by'] = 'Baseret på originalt værk af';
+$lang['Source'] = 'Kilde';
+
+$lang['Page layout'] = 'Sidelayout';
+$lang['Page footer'] = 'Sidefod';
+$lang['Theme'] = 'Tema';
+$lang['Show theme link'] = 'Vis temalink';
+$lang['Contact'] = 'Kontakte';
+$lang['Show contact link'] = 'Vis kontaktlink';
+$lang['Show extended metadata'] = 'Vis udvidede metadata';
+$lang['Show EXIF data'] = 'Vis EXIF-data';
+$lang['Hide EXIF data'] = 'Skjul EXIF-data';

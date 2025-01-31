@@ -1,5 +1,10 @@
 <?php
-namespace BootstrapDarkroom;
+
+/*
+** Modified by Andrew Johnson for Dark Aperture theme
+*/
+
+namespace DarkAperture;
 
 class ThemeController {
     private $config;
@@ -9,14 +14,14 @@ class ThemeController {
     }
 
     public function init() {
-        load_language('theme.lang', PHPWG_THEMES_PATH.'bootstrap_darkroom/');
+        load_language('theme.lang', PHPWG_THEMES_PATH.'dark_aperture/');
         load_language('lang', PHPWG_ROOT_PATH.PWG_LOCAL_DIR, array('no_fallback'=>true, 'local'=>true) );
 
         add_event_handler('init', array($this, 'assignConfig'));
         add_event_handler('init', array($this, 'setInitValues'));
 
         if ($this->config->bootstrap_theme === 'darkroom' || $this->config->bootstrap_theme === 'material' || $this->config->bootstrap_theme === 'bootswatch') {
-          $this->config->bootstrap_theme = 'bootstrap-darkroom';
+          $this->config->bootstrap_theme = 'dark-aperture';
           $this->config->save();
           add_event_handler('loc_begin_page_header', array($this, 'showUpgradeWarning'));
         }
@@ -42,17 +47,17 @@ class ThemeController {
     public function assignConfig() {
         global $template, $conf;
 
-        if (array_key_exists('bootstrap_darkroom_navbar_main_style', $conf) && !empty($conf['bootstrap_darkroom_navbar_main_style'])) {
-            $this->config->navbar_main_style = $conf['bootstrap_darkroom_navbar_main_style'];
+        if (array_key_exists('dark_aperture_navbar_main_style', $conf) && !empty($conf['dark_aperture_navbar_main_style'])) {
+            $this->config->navbar_main_style = $conf['dark_aperture_navbar_main_style'];
         }
-        if (array_key_exists('bootstrap_darkroom_navbar_main_bg', $conf) && !empty($conf['bootstrap_darkroom_navbar_main_bg'])) {
-            $this->config->navbar_main_bg = $conf['bootstrap_darkroom_navbar_main_bg'];
+        if (array_key_exists('dark_aperture_navbar_main_bg', $conf) && !empty($conf['dark_aperture_navbar_main_bg'])) {
+            $this->config->navbar_main_bg = $conf['dark_aperture_navbar_main_bg'];
         }
-        if (array_key_exists('bootstrap_darkroom_navbar_contextual_style', $conf) && !empty($conf['bootstrap_darkroom_navbar_contextual_style'])) {
-            $this->config->navbar_contextual_style = $conf['bootstrap_darkroom_navbar_contextual_style'];
+        if (array_key_exists('dark_aperture_navbar_contextual_style', $conf) && !empty($conf['dark_aperture_navbar_contextual_style'])) {
+            $this->config->navbar_contextual_style = $conf['dark_aperture_navbar_contextual_style'];
         }
-        if (array_key_exists('bootstrap_darkroom_navbar_contextual_bg', $conf) && !empty($conf['bootstrap_darkroom_navbar_contextual_bg'])) {
-            $this->config->navbar_contextual_bg = $conf['bootstrap_darkroom_navbar_contextual_bg'];
+        if (array_key_exists('dark_aperture_navbar_contextual_bg', $conf) && !empty($conf['dark_aperture_navbar_contextual_bg'])) {
+            $this->config->navbar_contextual_bg = $conf['dark_aperture_navbar_contextual_bg'];
         }
 
         $template->assign('theme_config', $this->config);
@@ -60,7 +65,7 @@ class ThemeController {
 
     public function showUpgradeWarning() {
         global $page;
-        $page['errors'][] = l10n('Your selected color style has been reset to "bootstrap-darkroom". You can select a different color style in the admin section.');
+        $page['errors'][] = l10n('Your selected color style has been reset to "dark-aperture". You can select a different color style in the admin section.');
     }
 
     public function hideMenus($menus) {
@@ -94,10 +99,10 @@ class ThemeController {
                                'loaded_plugins' => $GLOBALS['pwg_loaded_plugins'],
                                'meta_ref_enabled' => $conf['meta_ref']
                                ));
-        if (array_key_exists('bootstrap_darkroom_core_js_in_header', $conf)) {
-            $template->assign('bootstrap_darkroom_core_js_in_header', $conf['bootstrap_darkroom_core_js_in_header']);
+        if (array_key_exists('dark_aperture_core_js_in_header', $conf)) {
+            $template->assign('dark_aperture_core_js_in_header', $conf['dark_aperture_core_js_in_header']);
         } else {
-            $template->assign('bootstrap_darkroom_core_js_in_header', false);
+            $template->assign('dark_aperture_core_js_in_header', false);
         }
 
         if (isset($pwg_loaded_plugins['language_switch'])) {
@@ -117,8 +122,8 @@ class ThemeController {
     public function exifReplacements($exif) {
         global $conf;
 
-        if (array_key_exists('bootstrap_darkroom_ps_exif_replacements', $conf)) {
-            foreach ($conf['bootstrap_darkroom_ps_exif_replacements'] as $tag => $replacement) {
+        if (array_key_exists('dark_aperture_ps_exif_replacements', $conf)) {
+            foreach ($conf['dark_aperture_ps_exif_replacements'] as $tag => $replacement) {
                if (is_array($exif) && array_key_exists($tag, $exif)) {
                    $exif[$tag] = str_replace($replacement[0], $replacement[1], $exif[$tag]);
                }

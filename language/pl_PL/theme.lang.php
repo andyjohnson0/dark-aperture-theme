@@ -1,4 +1,9 @@
 <?php
+
+/*
+** Modified by Andrew Johnson for Dark Aperture theme
+*/
+
 // +-----------------------------------------------------------------------+
 // | Piwigo - a PHP based photo gallery                                    |
 // +-----------------------------------------------------------------------+
@@ -20,8 +25,11 @@
 // | Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA 02111-1307, |
 // | USA.                                                                  |
 // +-----------------------------------------------------------------------+
+
+// Polish
+
 $lang['Thumbnail Link Target'] = 'Cel linku miniaturki';
-$lang['Thumbnail page display'] = 'Strona wyświetlania miniaturek';
+$lang['Album page display'] = 'Wyświetlanie strony albumu';
 $lang['Social Media Integration'] = 'Integracja z mediami społecznościowymi';
 $lang['Social integration'] = 'Integracja z mediami społecznościowymi';
 $lang['Tabs below the image'] = 'Zakładki poniżej zdjęcia';
@@ -29,7 +37,7 @@ $lang['Show basic EXIF metadata'] = 'Pokaż podstawowe metadane EXIF';
 $lang['Show image caption'] = 'Pokaż podpis zdjęcia';
 $lang['Sidebar (like Boostrap Default)'] = 'Pasek boczny (jak w standardowym Bootstrap)';
 $lang['Simple'] = 'Prosty';
-$lang['Site logo'] = 'Logo strony';
+$lang['Use site logo'] = 'Użyj logo witryny';
 $lang['HTML 5 canvas'] = 'HTML 5 canvas';
 $lang['PhotoSwipe Slideshow'] = 'Pokaz zdjęć PhotoSwipe';
 $lang['Photoswipe Slideshow (Mobile devices only)'] = 'Pokaz zdjęć PhotoSwipe (tylko urządzenia mobilne)';
@@ -43,11 +51,11 @@ $lang['For more information on metadata visit'] = 'By uzyskać więcej informacj
 $lang['Link thumbnail to'] = 'Podlinkuj miniaturki do';
 $lang['List view'] = 'Widok listy';
 $lang['Never'] = 'Nigdy';
-$lang['Display category description in grid view'] = 'Wyświetl opis kategorii w postaci siatki';
+$lang['Display album description when in grid view'] = 'Wyświetl opis albumu w widoku siatki';
 $lang['Infinite looping'] = 'Nieskończone zapętlanie';
 $lang['Integrate lower navbar'] = 'Wstaw dolny pasek nawigacji';
 $lang['Enabled'] = 'Włączony';
-$lang['Full width layout'] = 'Użyj pełnej szerokości';
+$lang['Use full width layout'] = 'Użyj układu pełnej szerokości';
 $lang['Fullscreen'] = 'Pełen ekran';
 $lang['Grid view'] = 'Widok siatki';
 $lang['Banner style'] = 'Styl baneru';
@@ -56,7 +64,7 @@ $lang['By'] = 'Przez';
 $lang['Display number of images in album and subalbums'] = 'Wyświetl ilość obrazków w albumie i podalbumów';
 $lang['Bootstrap theme'] = 'Motyw Bootstrap';
 $lang['Bootstrap\'s default theme'] = 'Domyślny motyw Bootstrap';
-$lang['Category page display'] = 'Wyświetlanie strony kategorii';
+$lang['Main page display'] = 'Wyświetlanie strony głównej';
 $lang['Color theme'] = 'Kolor motywu';
 $lang['Display a site logo image instead of plain text'] = 'Wyświetl logo strony, zamiast tekstu';
 $lang['Components'] = 'Komponenty';
@@ -83,14 +91,13 @@ $lang['left-aligned free text for advanced descriptions'] = 'tekst zaawansowaneg
 $lang['loads all images one after another when the page loads (use carefully!)'] = 'wczyta wszystkie obrazy podczas ładowania strony (używaj ostrożnie!)';
 $lang['milliseconds'] = 'milisekundy';
 $lang['will load the image as soon as you slide to it'] = 'wczyta obraz po najechaniu na niego';
-$lang['Display categories as Bootstrap media wells'] = 'Wyświetl kategorie jako studnie Bootstrap';
+$lang['Display albums as Bootstrap media wells'] = 'Wyświetlaj albumy jako źródła multimediów Bootstrap';
 $lang['Enable the slick carousel below the main image on the picture page'] = 'Włącz slider (karuzelę) pod zdjęciem na stronie zdjęcia';
-$lang['This will display categories as media wells with squared thumbnails, similar to the smartpocket mobile theme.'] = 'Ta opcja wyświetla kategorie jako studnie z kwadratowymi miniaturkami, podobnie jak w motywie na urządzenia przenośne (smartpocket).';
-$lang['Enable PhotoSwipe fullscreen slideshow. Disable if you prefer to use Plugins like Fotorama or Piwigo\'s default slideshow.'] = 'Włącz pokaz slajdów PhotoSwipe. Wyłącz jeżeli chcesz użyć wtyczki jak Fotorama lub domyślnego stylu pokazu slajdów Piwigo
-';
+$lang['Display albums as media wells with squared thumbnails, similar to the smartpocket mobile theme.'] = 'Wyświetlaj albumy jako foldery multimedialne z kwadratowymi miniaturami, podobnie jak w motywie mobilnym smartpocket.';
+$lang['Enable PhotoSwipe fullscreen slideshow. Disable if you prefer to use Plugins like Fotorama or Piwigo\'s default slideshow.'] = 'Włącz pokaz slajdów PhotoSwipe. Wyłącz jeżeli chcesz użyć wtyczki jak Fotorama lub domyślnego stylu pokazu slajdów Piwigo';
 $lang['Span the full viewport height'] = 'Rozszerz na całą wysokość';
 $lang['Use full width containers that span the entire width of the viewport'] = 'Rozszerz szerokości strony na całą szerokość okna';
-$lang['Bootstrap Darkroom\'s custom dark color theme'] = 'Ciemny motyw kolorów Bootstrap Darkroom';
+$lang['Dark Aperture\'s custom dark color theme'] = 'Ciemny motyw kolorów Dark Aperture';
 $lang['lazyLoad method'] = 'metoda lazyLoad';
 $lang['Show a jumbotron banner on the categroy pages.'] = 'Pokaż baner jumbotron na stronach kategorii';
 $lang['Card grid below the image'] = 'Siatka kart pod obrazem';
@@ -107,3 +114,15 @@ $lang['Close (Esc)'] = 'Zamknij (Esc)';
 $lang['Next (arrow right)'] = 'Następne (strzałka w prawo)';
 $lang['AutoPlay'] = 'Automatyczne odtwarzanie';
 $lang['Zoom in/out'] = 'Powiększenie/pomniejszenie';
+$lang['Based on original work by'] = 'Na podstawie oryginalnej pracy';
+$lang['Source'] = 'Źródło';
+
+$lang['Page layout'] = 'Układ strony';
+$lang['Page footer'] = 'Stopka strony';
+$lang['Theme'] = 'Temo';
+$lang['Show theme link'] = 'Montru ligilon al la temo';
+$lang['Contact'] = 'Kontakt';
+$lang['Show contact link'] = 'Pokaż link kontaktowy';
+$lang['Show extended metadata'] = 'Pokaż rozszerzone metadane';
+$lang['Show EXIF data'] = 'Pokaż dane EXIF';
+$lang['Hide EXIF data'] = 'Ukryj dane EXIF';

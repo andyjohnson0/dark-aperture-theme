@@ -1,4 +1,9 @@
 <?php
+
+/*
+** Modified by Andrew Johnson for Dark Aperture theme
+*/
+
 // +-----------------------------------------------------------------------+
 // | Piwigo - a PHP based photo gallery                                    |
 // +-----------------------------------------------------------------------+
@@ -20,6 +25,9 @@
 // | Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA 02111-1307, |
 // | USA.                                                                  |
 // +-----------------------------------------------------------------------+
+
+// Swedish
+
 $lang['Enabled'] = 'Aktiverad';
 $lang['Endlessly scroll through album images'] = 'Oändlig bläddring genom albumets bilder';
 $lang['For more information on metadata visit'] = 'För mer information om metadata besök';
@@ -40,13 +48,13 @@ $lang['Show a jumbotron banner on the categroy pages.'] = 'Visa en jumbotronband
 $lang['Show basic EXIF metadata'] = 'Visa grundläggande EXIF metadata';
 $lang['Show image caption'] = 'Visa bildrubrik';
 $lang['Sidebar (like Boostrap Default)'] = 'Sidofält (som Bootstrap standard)';
-$lang['Site logo'] = 'Webbplatslogga';
+$lang['Use site logo'] = 'Använd webbplatslogotypen';
 $lang['Social integration'] = 'Social integration';
 $lang['Tabs below the image'] = 'Flikar under bilden';
 $lang['The path to the image, relative to your Piwigo installation folder'] = 'Sökvägen till bilden, i förhållande till din Piwigo installations mapp';
-$lang['This will display categories as media wells with squared thumbnails, similar to the smartpocket mobile theme.'] = 'Detta kommer att visa kategorier som mediakällor med kvadratiska miniatyrbilder, liknande smartpocket mobile temat.';
+$lang['Display albums as media wells with squared thumbnails, similar to the smartpocket mobile theme.'] = 'Visa album som mediabrunnar med fyrkantiga miniatyrer, liknande smartpockets mobiltema.';
 $lang['Thumbnail Link Target'] = 'Mål för miniatyrlänkar';
-$lang['Thumbnail page display'] = 'Miniatyrsidovisning';
+$lang['Album page display'] = 'Visning av albumsida';
 $lang['directly in the navigation bar'] = 'direkt i navigationsfältet';
 $lang['from'] = 'från';
 $lang['lazyLoad method'] = 'lazyload metod';
@@ -55,14 +63,14 @@ $lang['milliseconds'] = 'millisekunder';
 $lang['will load the image as soon as you slide to it'] = 'kommer att ladda bilden så fort du glider över till den';
 $lang['Picture page display'] = 'Bildsidevisning';
 $lang['Autoplay interval'] = 'Autospelsintervall';
-$lang['Bootstrap Darkroom\'s custom dark color theme'] = 'Bootstrap Darkroom\'s anpassade mörka färgtema';
+$lang['Dark Aperture\'s custom dark color theme'] = 'Dark Aperture\'s anpassade mörka färgtema';
 $lang['Bootstrap theme'] = 'Bootstraptema';
 $lang['Bootstrap\'s default theme'] = 'Bootstrap\'s standardtema';
 $lang['Bootswatch theme'] = 'Bootswatchtema';
-$lang['Category page display'] = 'Kategorisidans visning';
+$lang['Main page display'] = 'Huvudsida display';
 $lang['Center mode'] = 'Center-läge';
-$lang['Display categories as Bootstrap media wells'] = 'Visa kategorier som Bootstrapmediakällor';
-$lang['Display category description in grid view'] = 'Vias kategoribeskrivning i rutnätsvy';
+$lang['Display albums as Bootstrap media wells'] = 'Visa album som Bootstrap-mediebrunnar';
+$lang['Display album description when in grid view'] = 'Visa albumbeskrivning i rutnätsvy';
 $lang['Enable the slick carousel below the main image on the picture page'] = 'Aktivera den smarta karusellen under huvudbilden på bildsidan';
 $lang['HTML 5 canvas'] = 'HTML 5 canvas';
 $lang['If you find any issues, please report them to the'] = 'Om du hittar några problem, rapportera dem till';
@@ -78,7 +86,7 @@ $lang['Card grid below the image'] = 'Kortnät under bilden';
 $lang['Components'] = 'Komponenter';
 $lang['Discover'] = 'Upptäck';
 $lang['Display number of images in album and subalbums'] = 'Visa antal bilder i album och underalbum';
-$lang['Full width layout'] = 'Fullbreddslayout';
+$lang['Use full width layout'] = 'Använd full bredd layout';
 $lang['Fullscreen'] = 'Fullskärm';
 $lang['Grid view'] = 'Rutnätsvy';
 $lang['Integrate lower navbar'] = 'Integrera nedre navigeringsfältet ';
@@ -107,3 +115,15 @@ $lang['Share'] = 'Dela';
 $lang['Toggle fullscreen'] = 'Växla helskärm';
 $lang['Zoom in/out'] = 'Zooma in/ut';
 $lang['Display number of images in breadcrumb'] = 'Visa antalet bilder i brödsmula';
+$lang['Based on original work by'] = 'Baserad på originalverk av';
+$lang['Source'] = 'Källa';
+
+$lang['Page layout'] = 'Sidlayout';
+$lang['Page footer'] = 'Sidfot';
+$lang['Theme'] = 'Tema';
+$lang['Show theme link'] = 'Visa temalänk';
+$lang['Contact'] = 'Kontakta';
+$lang['Show contact link'] = 'Visa kontaktlänk';
+$lang['Show extended metadata'] = 'Visa utökad metadata';
+$lang['Show EXIF data'] = 'Visa EXIF-data';
+$lang['Hide EXIF data'] = 'Dölj EXIF-data';

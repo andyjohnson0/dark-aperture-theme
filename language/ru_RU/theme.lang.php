@@ -1,4 +1,9 @@
 <?php
+
+/*
+** Modified by Andrew Johnson for Dark Aperture theme
+*/
+
 // +-----------------------------------------------------------------------+
 // | Piwigo - a PHP based photo gallery                                    |
 // +-----------------------------------------------------------------------+
@@ -20,18 +25,21 @@
 // | Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA 02111-1307, |
 // | USA.                                                                  |
 // +-----------------------------------------------------------------------+
+
+// Russian
+
 $lang['Enable the slick carousel below the main image on the picture page'] = 'Включение "карусели" на странице под главным изображением';
-$lang['Display categories as Bootstrap media wells'] = 'Отображение категорий как медиа-стена Bootstrap ';
+$lang['Display albums as Bootstrap media wells'] = 'Отображение альбомов в виде медиа-колодцев Bootstrap';
 $lang['Autoplay interval'] = 'Интервал автозапуска';
 $lang['Enable PhotoSwipe fullscreen slideshow. Disable if you prefer to use Plugins like Fotorama or Piwigo\'s default slideshow.'] = 'Включение полноэранного слайшоу PhotoSwipe. Отключается, если Вы предпочитаете использовать плагин типа Fotorama или слайдшоу, входящее в Piwigo по умолчанию.';
 $lang['Display the currently selected image in the middle. Works best with infinite looping enabled.'] = 'Отображение выбранного изображения в середине. Лучше всего работает  при разрещенном бесконечном зацикливании.';
-$lang['This will display categories as media wells with squared thumbnails, similar to the smartpocket mobile theme.'] = 'Показ категории с квадратными миниатюрами, подобно мобильной теме smartpocket.';
+$lang['Display albums as media wells with squared thumbnails, similar to the smartpocket mobile theme.'] = 'Отображайте альбомы в виде медиа-колодцев с квадратными миниатюрами, аналогично теме мобильного устройства Smartpocket.';
 $lang['Show a jumbotron banner on the categroy pages.'] = 'Показ баннера jumbotron на странице категорий.';
-$lang['Bootstrap Darkroom\'s custom dark color theme'] = 'Доработка темной темы Bootstrap Darkroom';
+$lang['Dark Aperture\'s custom dark color theme'] = 'Доработка темной темы Dark Aperture';
 $lang['A color theme from'] = 'Цветная тема от';
 $lang['By'] = 'By';
 $lang['from'] = 'от';
-$lang['Display category description in grid view'] = 'Отображение описаний категории в табличном виде';
+$lang['Display album description when in grid view'] = 'Отображение описания альбома в виде сетки';
 $lang['Basic'] = 'Основные';
 $lang['Always'] = 'Всегда';
 $lang['Never'] = 'Никогда';
@@ -49,7 +57,7 @@ $lang['Picture details page'] = 'Информация о деталях изоб
 $lang['Picture info display position'] = 'Информация об отображении позиции ';
 $lang['Picture page display'] = 'Показать страницу изображения';
 $lang['Thumbnail Link Target'] = 'Thumbnail Link Target';
-$lang['Thumbnail page display'] = 'Отображение эскизов страницы';
+$lang['Album page display'] = 'Отображение страницы альбома';
 $lang['On mobile devices only'] = 'Только для мобильных устройств';
 $lang['Show basic EXIF metadata'] = 'Показать основные метаданные EXIF';
 $lang['Show image caption'] = 'Показать заголовок изображения';
@@ -61,14 +69,14 @@ $lang['lazyLoad method'] = 'метод lazyLoad';
 $lang['milliseconds'] = 'миллисекунды';
 $lang['PhotoSwipe Slideshow'] = 'Слайдшоу PhotoSwipe';
 $lang['Photoswipe Slideshow (Mobile devices only)'] = 'Слайдшоу PhotoSwipe (только для мобильных устройств)';
-$lang['Site logo'] = 'Логотип сайта';
+$lang['Use site logo'] = 'Использовать логотип сайта';
 $lang['Social integration'] = 'Интеграция с соцсетями';
 $lang['Enabled'] = 'Включено';
 $lang['HTML 5 canvas'] = 'HTML 5 canvas';
 $lang['Bootstrap theme'] = 'Тема Bootstrap ';
 $lang['Bootstrap\'s default theme'] = 'Тема по умолчанию';
 $lang['Bootswatch theme'] = 'Тема Bootswatch ';
-$lang['Category page display'] = 'Отображение страницы категорий';
+$lang['Main page display'] = 'Отображение главной страницы';
 $lang['Center mode'] = 'Режим центрирования';
 $lang['Disabled'] = 'Отключено';
 $lang['Display a site logo image instead of plain text'] = 'Отображение логотипа сайта вместо обычного текста';
@@ -88,7 +96,7 @@ $lang['center-aligned h5 heading'] = 'центрированный заголо�
 $lang['left-aligned free text for advanced descriptions'] = 'текст расширенного описания, выровненный по левому краю';
 $lang['Card grid below the image'] = 'Сетка карты под изображением';
 $lang['Display number of images in album and subalbums'] = 'Отображение количества изображений в альбоме и под-альбомах';
-$lang['Full width layout'] = 'Полная ширина макета';
+$lang['Use full width layout'] = 'Использовать макет полной ширины';
 $lang['Integrate lower navbar'] = 'Объединение с нижней панелью навигации';
 $lang['URL or releative path to the image'] = 'URL-адрес или путь со слэшем к изображению';
 $lang['Use full width containers that span the entire width of the viewport'] = 'Использовать всю ширину контейнеров, которые охватывают всю ширину окна просмотра';
@@ -106,3 +114,15 @@ $lang['Previous (arrow left)'] = 'Предыдущее (стрелка влев�
 $lang['Share'] = 'Поделиться';
 $lang['Toggle fullscreen'] = 'Перейти в полный экран';
 $lang['Zoom in/out'] = 'Зум (приближение / отдаление)';
+$lang['Based on original work by'] = 'Основано на оригинальной работе';
+$lang['Source'] = 'Источник';
+
+$lang['Page layout'] = 'Макет страницы';
+$lang['Page footer'] = 'Нижний колонтитул страницы';
+$lang['Theme'] = 'Тема';
+$lang['Show theme link'] = 'Показать ссылку на тему';
+$lang['Contact'] = 'Контакты';
+$lang['Show contact link'] = 'Показать ссылку на контакт';
+$lang['Show extended metadata'] = 'Показать расширенные метаданные';
+$lang['Show EXIF data'] = 'Показать данные EXIF';
+$lang['Hide EXIF data'] = 'Скрыть данные EXIF';

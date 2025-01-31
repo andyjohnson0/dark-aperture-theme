@@ -1,4 +1,9 @@
 <?php
+
+/*
+** Modified by Andrew Johnson for Dark Aperture theme
+*/
+
 // +-----------------------------------------------------------------------+
 // | Piwigo - a PHP based photo gallery                                    |
 // +-----------------------------------------------------------------------+
@@ -20,7 +25,10 @@
 // | Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA 02111-1307, |
 // | USA.                                                                  |
 // +-----------------------------------------------------------------------+
-$lang['Bootstrap Darkroom\'s custom dark color theme'] = 'Προσαρμοσμένο σκούρο χρώμα θέματος του Bootstrap Darkroom';
+
+// Greek
+
+$lang['Dark Aperture\'s custom dark color theme'] = 'Προσαρμοσμένο σκούρο χρώμα θέματος του Dark Aperture';
 $lang['Basic'] = 'Βασικό';
 $lang['Autoplay interval'] = 'Διάστημα Αυτόματης Αναπαραγωγής';
 $lang['Always'] = 'Πάντα';
@@ -30,13 +38,13 @@ $lang['Enabled'] = 'Ενεργοποιημένο';
 $lang['Enable the slick carousel below the main image on the picture page'] = 'Ενεργοποιήστε το κυλινδρικό καρουσέλ κάτω από την κύρια εικόνα στη σελίδα της εικόνας';
 $lang['Enable PhotoSwipe fullscreen slideshow. Disable if you prefer to use Plugins like Fotorama or Piwigo\'s default slideshow.'] = 'Ενεργοποιήστε την προβολή παρουσίασης πλήρους οθόνης PhotoSwipe. Απενεργοποιήστε εάν προτιμάτε να χρησιμοποιείτε πρόσθετα όπως το Fotorama ή το προεπιλεγμένο slideshow του Piwigo.';
 $lang['Display the currently selected image in the middle. Works best with infinite looping enabled.'] = 'Εμφάνιση της τρέχουσας επιλεγμένης εικόνας στη μέση. Λειτουργεί καλύτερα με ενεργοποιημένο το άπειρο looping.';
-$lang['Display categories as Bootstrap media wells'] = 'Εμφάνιση κατηγοριών ως πηγάδια πολυμέσων Bootstrap';
-$lang['Display category description in grid view'] = 'Εμφάνιση κατηγορίας εμφάνισης σε προβολή πλέγματος';
+$lang['Display albums as Bootstrap media wells'] = 'Εμφάνιση άλμπουμ ως πηγαδάκια πολυμέσων Bootstrap';
+$lang['Display album description when in grid view'] = 'Εμφάνιση περιγραφής άλμπουμ σε προβολή πλέγματος';
 $lang['Display a site logo image instead of plain text'] = 'Εμφανίστε μια εικόνα λογότυπου ιστότοπου αντί για απλό κείμενο';
 $lang['Disabled'] = 'Απενεργοποιημένο';
 $lang['Color theme'] = 'Χρώμα θέματος';
 $lang['Center mode'] = 'Κεντρική λειτουργία';
-$lang['Category page display'] = 'Εμφάνιση κατηγορίας σελίδας';
+$lang['Main page display'] = 'Εμφάνιση κύριας σελίδας';
 $lang['By'] = 'Από';
 $lang['Bug reports and feature requests'] = 'Αναφορές σφαλμάτων και αιτήματα λειτουργιών';
 $lang['Bootswatch theme'] = 'Θέμα Bootswatch';
@@ -47,7 +55,7 @@ $lang['Appearance'] = 'Εμφάνιση';
 $lang['Advanced'] = 'Προχωρημένα';
 $lang['A mobile-ready theme based on Bootstrap 4'] = 'Ένα θέμα φιλικό για κινητά βασισμένο στο Bootstrap 4';
 $lang['Fullscreen'] = 'Πλήρης οθόνη';
-$lang['Full width layout'] = 'Διαμόρφωση πλήρους πλάτους';
+$lang['Use full width layout'] = 'Χρησιμοποιήστε διάταξη πλήρους πλάτους';
 $lang['For more information on metadata visit'] = 'Για περισσότερες πληροφορίες σχετικά με τα μεταδεδομένα επισκεφτείτε';
 $lang['Display number of images in album and subalbums'] = 'Εμφανίζει τον αριθμό των εικόνων σε λεύκωμα και υπολεύκωμα';
 $lang['Discover'] = 'Ανακαλύψτε';
@@ -87,15 +95,15 @@ $lang['Use description rather than title for images'] = 'Χρησιμοποιή�
 $lang['Use colored share buttons instead of icons'] = 'Χρησιμοποιήστε χρωματιστά κουμπιά κοινής χρήσης αντί για εικονίδια';
 $lang['Use 6 colums for viewports >= 1680px'] = 'Χρησιμοποιήστε 6 στήλες για viewports >= 1680px';
 $lang['URL or releative path to the image'] = 'Διεύθυνση URL ή σχετική διαδρομή προς την εικόνα';
-$lang['Thumbnail page display'] = 'Εμφάνιση σελίδας μικρογραφιών';
+$lang['Album page display'] = 'Εμφάνιση σελίδας άλμπουμ';
 $lang['Thumbnail Link Target'] = 'Στόχος συνδέσμου μικρογραφιών';
-$lang['This will display categories as media wells with squared thumbnails, similar to the smartpocket mobile theme.'] = 'Αυτό θα εμφανίσει κατηγορίες ως πηγάδια πολυμέσων με τετράγωνες μικρογραφίες, παρόμοια με το θέμα για φορητές συσκευές smartpocket.';
+$lang['Display albums as media wells with squared thumbnails, similar to the smartpocket mobile theme.'] = 'Εμφανίστε τα άλμπουμ ως πηγαδάκια πολυμέσων με τετράγωνες μικρογραφίες, παρόμοια με το θέμα του smartpocket για κινητά.';
 $lang['The path to the image, relative to your Piwigo installation folder'] = 'Η διαδρομή προς την εικόνα, σε σχέση με το φάκελο εγκατάστασης του Piwigo';
 $lang['Tabs below the image'] = 'Καρτέλες κάτω από την εικόνα';
 $lang['Span the full viewport height'] = 'Καλύπτουν όλο το ύψος του παραθύρου προβολής';
 $lang['Social integration'] = 'Ενσωμάτωση Κοινωνικών Δικτύων';
 $lang['Social Media Integration'] = 'Ενσωμάτωση Κοινωνικών Δικτύων';
-$lang['Site logo'] = 'Λογότυπο ιστότοπου';
+$lang['Use site logo'] = 'Χρησιμοποιήστε το λογότυπο του ιστότοπου';
 $lang['Simple'] = 'Απλό';
 $lang['Sidebar (like Boostrap Default)'] = 'Πλευρική γραμμή (όπως προεπιλογή Bootstrap)';
 $lang['Zoom in/out'] = 'Μεγέθυνση/σμίκρυνση';
@@ -106,3 +114,15 @@ $lang['Picture details'] = 'Λεπτομέρειες εικόνας';
 $lang['Next (arrow right)'] = 'Επόμενο (βέλος δεξιά)';
 $lang['Close (Esc)'] = 'Κλείσιμο (Esc)';
 $lang['AutoPlay'] = 'Αυτόματη αναπαραγωγή';
+$lang['Based on original work by'] = 'Βασισμένο σε πρωτότυπο έργο του';
+$lang['Source'] = 'Πηγή';
+
+$lang['Page layout'] = 'Διάταξη σελίδας';
+$lang['Page footer'] = 'Υποσέλιδο σελίδας';
+$lang['Theme'] = 'Θέμα';
+$lang['Show theme link'] = 'Εμφάνιση συνδέσμου θέματος';
+$lang['Contact'] = 'Επαφή';
+$lang['Show contact link'] = 'Εμφάνιση συνδέσμου επαφής';
+$lang['Show extended metadata'] = 'Εμφάνιση εκτεταμένων μεταδεδομένων';
+$lang['Show EXIF data'] = 'Εμφάνιση δεδομένων EXIF';
+$lang['Hide EXIF data'] = 'Απόκρυψη δεδομένων EXIF';

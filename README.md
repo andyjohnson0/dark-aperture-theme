@@ -1,10 +1,12 @@
-# Piwigo Bootstrap Darkroom
+# Dark Aperture Theme for Piwigo
 
 A mobile-ready [Piwigo](http://piwigo.org) theme based on [Bootstrap 4](https://getbootstrap.com).
 
-Original work copyright 2017 by Thomas Kuther - see https://github.com/Piwigo/piwigo-bootstrap-darkroom.
-This fork contains modifications copyright 2025 by [Andrew Johnson](http://andyjohnson.uk) - see https://github.com/andyjohnson0/piwigo-bootstrap-darkroom.
-Derivative work created inaccordance with the [licence](LICENSE.txt).
+By [Andrew Johnson](http://andyjohnson.uk). See the repo at [https://github.com/andyjohnson0/dark-aperture-theme](https://github.com/andyjohnson0/dark-aperture-theme)
+
+Based on [Bootstrap Darkroom theme](https://github.com/Piwigo/piwigo-bootstrap-darkroom) which is Copyright 2017 by Thomas Kuther. 
+The original author and contributors are thanked for their work.
+This derivative work created in accordance with the Apache 2.0 [licence](LICENSE.txt).
 
 
 ## Features
@@ -26,21 +28,22 @@ Derivative work created inaccordance with the [licence](LICENSE.txt).
   * async/ondemand loading of carousel & PhotoSwipe content, adaptive image size selection, swipe & tap events
 * Various configuration options
 * Easy customization using CSS overrides or SASS custom build for advanced needs.
+* Localised in 25 languages using [Smarty](https://www.smarty.net/) support in Piwigo
  
 
 ## Usage
 
 1. Build as described below
-2. Upload or copy the repo root directory, excluding the `.git` directory into `themes/bootstrap_darkroom` on the targer
+2. Upload or copy the repo root directory, excluding the `.git` directory into `themes/dark_aperture` on the target
 system.
-3. Enable Bootstrap Darkroom
-4. Disable the smartpocket theme (it's enabled by default). This is required in order to use Bootstrap Darkroom by default on mobile devices, too.
+3. Enable Dark Aperture theme
+4. Disable the smartpocket theme (it's enabled by default). This is required in order to use Dark Aperture by default on mobile devices, too.
 
 
 ## Development & Customizing
 
 This fork has been modified to build on Windows. The `build:material` and `build:bootswatch` node scripts will need to
-be modified to build on other operating systems. See the [forked repo](https://github.com/Piwigo/piwigo-bootstrap-darkroom) for information.
+be modified to build on other operating systems. See the [forked repo](https://github.com/Piwigo/piwigo-dark-aperture) for information.
 
 ### Dependencies
 
@@ -69,7 +72,7 @@ To build for development:
 
 1. `yarn install`
 
-2. In an admin command window, execute the Windows command `mklink /d %CD%"\node_modules\~bootstrap" %CD%\"node_modules\bootstrap”`
+2. In an admin command window, execute the Windows command `mklink /d "%CD%\node_modules\~bootstrap" "%CD%\node_modules\bootstrap"`
 from the repo root directory. This aliases `node_modules\~bootstrap` to `node_modules\bootstrap` and is required to be able to build
 Bootstrap Material Design, which contains paths with a `~` suffix.
 
@@ -81,17 +84,27 @@ To build for deployment:
 
 2. Alias `~bootstrap` to `bootstrap` as described above.
 
-3. `yarn build --production`
+3. `yarn install --production`
 
-4. Upload or copy the repo root directory, excluding the `.git` directory into `themes/bootstrap_darkroom` on the targer
+4. Upload or copy the repo root directory, excluding the `.git` directory into `themes/dark_aperture` on the target
 system.
 
 
-### License
+## Credits
+
+Based on [Bootstrap Darkroom theme](https://github.com/Piwigo/piwigo-dark-aperture) by Thomas Kuther. The original author is thanked
+for their work. This derivative work created in accordance with the [licence](LICENSE.txt).
+
+Logo by [Gabriele Malaspina](https://www.svgrepo.com/svg/488838/camera). Public domain licensed.
+
+Photography icons by [Dmitry Baranovskiy](https://thenounproject.com/DmitryBaranovskiy/)</a>,
+licensed under [Creative Commons 3.0](https://creativecommons.org/licenses/by/3.0/us/)
+
+
+## License
 
 ```
-Original copyright 2017 Thomas Kuther
-Modifications copyright 2025 Andrew Johnson
+Based on original work copyright 2017 Thomas Kuther
 
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.

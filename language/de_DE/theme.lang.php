@@ -1,4 +1,9 @@
 <?php
+
+/*
+** Modified by Andrew Johnson for Dark Aperture theme
+*/
+
 // +-----------------------------------------------------------------------+
 // | Piwigo - a PHP based photo gallery                                    |
 // +-----------------------------------------------------------------------+
@@ -20,10 +25,13 @@
 // | Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA 02111-1307, |
 // | USA.                                                                  |
 // +-----------------------------------------------------------------------+
+
+// German
+
 $lang['Enabled'] = 'Aktiviert';
 $lang['Disabled'] = 'Deaktiviert';
 $lang['Color theme'] = 'Farbschema';
-$lang['Bootstrap Darkroom\'s custom dark color theme'] = 'Bootstrap Darkroom\'s dunkles Farbschema';
+$lang['Dark Aperture\'s custom dark color theme'] = 'Dark Aperture\'s dunkles Farbschema';
 $lang['A color theme from'] = 'Ein Farbschema von';
 $lang['Bootstrap\'s default theme'] = 'Das Standard-Farbschema von Bootstrap';
 $lang['Bootswatch theme'] = 'Bootswatch Thema';
@@ -49,18 +57,18 @@ $lang['Link thumbnail to'] = 'Klick auf Vorschaubild öffnet';
 $lang['Picture details page'] = 'Foto-Detailseite';
 $lang['PhotoSwipe Slideshow'] = 'PhotoSwipe Diaschau';
 $lang['Photoswipe Slideshow (Mobile devices only)'] = 'PhotoSwipe Diaschau (nur auf Mobilgeräten)';
-$lang['Category page display'] = 'Erscheinungsbild der Kategorie-Seiten';
-$lang['Display categories as Bootstrap media wells'] = 'Zeige Kategorien als Bootstrap Media Wells';
+$lang['Main page display'] = 'Taispeáint príomhleathanach';
+$lang['Display albums as Bootstrap media wells'] = 'Alben als Bootstrap-Medienfelder anzeigen';
 $lang['Never'] = 'Nie';
 $lang['Always'] = 'Immer';
 $lang['On mobile devices only'] = 'Nur auf Mobil-Geräten';
-$lang['This will display categories as media wells with squared thumbnails, similar to the smartpocket mobile theme.'] = 'Dies zeigt die Kategorien als media wells mit quadratischen Vorschaubildern, ähnlich dem Smartpocket-Theme';
+$lang['Display albums as media wells with squared thumbnails, similar to the smartpocket mobile theme.'] = 'Zeigen Sie Alben als Medienfelder mit quadratischen Miniaturansichten an, ähnlich dem mobilen Smartpocket-Design.';
 $lang['Show basic EXIF metadata'] = 'Zeige bestimmte EXIF-Metadaten';
 $lang['For more information on metadata visit'] = 'Für weitere Informationen zu den Metadaten siehe';
-$lang['Thumbnail page display'] = 'Erscheinungsbild der Vorschau-Seiten';
+$lang['Album page display'] = 'Anzeige der Albumseite';
 $lang['Show image caption'] = 'Zeige Bildunterschrift';
 $lang['from'] = 'von';
-$lang['Site logo'] = 'Logo der Seite';
+$lang['Use site logo'] = 'Site-Logo verwenden';
 $lang['Display a site logo image instead of plain text'] = 'Zeige ein Logo-Bild anstatt des Textes';
 $lang['The path to the image, relative to your Piwigo installation folder'] = 'Der Pfad zur Bilddatei, relativ zum Piwigo-Installationsverzeichnis';
 $lang['directly in the navigation bar'] = 'direkt in der Navigationsleiste';
@@ -72,12 +80,12 @@ $lang['A mobile-ready theme based on Bootstrap 4'] = 'Ein mobil-taugliches und f
 $lang['If you find any issues, please report them to the'] = 'Probleme und Fehler bitte melden über den';
 $lang['Issue tracker'] = 'Bug Tracker.';
 $lang['Bug reports and feature requests'] = 'Fehlerberichte und Änderungswünsche';
-$lang['Display category description in grid view'] = 'Zeige die Album-Beschreibung auch in der Grid-Ansicht';
+$lang['Display album description when in grid view'] = 'Albumbeschreibung in der Rasteransicht anzeigen';
 $lang['Fullscreen'] = 'Vollbild';
 $lang['Grid view'] = 'Kachel-Ansicht';
 $lang['List view'] = 'Listen-Ansicht';
 $lang['Discover'] = 'Entdecken';
-$lang['Full width layout'] = 'Full width layout';
+$lang['Use full width layout'] = 'Layout in voller Breite verwenden';
 $lang['Use full width containers that span the entire width of the viewport'] = 'Benutze fließende Kontainer, welche die gesamte Breite des Browserfensters einnehmen';
 $lang['Appearance'] = 'Erscheinungsbild';
 $lang['Components'] = 'Komponenten';
@@ -106,3 +114,15 @@ $lang['Share'] = 'Teilen Sie';
 $lang['AutoPlay'] = 'Automatische Wiedergabe';
 $lang['Close (Esc)'] = 'Schließen (Esc)';
 $lang['Next (arrow right)'] = 'Weiter (Pfeil rechts)';
+$lang['Based on original work by'] = 'Basierend auf der Originalarbeit von';
+$lang['Source'] = 'Quelle';
+
+$lang['Page layout'] = 'Seitenlayout';
+$lang['Page footer'] = 'Seitenfußzeile';
+$lang['Theme'] = 'Thema';
+$lang['Show theme link'] = 'Themenlink anzeigen';
+$lang['Contact'] = 'Kontakt';
+$lang['Show contact link'] = 'Kontaktlink anzeigen';
+$lang['Show extended metadata'] = 'Erweiterte Metadaten anzeigen';
+$lang['Show EXIF data'] = 'EXIF-Daten anzeigen';
+$lang['Hide EXIF data'] = 'EXIF-Daten ausblenden';

@@ -1,4 +1,9 @@
 <?php
+
+/*
+** Modified by Andrew Johnson for Dark Aperture theme
+*/
+
 // +-----------------------------------------------------------------------+
 // | Piwigo - a PHP based photo gallery                                    |
 // +-----------------------------------------------------------------------+
@@ -20,13 +25,16 @@
 // | Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA 02111-1307, |
 // | USA.                                                                  |
 // +-----------------------------------------------------------------------+
+
+// Turkish
+
 $lang['Advanced'] = 'Gelişmiş';
 $lang['Always'] = 'Her zaman';
 $lang['Appearance'] = 'Görünüm';
 $lang['Autoplay interval'] = 'Otomatik oynatma aralığı';
 $lang['Banner style'] = 'Afiş tarzı';
 $lang['Basic'] = 'Temel';
-$lang['Full width layout'] = 'Tam genişlik görünümü';
+$lang['Use full width layout'] = 'Tam genişlikte düzen kullan';
 $lang['Enabled'] = 'Aktif';
 $lang['Endlessly scroll through album images'] = 'Albüm resimleriyle bitmeyen kaydırma';
 $lang['For more information on metadata visit'] = 'Metadata ile ilgili daha fazla bilgi için ziyaret edin:';
@@ -39,9 +47,9 @@ $lang['Grid view'] = 'Izgaralı görünüm';
 $lang['Hero image'] = 'Hero resmi';
 $lang['Infinite looping'] = 'Sonsuz döngü';
 $lang['Integrate lower navbar'] = 'Alt gezinti çubuğuna entegre et';
-$lang['Bootstrap Darkroom\'s custom dark color theme'] = 'Bootstrap Darkroom\'un kişiselleştirilmiş koyu renk teması';
+$lang['Dark Aperture\'s custom dark color theme'] = 'Dark Aperture\'un kişiselleştirilmiş koyu renk teması';
 $lang['Card grid below the image'] = 'Kart karesi resmin altında';
-$lang['Category page display'] = 'Kategori sayfası gösterimi';
+$lang['Main page display'] = 'Ana sayfa görüntüleme';
 $lang['A mobile-ready theme based on Bootstrap 4'] = 'Bootstrap 4 temelli mobil görünüme hazır bir tema';
 $lang['A color theme from'] = 'Bir renk teması';
 $lang['By'] = '.';
@@ -53,7 +61,7 @@ $lang['Bug reports and feature requests'] = 'Hata raporları ve geliştirme iste
 $lang['Bootswatch theme'] = 'Bootswatch teması';
 $lang['Bootstrap\'s default theme'] = 'Bootstrap\'ın varsayılan teması';
 $lang['Bootstrap theme'] = 'Bootstrap teması';
-$lang['Display categories as Bootstrap media wells'] = 'Kategorileri Bootstrap ortamı olarak görüntüleme';
+$lang['Display albums as Bootstrap media wells'] = 'Albümleri Bootstrap medya kuyuları olarak görüntüle';
 $lang['Photoswipe Slideshow (Mobile devices only)'] = 'Photoswipe Slayt Gösterisi (yalnızca mobil cihazlar)';
 $lang['Show a jumbotron banner on the categroy pages.'] = 'Kategori sayfalarında bir jumbotron başlığı gösterin.';
 $lang['Span the full viewport height'] = 'Tam görüntü alanı yüksekliğini yayma';
@@ -62,17 +70,17 @@ $lang['Display the currently selected image in the middle. Works best with infin
 $lang['Enable PhotoSwipe fullscreen slideshow. Disable if you prefer to use Plugins like Fotorama or Piwigo\'s default slideshow.'] = 'PhotoSwipe tam ekran slayt gösterisini etkinleştir. Fotorama veya Piwigo\'nun varsayılan slayt gösterisi gibi eklentileri kullanmayı tercih ediyorsanız devre dışı bırakın.';
 $lang['Tabs below the image'] = 'Sekmeler görüntünün altında';
 $lang['The path to the image, relative to your Piwigo installation folder'] = 'Piwigo kurulum klasörünüze göre imaj dosyası konumu';
-$lang['This will display categories as media wells with squared thumbnails, similar to the smartpocket mobile theme.'] = 'Bu, kategorileri smartpocket mobil temasına benzer şekilde kare minik resimlere sahip medya ortamı olarak görüntüler.';
+$lang['Display albums as media wells with squared thumbnails, similar to the smartpocket mobile theme.'] = 'Albümleri akıllı cep mobil temasına benzer şekilde kare şeklinde küçük resimlerle medya kuyuları olarak görüntüleyin.';
 $lang['Show image caption'] = 'Resim başlığını görüntüle';
 $lang['Simple'] = 'Basit';
-$lang['Site logo'] = 'Site logosu';
+$lang['Use site logo'] = 'Site logosunu kullan';
 $lang['Social Media Integration'] = 'Sosyal bütünleştirme';
 $lang['Social integration'] = 'Sosyal bütünleştirme';
 $lang['Thumbnail Link Target'] = 'Küçük Resim Bağlantı Hedefi';
-$lang['Thumbnail page display'] = 'Küçük resim sayfası görüntüleme';
+$lang['Album page display'] = 'Albüm sayfası görüntüleme';
 $lang['PhotoSwipe Slideshow'] = 'PhotoSwipe Slayt Gösterisi';
 $lang['Display number of images in album and subalbums'] = 'Albümdeki ve alt albümlerdeki imaj sayısını görüntüleme';
-$lang['Display category description in grid view'] = 'Kategori açıklamasını ızgara görünümünde görüntüle';
+$lang['Display album description when in grid view'] = 'Izgara görünümündeyken albüm açıklamasını görüntüle';
 $lang['will load the image as soon as you slide to it'] = 'görüntüyü kaydırdığınızda yükler';
 $lang['loads all images one after another when the page loads (use carefully!)'] = 'sayfa yüklendiğinde tüm görüntüleri arka arkaya yükler (dikkatli kullanın!)';
 $lang['left-aligned free text for advanced descriptions'] = 'geniş açıklamalar için sola hizalanmış serbest yazı alanı';
@@ -106,3 +114,14 @@ $lang['Previous (arrow left)'] = 'Önceki (sol ok)';
 $lang['Share'] = 'Paylaş';
 $lang['Toggle fullscreen'] = 'Tam ekrana geç';
 $lang['Zoom in/out'] = 'Yakınlaştır/uzaklaştır';
+$lang['Based on original work by'] = 'Orijinal çalışmaya dayalı';
+$lang['Source'] = 'Kaynak';
+
+$lang['Page footer'] = 'Sayfa düzeni';
+$lang['Theme'] = 'Tema';
+$lang['Show theme link'] = 'Tema bağlantısını göster';
+$lang['Contact'] = 'Contatto';
+$lang['Show contact link'] = 'Mostra collegamento contatto';
+$lang['Show extended metadata'] = 'Genişletilmiş meta verileri göster';
+$lang['Show EXIF data'] = 'EXIF verilerini göster';
+$lang['Hide EXIF data'] = 'EXIF verilerini gizle';

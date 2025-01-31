@@ -1,4 +1,9 @@
 <?php
+
+/*
+** Modified by Andrew Johnson for Dark Aperture theme
+*/
+
 // +-----------------------------------------------------------------------+
 // | Piwigo - a PHP based photo gallery                                    |
 // +-----------------------------------------------------------------------+
@@ -20,6 +25,9 @@
 // | Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA 02111-1307, |
 // | USA.                                                                  |
 // +-----------------------------------------------------------------------+
+
+// Portugese (Brazil)
+
 $lang['Picture page display'] = 'Visualização da página de imagens';
 $lang['Picture info display position'] = 'Posição de visualização da informação da imagem';
 $lang['Picture details page'] = 'Página de detalhes da imagem';
@@ -43,31 +51,31 @@ $lang['milliseconds'] = 'Milissegundos';
 $lang['lazyLoad method'] = 'Método de carga preguiçosa';
 $lang['from'] = 'de';
 $lang['directly in the navigation bar'] = 'diretamente na barra de navegação';
-$lang['Thumbnail page display'] = 'Exibição da página em miniatura';
+$lang['Album page display'] = 'Exibição da página do álbum';
 $lang['Thumbnail Link Target'] = 'Alvo da Hiperligação da Miniatura';
-$lang['This will display categories as media wells with squared thumbnails, similar to the smartpocket mobile theme.'] = 'Isso exibirá categorias como poços de mídia com miniaturas quadradas, semelhante ao tema móvel smartpocket.';
+$lang['Display albums as media wells with squared thumbnails, similar to the smartpocket mobile theme.'] = 'Exiba álbuns como repositórios de mídia com miniaturas quadradas, semelhante ao tema móvel do smartpocket.';
 $lang['The path to the image, relative to your Piwigo installation folder'] = 'O caminho para a imagem, em relação à sua pasta de instalação Piwigo';
 $lang['Tabs below the image'] = 'Abas abaixo da imagem';
 $lang['Social integration'] = 'Integração social';
-$lang['Site logo'] = 'Logotipo do site';
+$lang['Use site logo'] = 'Usar logotipo do site';
 $lang['Sidebar (like Boostrap Default)'] = 'Barra lateral (como Bootstrap Padrão)';
 $lang['Show image caption'] = 'Exibir legenda da imagem';
 $lang['Show basic EXIF metadata'] = 'Exibir metadados básicos EXIF';
 $lang['Show a jumbotron banner on the categroy pages.'] = 'Exibir um banner jumbotron nas páginas de categoria.';
 $lang['Display the currently selected image in the middle. Works best with infinite looping enabled.'] = 'Exibir a imagem selecionada no meio. Funciona melhor com loop infinito ativado.';
-$lang['Display category description in grid view'] = 'Exibir categoria descrição em vista de grade';
-$lang['Display categories as Bootstrap media wells'] = 'Exibir categorias como mídia poços Bootstrap';
+$lang['Display album description when in grid view'] = 'Exibir descrição do álbum quando estiver na visualização em grade';
+$lang['Display albums as Bootstrap media wells'] = 'Exibir álbuns como poços de mídia Bootstrap';
 $lang['Display a site logo image instead of plain text'] = 'Exibir uma imagem do logotipo do site em vez de texto sem formatação';
 $lang['Disabled'] = 'Desabilitado';
 $lang['Color theme'] = 'Cor do tema';
 $lang['Center mode'] = 'Modo central';
-$lang['Category page display'] = 'Exibição da página da categoria';
+$lang['Main page display'] = 'Exibição da página principal';
 $lang['By'] = 'Por';
 $lang['Bootswatch theme'] = 'Tema Bootswatch';
 $lang['Bug reports and feature requests'] = 'Relatórios de erros e solicitações de recursos';
 $lang['Bootstrap\'s default theme'] = 'O tema padrão do Bootstrap';
 $lang['Bootstrap theme'] = 'Tema Bootstrap';
-$lang['Bootstrap Darkroom\'s custom dark color theme'] = 'Tema da cor escura personalizada do Bootstrap Darkroom';
+$lang['Dark Aperture\'s custom dark color theme'] = 'Tema da cor escura personalizada do Dark Aperture';
 $lang['Basic'] = 'Básico';
 $lang['Autoplay interval'] = 'Intervalo de reprodução automática';
 $lang['Always'] = 'Sempre';
@@ -90,7 +98,7 @@ $lang['Page header'] = 'Cabeçalho da página';
 $lang['List view'] = 'Exibição de lista';
 $lang['Integrate lower navbar'] = 'Integrar barra de navegação inferior';
 $lang['Grid view'] = 'Vista em grelha';
-$lang['Full width layout'] = 'Layout de largura total';
+$lang['Use full width layout'] = 'Usar layout de largura total';
 $lang['Display number of images in album and subalbums'] = 'Exibe o número de imagens em álbuns e sub-álbuns';
 $lang['Discover'] = 'Descobrir';
 $lang['Components'] = 'Componentes';
@@ -106,3 +114,15 @@ $lang['Previous (arrow left)'] = 'Anterior (seta para a esquerda)';
 $lang['Share'] = 'Compartilhar';
 $lang['Toggle fullscreen'] = 'Alternar para o modo tela cheia';
 $lang['Zoom in/out'] = 'Ampliar/Reduzir';
+$lang['Based on original work by'] = 'Baseado no trabalho original de';
+$lang['Source'] = 'Fonte';
+
+$lang['Page layout'] = 'Layout da página';
+$lang['Page footer'] = 'Rodapé da página';
+$lang['Theme'] = 'Tema';
+$lang['Show theme link'] = 'Mostrar link do tema';
+$lang['Contact'] = 'Contato';
+$lang['Show contact link'] = 'Mostrar link de contato';
+$lang['Show extended metadata'] = 'Mostrar metadados estendidos';
+$lang['Show EXIF data'] = 'Mostrar dados EXIF';
+$lang['Hide EXIF data'] = 'Ocultar dados EXIF';
