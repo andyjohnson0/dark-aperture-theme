@@ -1,0 +1,202 @@
+<?php
+
+/*
+** Modified by Andrew Johnson for Dark Aperture theme
+*/
+
+// +-----------------------------------------------------------------------+
+// | Piwigo - a PHP based photo gallery                                    |
+// +-----------------------------------------------------------------------+
+// | Copyright(C) 2008-2017 Piwigo Team                  http://piwigo.org |
+// | Copyright(C) 2003-2008 PhpWebGallery Team    http://phpwebgallery.net |
+// | Copyright(C) 2002-2003 Pierrick LE GALL   http://le-gall.net/pierrick |
+// +-----------------------------------------------------------------------+
+// | This program is free software; you can redistribute it and/or modify  |
+// | it under the terms of the GNU General Public License as published by  |
+// | the Free Software Foundation                                          |
+// |                                                                       |
+// | This program is distributed in the hope that it will be useful, but   |
+// | WITHOUT ANY WARRANTY; without even the implied warranty of            |
+// | MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU      |
+// | General Public License for more details.                              |
+// |                                                                       |
+// | You should have received a copy of the GNU General Public License     |
+// | along with this program; if not, write to the Free Software           |
+// | Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA 02111-1307, |
+// | USA.                                                                  |
+// +-----------------------------------------------------------------------+
+
+// Polish
+
+$lang["Thumbnail Link Target"] = "Cel linku miniaturki";
+$lang["Album page display"] = "Wyświetlanie strony albumu";
+$lang["Social Media Integration"] = "Integracja z mediami społecznościowymi";
+$lang["Social integration"] = "Integracja z mediami społecznościowymi";
+$lang["Tabs below the image"] = "Zakładki poniżej zdjęcia";
+$lang["Show basic EXIF metadata"] = "Pokaż podstawowe metadane EXIF";
+$lang["Show image caption"] = "Pokaż podpis zdjęcia";
+$lang["Sidebar (like Boostrap Default)"] = "Pasek boczny (jak w standardowym Bootstrap)";
+$lang["Simple"] = "Prosty";
+$lang["Use site logo"] = "Użyj logo witryny";
+$lang["HTML 5 canvas"] = "HTML 5 canvas";
+$lang["PhotoSwipe Slideshow"] = "Pokaz zdjęć PhotoSwipe";
+$lang["Photoswipe Slideshow (Mobile devices only)"] = "Pokaz zdjęć PhotoSwipe (tylko urządzenia mobilne)";
+$lang["Picture info display position"] = "Miejsce wyświetlania informacji o zdjęciu";
+$lang["Picture page display"] = "Strona wyświetlania zdjęcia";
+$lang["On mobile devices only"] = "Tylko na urządzeniach przenośnych";
+$lang["Page header"] = "Nagłówek strony";
+$lang["Picture details page"] = "Strona z informacjami o zdjęciu";
+$lang["Endlessly scroll through album images"] = "Przewijaj bez końca przez obrazki albumu";
+$lang["For more information on metadata visit"] = "By uzyskać więcej informacji o metadanych, odwiedź";
+$lang["Link thumbnail to"] = "Podlinkuj miniaturki do";
+$lang["List view"] = "Widok listy";
+$lang["Never"] = "Nigdy";
+$lang["Display album description when in grid view"] = "Wyświetl opis albumu w widoku siatki";
+$lang["Infinite looping"] = "Nieskończone zapętlanie";
+$lang["Integrate lower navbar"] = "Wstaw dolny pasek nawigacji";
+$lang["Enabled"] = "Włączony";
+$lang["Use full width layout"] = "Użyj układu pełnej szerokości";
+$lang["Fullscreen"] = "Pełen ekran";
+$lang["Grid view"] = "Widok siatki";
+$lang["Banner style"] = "Styl baneru";
+$lang["Bug reports and feature requests"] = "Zgłaszanie błędów i propozycji nowych funkcjonalności";
+$lang["By"] = "Przez";
+$lang["Display number of images in album and subalbums"] = "Wyświetl ilość obrazków w albumie i podalbumów";
+$lang["Bootstrap theme"] = "Motyw Bootstrap";
+$lang["Bootstrap's default theme"] = "Domyślny motyw Bootstrap";
+$lang["Main page display"] = "Wyświetlanie strony głównej";
+$lang["Color theme"] = "Kolor motywu";
+$lang["Display a site logo image instead of plain text"] = "Wyświetl logo strony, zamiast tekstu";
+$lang["Components"] = "Komponenty";
+$lang["Description display style"] = "Styl wyświetlania opisu";
+$lang["Disabled"] = "Wyłączony";
+$lang["Discover"] = "Odkryj";
+$lang["Advanced"] = "Zaawansowany";
+$lang["Appearance"] = "Wygląd";
+$lang["Always"] = "Zawsze";
+$lang["Basic"] = "Podstawowy";
+$lang["Use colored share buttons instead of icons"] = "Użyj kolorowych przycisków zamiast ikon";
+$lang["directly in the navigation bar"] = "bezpośrednio w pasku navigacji";
+$lang["from"] = "z";
+$lang["Hero image"] = "Obraz bohatera";
+$lang["If you find any issues, please report them to the"] = "Jeśli znajdziesz jakiś problem, zgłoś go proszę do";
+$lang["Issue tracker"] = "Śledzenie problemów";
+$lang["URL or releative path to the image"] = "URL lub relatywna ścieżka do obrazu";
+$lang["Use 6 colums for viewports >= 1680px"] = "Użyj 6 kolumn dla panelu >= 1680px";
+$lang["The path to the image, relative to your Piwigo installation folder"] = "Ścieżka do zdjęcia, wewnątrz folderu instalacji Piwigo";
+$lang["Center mode"] = "Tryb wyśrodkowany";
+$lang["Use description rather than title for images"] = "Używaj opisu zamiast tytułu zdjęć";
+$lang["center-aligned h5 heading"] = "wyśrodkowany nagłówek H5";
+$lang["left-aligned free text for advanced descriptions"] = "tekst zaawansowanego opisu (wyrównany do lewej)";
+$lang["loads all images one after another when the page loads (use carefully!)"] = "wczyta wszystkie obrazy podczas ładowania strony (używaj ostrożnie!)";
+$lang["milliseconds"] = "milisekundy";
+$lang["will load the image as soon as you slide to it"] = "wczyta obraz po najechaniu na niego";
+$lang["Display albums as Bootstrap media wells"] = "Wyświetlaj albumy jako źródła multimediów Bootstrap";
+$lang["Enable the slick carousel below the main image on the picture page"] = "Włącz slider (karuzelę) pod zdjęciem na stronie zdjęcia";
+$lang["Display albums as media wells with squared thumbnails, similar to the smartpocket mobile theme."] = "Wyświetlaj albumy jako foldery multimedialne z kwadratowymi miniaturami, podobnie jak w motywie mobilnym smartpocket.";
+$lang["Enable PhotoSwipe fullscreen slideshow. Disable if you prefer to use Plugins like Fotorama or Piwigo's default slideshow."] = "Włącz pokaz slajdów PhotoSwipe. Wyłącz jeżeli chcesz użyć wtyczki jak Fotorama lub domyślnego stylu pokazu slajdów Piwigo";
+$lang["Span the full viewport height"] = "Rozszerz na całą wysokość";
+$lang["Use full width containers that span the entire width of the viewport"] = "Rozszerz szerokości strony na całą szerokość okna";
+$lang["Dark Aperture's custom dark color theme"] = "Ciemny motyw kolorów Dark Aperture";
+$lang["lazyLoad method"] = "metoda lazyLoad";
+$lang["Show a jumbotron banner on the categroy pages."] = "Pokaż baner jumbotron na stronach kategorii";
+$lang["Card grid below the image"] = "Siatka kart pod obrazem";
+$lang["Display the currently selected image in the middle. Works best with infinite looping enabled."] = "Wyświetl bieżący po środku. Działa najlepiej z nieskończonym zapętlaniem";
+$lang["A color theme from"] = "Kolor motywu z";
+$lang["A mobile-ready theme based on Bootstrap 4"] = "Motyw na urządzenia mobilne oparty na Bootstrap 4";
+$lang["Autoplay interval"] = "Interwał autoodtwarzania";
+$lang["Bootswatch theme"] = "Motyw Bootswatch";
+$lang["Picture details"] = "Szczegóły zdjęcia";
+$lang["Previous (arrow left)"] = "Poprzednie (strzałka w lewo)";
+$lang["Share"] = "Udostępnij";
+$lang["Toggle fullscreen"] = "Przełącz pełny widok";
+$lang["Close (Esc)"] = "Zamknij (Esc)";
+$lang["Next (arrow right)"] = "Następne (strzałka w prawo)";
+$lang["AutoPlay"] = "Automatyczne odtwarzanie";
+$lang["Zoom in/out"] = "Powiększenie/pomniejszenie";
+$lang["Based on original work by"] = "Na podstawie oryginalnej pracy";
+$lang["Source"] = "Źródło";
+$lang["Information"] = "Informacja";
+
+$lang["Page layout"] = "Układ strony";
+$lang["Page footer"] = "Stopka strony";
+$lang["Theme"] = "Temo";
+$lang["Show theme link"] = "Montru ligilon al la temo";
+$lang["Contact"] = "Kontakt";
+$lang["Show contact link"] = "Pokaż link kontaktowy";
+$lang["Show extended metadata"] = "Pokaż rozszerzone metadane";
+$lang["Show EXIF data"] = "Pokaż dane EXIF";
+$lang["Hide EXIF data"] = "Ukryj dane EXIF";
+$lang["Indicate recent albums"] = "Wskaż ostatnie albumy";
+$lang["Indicate recent images"] = "Wskaż ostatnie obrazy";
+
+$lang["Share on"] = "Udostępnij na";
+$lang["Instagram"] = "Instagram";
+$lang["Bluesky"] = "Bluesky";
+$lang["Mastodon"] = "Mastodon";
+$lang["X"] = "X";
+$lang["Facebook"] = "Facebook";
+$lang["Pinterest"] = "Pinterest";
+$lang["WhatsApp"] = "WhatsApp";
+$lang["Download image"] = "Pobierz obraz";
+$lang["Instance"] = "Instancja";
+$lang["Instance name. E.g. mastodon.social"] = "Nazwa instancji. Np. mastodon.social";
+
+$lang["Login"] = "Zaloguj się";
+$lang["Auto login"] = "Automatyczne logowanie";
+$lang["Username"] = "Nazwa użytkownika";
+$lang["Password"] = "Hasło";
+$lang["Powered by"] = "Obsługiwane przez";
+$lang["Albums"] = "Albumy";
+$lang["Related tags"] = "Powiązane słowa kluczowe";  // "Related keywords"
+$lang["Keywords"] = "Słowa kluczowe";
+$lang["Search"] = "Szukaj";
+$lang["About"] = "Informacje";
+$lang["Notification"] = "Powiadomienie";
+$lang["Your favorites"] = "Twoje ulubione";
+$lang["Most visited"] = "Najczęściej odwiedzane";
+$lang["%d photos"] = "%d zdjęcia";
+$lang["Tags"] = "słowa kluczowe";  // "Keywords"
+$lang["Recent photos"] = "Ostatnie zdjęcia";
+$lang["Recent albums"] = "Ostatnie albumy";
+$lang["Random photos"] = "Losowe zdjęcia";
+$lang["Calendar"] = "Kalendarz";
+$lang["Hello"] = "Witaj";
+$lang["Logout"] = "Wyloguj";
+$lang["Customize"] = "Dostosuj";
+$lang["Administration"] = "Administracja";
+$lang["display a calendar by posted date"] = "Wyświetl kalendarz według daty publikacji";
+$lang["display a calendar by creation date"] = "Wyświetl kalendarz według daty utworzenia";
+
+$lang["Time Taken"] = "Czas trwania";
+$lang["Make"] = "Utwórz";
+$lang["Flash"] = "Flash";
+$lang["Model"] = "Model";
+$lang["F-number"] = "Liczba F";
+$lang["Exposure"] = "Ekspozycja";
+$lang["ISO"] = "ISO";
+$lang["Flash Mode"] = "Tryb lampy błyskowej";
+$lang["White Balance"] = "Balans bieli";
+$lang["Metering Mode"] = "Tryb pomiaru";
+$lang["Description"] = "Opis";
+$lang["Date/Time Taken"] = "Data/godzina wykonania";
+$lang["Unknown"] = "Nieznana";
+$lang["Other"] = "Inna";
+$lang["None"] = "Brak";
+$lang["Automatic"] = "Automatyczna";
+$lang["Manual"] = "Ręczna";
+$lang["Average"] = "Średnia";
+$lang["Center-weighted average"] = "Średnia centralnie ważona";
+$lang["Spot"] = "Punktowa";
+$lang["Multi-spot"] = "Wielopunktowa";
+$lang["Pattern"] = "Wzór";
+$lang["Partial"] = "Częściowa";
+$lang["No flash function"] = "Brak funkcji lampy błyskowej";
+$lang["Flash fired"] = "Błysk wyzwolony";
+$lang["Flash did not fire"] = "Błysk nie wyzwolony";
+$lang["Compulsory flash firing"] = "Przymusowe wyzwalanie lampy błyskowej";
+$lang["Compulsory flash suppression"] = "Przymusowe tłumienie lampy błyskowej";
+$lang["Auto mode"] = "Tryb automatyczny";
+$lang["Red-eye reduction"] = "Redukcja efektu czerwonych oczu";
+$lang["Strobe return light not detected"] = "Nie wykryto światła powrotnego lampy błyskowej";
+$lang["Strobe return light detected"] = "Wykryto światło powrotne lampy błyskowej";

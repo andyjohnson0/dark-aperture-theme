@@ -1,4 +1,6 @@
 // Core Piwigo layout (theme.css without any color styles or full bootsrap included)
+// Modified by Andrew Johnson for Dark Aperture theme
+
 @import "common/variables";
 @import "node_modules/bootstrap/scss/variables";
 @import "theme/base";
@@ -14,3 +16,5 @@
 @import "theme/page-header";
 @import "theme/iphone-x";
 @import "theme/plugin-fixes";
+
+@import "theme/social-buttons";

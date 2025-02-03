@@ -1,3 +1,5 @@
+{* Modified by Andrew Johnson for Dark Aperture theme *}
+
 <!DOCTYPE html>
 <html lang="{$lang_info.code}" dir="{$lang_info.direction}">
 <head>
@@ -69,7 +71,6 @@
 {/if}
     {combine_css path='themes/dark_aperture/node_modules/@fortawesome/fontawesome-free/css/all.min.css' order=-14}
     {combine_css path='themes/dark_aperture/assets/photography-icons/css/PhotographyIcons.css' order=-13}
-    {combine_css path='themes/dark_aperture/node_modules/bootstrap-social/bootstrap-social.css' order=-12}
 {foreach from=$themes item=theme}
 {if $theme.load_css}
     {combine_css path="themes/`$theme.id`/theme.css" order=-10}

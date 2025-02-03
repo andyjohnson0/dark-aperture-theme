@@ -44,6 +44,8 @@ class Config {
     const KEY_PHOTOSWIPE_INTERVAL = 'photoswipe_interval';
     const KEY_THUMBNAIL_CAPTION = 'thumbnail_caption';
     const KEY_THUMBNAIL_CAT_DESC = 'thumbnail_cat_desc';
+    const KEY_CATEGORY_SHOW_RECENT = 'category_show_recent';
+    const KEY_PICTURE_SHOW_RECENT = 'picture_show_recent';
     const KEY_CATEGORY_WELLS = 'category_wells';
     const KEY_LOGO_IMAGE_ENABLED = 'logo_image_enabled';
     const KEY_LOGO_IMAGE_PATH = 'logo_image_path';
@@ -54,10 +56,13 @@ class Config {
     const KEY_CONTACT_LINK_ENABLED = 'contact_link_enabled';
     const KEY_SOCIAL_ENABLED = 'social_enabled';
     const KEY_SOCIAL_BUTTONS = 'social_buttons';
-    const KEY_SOCIAL_TWITTER = 'social_twitter';
+    const KEY_SOCIAL_INSTAGRAM = 'social_instagram';
+    const KEY_SOCIAL_BLUESKY = 'social_bluesky';
+    const KEY_SOCIAL_MASTODON = 'social_mastodon';
+    const KEY_SOCIAL_MASTODON_INSTANCE = 'social_mastodon_instance';
+    const KEY_SOCIAL_X = 'social_x';
     const KEY_SOCIAL_FACEBOOK = 'social_facebook';
     const KEY_SOCIAL_PINTEREST = 'social_pinterest';
-    const KEY_SOCIAL_VK = 'social_vk';
 
     const KEY_COMMENTS_TYPE = 'comments_type';
     const KEY_COMMENTS_DISQUS_SHORTNAME = 'comments_disqus_shortname';
@@ -91,6 +96,8 @@ class Config {
         self::KEY_PHOTOSWIPE_INTERVAL => '3500',
         self::KEY_THUMBNAIL_CAPTION => true,
         self::KEY_THUMBNAIL_CAT_DESC => 'simple',
+        self::KEY_CATEGORY_SHOW_RECENT => true,
+        self::KEY_PICTURE_SHOW_RECENT => true,
         self::KEY_CATEGORY_WELLS => 'never',
         self::KEY_LOGO_IMAGE_ENABLED => false,
         self::KEY_LOGO_IMAGE_PATH => '',
@@ -100,10 +107,13 @@ class Config {
         self::KEY_CONTACT_LINK_ENABLED => false,
         self::KEY_SOCIAL_ENABLED => true,
         self::KEY_SOCIAL_BUTTONS => false,
-        self::KEY_SOCIAL_TWITTER => true,
+        self::KEY_SOCIAL_INSTAGRAM => true,
+        self::KEY_SOCIAL_BLUESKY => true,
+        self::KEY_SOCIAL_MASTODON => true,
+        self::KEY_SOCIAL_MASTODON_INSTANCE => 'mastodon.social',
+        self::KEY_SOCIAL_X => true,
         self::KEY_SOCIAL_FACEBOOK => true,
         self::KEY_SOCIAL_PINTEREST => true,
-        self::KEY_SOCIAL_VK => true,
         self::KEY_COMMENTS_TYPE => 'piwigo',
         self::KEY_COMMENTS_DISQUS_SHORTNAME => null,
         self::KEY_TAG_CLOUD_TYPE => 'basic',
@@ -137,6 +147,8 @@ class Config {
         self::KEY_PHOTOSWIPE_INTERVAL => self::TYPE_NUM,
         self::KEY_THUMBNAIL_CAPTION => self::TYPE_BOOL,
         self::KEY_THUMBNAIL_CAT_DESC => self::TYPE_STRING,
+        self::KEY_CATEGORY_SHOW_RECENT => self::TYPE_BOOL,
+        self::KEY_PICTURE_SHOW_RECENT => self::TYPE_BOOL,
         self::KEY_CATEGORY_WELLS => self::TYPE_STRING,
         self::KEY_LOGO_IMAGE_ENABLED => self::TYPE_BOOL,
         self::KEY_LOGO_IMAGE_PATH => self::TYPE_STRING,
@@ -146,10 +158,13 @@ class Config {
         self::KEY_CONTACT_LINK_ENABLED => self::TYPE_BOOL,
         self::KEY_SOCIAL_ENABLED => self::TYPE_BOOL,
         self::KEY_SOCIAL_BUTTONS => self::TYPE_BOOL,
-        self::KEY_SOCIAL_TWITTER => self::TYPE_BOOL,
+        self::KEY_SOCIAL_INSTAGRAM => self::TYPE_BOOL,
+        self::KEY_SOCIAL_BLUESKY => self::TYPE_BOOL,
+        self::KEY_SOCIAL_MASTODON => self::TYPE_BOOL,
+        self::KEY_SOCIAL_MASTODON_INSTANCE => self::TYPE_STRING,
+        self::KEY_SOCIAL_X => self::TYPE_BOOL,
         self::KEY_SOCIAL_FACEBOOK => self::TYPE_BOOL,
         self::KEY_SOCIAL_PINTEREST => self::TYPE_BOOL,
-        self::KEY_SOCIAL_VK => self::TYPE_BOOL,
         self::KEY_COMMENTS_TYPE => self::TYPE_STRING,
         self::KEY_COMMENTS_DISQUS_SHORTNAME => self::TYPE_STRING,
         self::KEY_TAG_CLOUD_TYPE => self::TYPE_STRING,

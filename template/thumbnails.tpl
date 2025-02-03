@@ -1,3 +1,8 @@
+{* 
+** Album picture thumbnails display
+** Modified by Andrew Johnson for Dark Aperture theme
+*}
+
 {if !empty($thumbnails)}
 {footer_script}
     var error_icon = "{$ROOT_URL}{$themeconf.icon_dir}/errors_small.png"{if isset($maxRequests)}, max_requests = {$maxRequests}{/if};
@@ -32,10 +37,13 @@
         {if $theme_config->thumbnail_caption}
         <div class="card-body{if !$theme_config->thumbnail_caption && isset($smarty.cookies.view) and $smarty.cookies.view != 'list'} d-none{/if}{if !$theme_config->thumbnail_caption} list-view-only{/if}">
             <h6 class="card-title">
-                <a href="{$thumbnail.URL}" class="ellipsis{if !empty($thumbnail.icon_ts)} recent{/if}">{$thumbnail.NAME}</a>
-            {if !empty($thumbnail.icon_ts)}
-                <img title="{$thumbnail.icon_ts.TITLE}" src="{$ROOT_URL}{$themeconf.icon_dir}/recent.png" alt="(!)">
-            {/if}
+                {assign var="show_recent_icon" value=!empty($thumbnail.icon_ts) and $theme_config->picture_show_recent}
+                <a href="{$thumbnail.URL}" class="ellipsis{if $show_recent_icon} recent{/if}">
+                    {$thumbnail.NAME}
+                </a>
+                {if $show_recent_icon}
+                    <img title="{$thumbnail.icon_ts.TITLE}" src="{$ROOT_URL}{$themeconf.icon_dir}/recent.png" alt="{$thumbnail.icon_ts.TITLE}">
+                {/if}
             </h6>
             {if isset($thumbnail.NB_COMMENTS) || isset($thumbnail.NB_HITS)}
             <div class="card-text">

@@ -1,0 +1,31 @@
+// Social colors and buttons
+// Modified by Andrew Johnson for Dark Aperture theme
+
+$social-colors: (
+ "instagram": #2E5E86,
+ "bluesky": #0772D8,
+ "mastodon": #5352D6,
+ "x-twitter": #183153, 
+ "facebook": #3B5998,
+ "pinterest": #C61118
+);
+
+// Specialise Bootstrap .btn class
+@each $name, $color in $social-colors {
+   .btn-#{$name} {
+     // Colour
+     background-color: $color;
+     color: #fff;
+
+     // Size and content alignment
+     display: inline-flex;
+     justify-content: center; 
+     align-items: center;
+     min-width: 150px;
+     min-height: 40px;
+
+     &:hover {
+       background-color: darken($color, 10%);
+     }
+   }
+ }
