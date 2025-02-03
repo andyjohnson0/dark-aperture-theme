@@ -29,6 +29,11 @@ This derivative work created in accordance with the Apache 2.0 [licence](LICENSE
 * Various configuration options
 * Easy customization using CSS overrides or SASS custom build for advanced needs.
 * Localised in 25 languages using [Smarty](https://www.smarty.net/) support in Piwigo
+
+
+## Preview
+
+![Preview](https://raw.githubusercontent.com/andyjohnson0/dark-aperture-theme/refs/heads/master/screenshot.png)
  
 
 ## Usage
