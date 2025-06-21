@@ -1,3 +1,5 @@
+{* Modified by Andrew Johnson for Dark Aperture theme *}
+
 {combine_css path="themes/dark_aperture/node_modules/photoswipe/dist/photoswipe.css" order=-11}
 {combine_css path="themes/dark_aperture/node_modules/photoswipe/dist/default-skin/default-skin.css" order=-12}
 {combine_script id="photoswipe" require="jquery" path="themes/dark_aperture/node_modules/photoswipe/dist/photoswipe.min.js" load="footer"}
@@ -105,23 +107,46 @@ function startPhotoSwipe(idx) {
             history: $history,
             preload: [1,2],
 {if $theme_config->social_enabled}
-            shareButtons: [
-{if $theme_config->social_facebook}{literal}
-                           {id:'facebook', label:'<i class="fab fa-facebook fa-2x fa-fw"></i> Share on Facebook', url:'https://www.facebook.com/sharer/sharer.php?u={{url}}'},
-{/literal}{/if}
-{if $theme_config->social_twitter}{literal}
-                           {id:'twitter', label:'<i class="fab fa-twitter fa-2x fa-fw"></i> Tweet', url:'https://twitter.com/intent/tweet?url={{url}}'},
-{/literal}{/if}
-{if $theme_config->social_pinterest}{literal}
-                           {id:'pinterest', label:'<i class="fab fa-pinterest fa-2x fa-fw"></i> Pin it', url:'http://www.pinterest.com/pin/create/button/?url={{url}}&media=' + window.location + '/../{{raw_image_url}}'},
-{/literal}{/if}
-{if get_device() == 'mobile'}{literal}
-                           {id:'whatsapp', label:'<i class="fab fa-whatsapp fa-2x fa-fw"></i> Share via WhatsApp', url:'whatsapp://send?text={{url}}', download:true},
-{/literal}{/if}
+    shareButtons: [
+{if $theme_config->social_instagram}
+    {literal}
+        {id:'instagram', label:'{/literal}<i class="fab fa-instagram fa-2x fa-fw"></i> {'Share on'|@translate}&nbsp;{'Instragram'|@translate}{literal}', url:'https://www.facebook.com/sharer/sharer.php?u={{url}}'},
+    {/literal}
+{/if}
+{if $theme_config->social_bluesky}
+    {literal}
+        {id:'bluesky', label:'{/literal}<i class="fab fa-bluesky fa-2x fa-fw"></i> {'Share on'|@translate}&nbsp;{'Bluesky'|@translate}{literal}', url:'https://bsky.app/intent/compose/?text={{url}}'},
+    {/literal}
+{/if}
+{if $theme_config->social_mastodon}
+    {literal}
+        {id:'mastodon', label:'{/literal}<i class="fab fa-mastodon fa-2x fa-fw"></i> {'Share on'|@translate}&nbsp;{'Mastodon'|@translate}{literal}', url:'https://{/literal}{$theme_config->social_mastodon_instance}{literal}/share?text=%0A{{url}}'},
+    {/literal}
+{/if}
+{if $theme_config->social_x}
+    {literal}
+        {id:'x', label:'{/literal}<i class="fab fa-x-twitter fa-2x fa-fw"></i> {'Share on'|@translate}&nbsp;{'X'|@translate}{literal}', url:'https://x.com/intent/post?text=&url={{url}}'},
+    {/literal}
+{/if}
+{if $theme_config->social_facebook}
+    {literal}
+        {id:'facebook', label:'{/literal}<i class="fab fa-facebook fa-2x fa-fw"></i> {'Share on'|@translate}&nbsp;{'Facebook'|@translate}{literal}', url:'https://www.facebook.com/sharer/sharer.php?u={{url}}'},
+    {/literal}
+{/if}
+{if $theme_config->social_pinterest}
+    {literal}
+        {id:'pinterest', label:'{/literal}<i class="fab fa-pinterest fa-2x fa-fw"></i> {'Share on'|@translate}&nbsp;{'Pinterest'|@translate}{literal}', url:'https://www.pinterest.com/pin/create/button/?url={{url}}&media=' + window.location + '/../{{raw_image_url}}'},
+    {/literal}
+{/if}
+{if get_device() == 'mobile'}
+    {literal}
+        {id:'whatsapp', label:'{/literal}<i class="fab fa-whatsapp fa-2x fa-fw"></i> {'Share on'|@translate}&nbsp;{'WhatsApp'|@translate}{literal}', url:'whatsapp://send?text={{url}}', download:true},
+    {/literal}
+{/if}
 {literal}
-                           {id:'download', label:'<i class="fas fa-cloud-download-alt fa-2x fa-fw"></i> Download image', url:'{{raw_image_url}}', download:true}
+    {id:'download', label:'{/literal}<i class="fas fa-cloud-download-alt fa-2x fa-fw"></i> {'Download image'|@translate|escape:'javascript'}{literal}', url:'{{raw_image_url}}', download:true}
 {/literal}
-                        ],
+    ],
 {/if}
         };
         var photoSwipe = new PhotoSwipe($pswp, PhotoSwipeUI_Default, items, options);

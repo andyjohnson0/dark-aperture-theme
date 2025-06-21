@@ -95,6 +95,38 @@ To build for deployment:
 system.
 
 
+## Localisation
+
+The theme provides localised strings for the following languages: 
+- Danish (da_DK)
+- German (de_DE)
+- Greek (el_GR)
+- English (eu_UK)
+- French (fe_FR)
+- Italian (it_IT)
+- Dutch (nl_NL)
+- Polish (pl_PL)
+- Porugese (pt_PT, pt_BR)
+- Turkish (tr_TR)
+- Chinese (cn)
+
+Language localisations follow the Piwigo convention of a php file in `./language/<language_COUNTRY>/theme.lang.php` that maps
+the string to be translated to a translated string.
+
+The theme infrastructure provides additional localisation capabilities. Given the `<language_COUNTRY>` code derived from
+the user's browser settings, the theme tries to determine the best `./language` subdirectory to load a `theme.lang.php` file from,
+by trying the following:
+1. subdirectory named `language_COUNTRY`
+2. subdirectory named `language`
+3. the first subdirectory beginning with `language_`
+4. subdirectory named `en`
+5. the first subdirectory name beginning with `en_`
+6. the first subdirectory of the `./language` directory
+
+This enables, for a example, a `cn` subdirectory to contain localisations for all national variants of Chinese, with the
+option to override it for specific national variants.
+
+
 ## Credits
 
 Based on [Bootstrap Darkroom theme](https://github.com/Piwigo/piwigo-dark-aperture) by Thomas Kuther. The original author is thanked

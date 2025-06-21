@@ -186,6 +186,13 @@
                        {'Display album description when in grid view'|@translate}
                     </label>
                 </li>
+                <li>
+                    <label class="font-checkbox">
+                       <span class="icon-check"></span>
+                       <input type="checkbox" name="category_show_recent"{if $theme_config->category_show_recent} checked=checked{/if}>
+                       {'Indicate recent albums'|@translate}
+                    </label>
+                </li>
             </ul>
         </fieldset>
         <fieldset>
@@ -204,7 +211,14 @@
                     <input type="checkbox" name="thumbnail_nb_images" {if $theme_config->thumbnail_nb_images}checked="checked"{/if}>
                     {'Display number of images in breadcrumb'|@translate}
                     </label>
-            </li>
+                </li>
+                <li>
+                    <label class="font-checkbox">
+                        <span class="icon-check"></span>
+                        <input type="checkbox" name="picture_show_recent"{if $theme_config->picture_show_recent} checked="checked"{/if}>
+                        {'Indicate recent images'|@translate}
+                    </label>
+                </li>
             </ul>
         </fieldset>
         <fieldset>
@@ -368,11 +382,46 @@
                         {'Enabled'|@translate}
                     </label>
                 </li>
-                <li id="social_twitter" class="ident">
+                <li id="social_instagram" class="ident">
                     <label class="font-checkbox">
                         <span class="icon-check"></span>
-                        <input type="checkbox" name="social_twitter"{if $theme_config->social_twitter}  checked="checked"{/if}>
-                        {'Twitter'|@translate}
+                        <input type="checkbox" name="social_instagram"{if $theme_config->social_instagram}  checked="checked"{/if}>
+                        {'Instagram'|@translate}
+                    </label>
+                </li>
+                <li id="social_bluesky" class="ident">
+                    <label class="font-checkbox">
+                        <span class="icon-check"></span>
+                        <input type="checkbox" name="social_bluesky"{if $theme_config->social_bluesky}  checked="checked"{/if}>
+                        {'Bluesky'|@translate}
+                    </label>
+                </li>
+                <li id="social_mastodon" class="ident">
+                    <label class="font-checkbox">
+                        <span class="icon-check"></span>
+                        <input type="checkbox" name="social_mastodon"{if $theme_config->social_mastodon}  checked="checked"{/if}>
+                        {'Mastodon'|@translate}
+                    </label>
+                    <ul> 
+                        <li id="social_mastodon_instance">
+                        <label>
+                            {'Instance'|@translate}
+                            <input type="text" name="social_mastodon_instance" size="50"
+                                {if $theme_config->social_mastodon_instance != ""}
+                                    value="{$theme_config->social_mastodon_instance}"
+                                {else}
+                                    placeholder="mastodon.social"
+                                {/if}>
+                        </label>
+                        <span class="info">{'Instance name. E.g. mastodon.social'|@translate}</span>
+                        </li>
+                    </ul>
+                </li>
+                <li id="social_x" class="ident">
+                    <label class="font-checkbox">
+                        <span class="icon-check"></span>
+                        <input type="checkbox" name="social_x"{if $theme_config->social_x}  checked="checked"{/if}>
+                        {'X'|@translate}
                     </label>
                 </li>
                 <li id="social_facebook" class="ident">
@@ -387,13 +436,6 @@
                         <span class="icon-check"></span>
                         <input type="checkbox" name="social_pinterest"{if $theme_config->social_pinterest}  checked="checked"{/if}>
                         {'Pinterest'|@translate}
-                    </label>
-                </li>
-                <li id="social_vk" class="ident">
-                    <label class="font-checkbox">
-                        <span class="icon-check"></span>
-                        <input type="checkbox" name="social_vk"{if $theme_config->social_vk}  checked="checked"{/if}>
-                        {'VK'|@translate}
                     </label>
                 </li>
                 <li id="social_buttons">
@@ -411,13 +453,25 @@
         <input type="submit" name="submit" value="{'Save Settings'|@translate}">
     </p>
 </form>
+
+
+{* Handle show/hide of conditional fields *}
 {footer_script require="jquery"}
 (function(){
     var targets = {
-        'input[name="social_enabled"]': ['#social_twitter', '#social_facebook', '#social_pinterest', '#social_vk', '#social_buttons'],
+        'input[name="social_enabled"]': [
+            '#social_instagram',
+            '#social_bluesky',
+            '#social_mastodon',
+            '#social_mastodon_instance',
+            '#social_x', 
+            '#social_facebook', 
+            '#social_pinterest', 
+            '#social_buttons'],
         '#comments_radio_disqus': ['#comments_type_disqus'],
         'input[name="fluid_width"]': ['#fluid_width_col_xxl'],
         'input[name="logo_image_enabled"]': ['#logo_image_path'],
+        'input[name="social_mastodon"]': ['#social_mastodon_instance'],
     };
     for (selector in targets) {
         for (target of targets[selector]) {
@@ -431,6 +485,7 @@
         }
     };
 }());
+
 
 $(document).ready(function(){
   $('ul.tabs li').click(function(){

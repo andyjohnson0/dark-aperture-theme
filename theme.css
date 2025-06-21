@@ -1224,4 +1224,88 @@ ul.thumbnailCategories {
   padding-right: 0.5rem;
 }
 
+.btn-instagram {
+  background-color: #2E5E86;
+  color: #fff;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 150px;
+  min-height: 40px;
+}
+
+.btn-instagram:hover {
+  background-color: #214360;
+}
+
+.btn-bluesky {
+  background-color: #0772D8;
+  color: #fff;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 150px;
+  min-height: 40px;
+}
+
+.btn-bluesky:hover {
+  background-color: #0558a7;
+}
+
+.btn-mastodon {
+  background-color: #5352D6;
+  color: #fff;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 150px;
+  min-height: 40px;
+}
+
+.btn-mastodon:hover {
+  background-color: #302fc6;
+}
+
+.btn-x-twitter {
+  background-color: #183153;
+  color: #fff;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 150px;
+  min-height: 40px;
+}
+
+.btn-x-twitter:hover {
+  background-color: #0d1a2b;
+}
+
+.btn-facebook {
+  background-color: #3B5998;
+  color: #fff;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 150px;
+  min-height: 40px;
+}
+
+.btn-facebook:hover {
+  background-color: #2d4373;
+}
+
+.btn-pinterest {
+  background-color: #C61118;
+  color: #fff;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 150px;
+  min-height: 40px;
+}
+
+.btn-pinterest:hover {
+  background-color: #970d12;
+}
+
 /*# sourceMappingURL=theme.css.map */

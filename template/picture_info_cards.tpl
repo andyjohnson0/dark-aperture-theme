@@ -1,3 +1,5 @@
+{* Modified by Andrew Johnson for Dark Aperture theme *}
+
     <div id="infopanel-left" class="col-lg-6 col-12">
       <!-- Picture infos -->
       <div id="card-informations" class="card mb-2">
@@ -248,36 +250,31 @@
             </div>
             {/if}
             <div class="row">
-              <div class="col-12{if $theme_config->fluid_width} col-xl-10{/if}">
+              <div class="col-12{if $theme_config->fluid_width} col-xl-12{/if}">
                 <div class="row">
                   {if is_array($metadata.0.lines) && (array_key_exists("{$exif_fnumber}", $metadata.0.lines))}
-                  <div class="col-6 col-sm-4">
-                    <span class="camera-aperture fa-2x pr-2" title="{$exif_fnumber}"></span> f/{$metadata.0.lines[{$exif_fnumber}]}
+                  <div class="col-4 col-sm-3">
+                    <span class="camera-aperture fa-2x pr-2" title="{$exif_fnumber}"></span> f/{$metadata.0.lines[{$exif_fnumber}]|fraction_str_to_decimal:1}
                   </div>
                   {/if}
                   {if is_array($metadata.0.lines) && (array_key_exists("{$exif_focal_length}", $metadata.0.lines))}
-                  <div class="col-6 col-sm-4">
+                  <div class="col-4 col-sm-3">
                     <span class="camera-focal-length fa-2x pr-2" title="{$exif_focal_length}"></span> {$metadata.0.lines[{$exif_focal_length}]}
                   </div>
                   {/if}
                   {if is_array($metadata.0.lines) && (array_key_exists("{$exif_exposure_time}", $metadata.0.lines))}
-                  <div class="col-6 col-sm-4">
-                    <span class="camera-shutter-speed fa-2x pr-2" title="{$exif_exposure_time}"></span> {$metadata.0.lines[{$exif_exposure_time}]}
+                  <div class="col-4 col-sm-3">
+                    <span class="camera-shutter-speed fa-2x pr-2" title="{$exif_exposure_time}"></span> {$metadata.0.lines[{$exif_exposure_time}]|fraction_str_to_decimal:3} s
                   </div>
                   {/if}
                   {if is_array($metadata.0.lines) && (array_key_exists("{$exif_iso}", $metadata.0.lines))}
-                  <div class="col-6 col-sm-4">
+                  <div class="col-4 col-sm-3">
                     <span class="camera-iso fa-2x pr-2" title="{$exif_iso}"></span> {$metadata.0.lines[{$exif_iso}]}
                   </div>
                   {/if}
                   {if is_array($metadata.0.lines) && (array_key_exists("{$exif_exposure_bias}", $metadata.0.lines))}
-                  <div class="col-6 col-sm-4">
+                  <div class="col-4 col-sm-3">
                     <span class="camera-exposure fa-2x pr-2" title="{$exif_exposure_bias}"></span> {$metadata.0.lines[{$exif_exposure_bias}]}
-                  </div>
-                  {/if}
-                  {if is_array($metadata.0.lines) && (array_key_exists("{$exif_flash}", $metadata.0.lines))}
-                  <div class="col-6 col-sm-4">
-                    <span class="camera-flash fa-2x pr-2 float-left h-100" title="{$exif_flash}"></span><div> {$metadata.0.lines[{$exif_flash}]}</div>
                   </div>
                   {/if}
                 </div>
@@ -298,14 +295,47 @@ $('#show_exif_data').on('click', function() {
 {/footer_script}
           <div id="full_exif_data" class="d-none flex-column mt-2">
 {foreach from=$metadata item=meta}
-{foreach from=$meta.lines item=value key=label}
+  {foreach from=$meta.lines item=value key=label}
+    {if $label == "FNumber"}
+      {assign var='label' value='F-number'|@translate}
+      {assign var='value' value=$value|fraction_str_to_decimal:1}
+    {elseif $label == "ExposureTime"}
+      {assign var='label' value='Exposure'|@translate}
+      {assign var='value' value=$value|fraction_str_to_decimal:3}
+    {elseif $label == "ISOSpeedRatings"}
+      {assign var='label' value='ISO'|@translate}
+    {elseif $label == "Flash"}
+      {assign var='label' value='Flash Mode'|@translate}
+      {assign var='values' value=$value|flash_mode_to_strings}
+      {assign 'values2' []}
+      {foreach $values as $val}
+        {assign var='val' value=$val|translate}
+        {append var='values2' value=$val}
+      {/foreach}
+      {assign var='value' value=', '|implode:$values2}
+    {elseif $label == "WhiteBalance"}
+      {assign var='label' value='White Balance'|@translate}
+      {assign var='value' value=$value|white_balance_to_string|@translate}
+    {elseif $label == "ExposureProgram"}
+      {assign var='label' value='Metering Mode'|@translate}
+      {assign var='value' value=$value|metering_mode_to_string|@translate}
+    {elseif $label == "iptc_description"}
+      {assign var='label' value='Description'|@translate}
+    {elseif $label == "DateTimeOriginal"}
+      {assign var='label' value='Date/Time Taken'|@translate}
+      {assign var='value' value=pattern_replace($value, '/:/','/',2)}
+    {elseif $label == "Make"}
+      {assign var='label' value='Make'|@translate}
+    {elseif $label == "Model"}
+      {assign var='label' value='Model'|@translate}
+    {/if}
             <div>
               <dl class="row mb-0">
                 <dt class="col-sm-6">{$label}</dt>
                 <dd class="col-sm-6">{$value}</dd>
               </dl>
             </div>
-{/foreach}
+  {/foreach}
 {/foreach}
           </div>
         </div>

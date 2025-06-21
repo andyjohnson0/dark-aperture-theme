@@ -1,3 +1,5 @@
+{* Modified by Andrew Johnson for Dark Aperture theme *}
+
 <!-- Start of picture.tpl -->
 {if get_device() != 'desktop'}
 {combine_script id='jquery.mobile-events' path='themes/dark_aperture/node_modules/jQuery-Touch-Events/src/jquery.mobile-events.min.js' require='jquery' load='footer'}
@@ -57,28 +59,56 @@ $('#theImage img').bind('swipeleft swiperight', function (event) {
 {if $theme_config->social_enabled}
   <div id="theImageShareButtons" class="row justify-content-center{if !$theme_config->slick_enabled} pb-4{/if}">
     <section id="share">
-{if $theme_config->social_twitter}
-        <a href="http://twitter.com/share?text={$current.TITLE}&amp;url={$http_scheme}://{$smarty.server.HTTP_HOST}{$smarty.server.REQUEST_URI}"
-           onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;" title="Share on Twitter"{if $theme_config->social_buttons} class="btn btn-sm btn-social btn-raised btn-twitter"{/if}>
-            <i class="fab fa-twitter"></i>{if $theme_config->social_buttons} Twitter{/if}
+{if $theme_config->social_instagram}
+        <a href="https://www.facebook.com/sharer/sharer.php?u={$http_scheme}://{$smarty.server.HTTP_HOST}{$smarty.server.REQUEST_URI}" 
+           target="_blank" 
+           title="{'Share on'|@translate}&nbsp;{'Instagram'|@translate}"
+           {if $theme_config->social_buttons} class="btn btn-instagram"{/if}>
+            <i class="fab fa-instagram"></i>{if $theme_config->social_buttons} &nbsp; {'Instagram'|@translate}{/if}
+        </a>
+{/if}
+{if $theme_config->social_bluesky}
+        <a href="https://bsky.app/intent/compose/?text={$current.TITLE|escape}%0A{$http_scheme}://{$smarty.server.HTTP_HOST}{$smarty.server.REQUEST_URI}"
+           target="_blank" 
+           title="{'Share on'|@translate}&nbsp;{'Bluesky'|@translate}"
+           {if $theme_config->social_buttons} class="btn btn-bluesky"{/if}>
+          <i class="fa-brands fa-bluesky"></i>{if $theme_config->social_buttons} &nbsp; {'Bluesky'|@translate}{/if}
+        </a>
+{/if}
+{if $theme_config->social_mastodon}
+    {assign var="mastodon_instance" value=$theme_config->social_mastodon_instance|default:"https://mastodon.social"}
+    <a href="https://{$mastodon_instance}/share?text={$current.TITLE|escape:'url'}%20{$http_scheme}://{$smarty.server.HTTP_HOST}{$smarty.server.REQUEST_URI}"
+       target="_blank" 
+       title="{'Share on'|@translate}&nbsp;{'Mastodon'|@translate}"
+       {if $theme_config->social_buttons} class="btn btn-mastodon"{/if}>
+      <i class="fab fa-mastodon"></i>{if $theme_config->social_buttons} &nbsp; {'Mastodon'|@translate}{/if}
+    </a>
+{/if}
+{if $theme_config->social_x}
+        <a href="https://x.com/intent/post?text={$current.TITLE|escape}&amp;url={$http_scheme}://{$smarty.server.HTTP_HOST}{$smarty.server.REQUEST_URI}"
+           target="_blank" 
+           title="{'Share on'|@translate}&nbsp;{'X'|@translate}"
+           {if $theme_config->social_buttons} class="btn btn-x-twitter"{/if}>
+          <i class="fab fa-x-twitter"></i>
         </a>
 {/if}
 {if $theme_config->social_facebook}
         <a href="https://www.facebook.com/sharer/sharer.php?u={$http_scheme}://{$smarty.server.HTTP_HOST}{$smarty.server.REQUEST_URI}"
-           onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;" title="Share on Facebook"{if $theme_config->social_buttons} class="btn btn-sm btn-social btn-raised btn-facebook"{/if}>
-            <i class="fab fa-facebook"></i>{if $theme_config->social_buttons} Facebook{/if}
+           target="_blank" 
+           title="{'Share on'|@translate}&nbsp;{'Facebook"'|@translate}"
+           {if $theme_config->social_buttons} class="btn btn-facebook"{/if}>
+          <i class="fab fa-facebook"></i>{if $theme_config->social_buttons} &nbsp; {'Facebook'|@translate}{/if}
         </a>
 {/if}
 {if $theme_config->social_pinterest}
-        <a href="https://www.pinterest.com/pin/create/button/?url={$http_scheme}://{$smarty.server.HTTP_HOST}{$smarty.server.REQUEST_URI}{if isset($current.derivatives.large)}&media={$http_scheme}://{$smarty.server.HTTP_HOST}{$smarty.server.REQUEST_URI}/../{$current.derivatives.large->get_url()}{/if}"
-           onclick="window.open(this.href, 'pinterest-share', 'width=490,height=530');return false;" title="Pin on Pinterest"{if $theme_config->social_buttons} class="btn btn-sm btn-social btn-raised btn-pinterest"{/if}>
-            <i class="fab fa-pinterest"></i>{if $theme_config->social_buttons} Pinterest{/if}
-        </a>
-{/if}
-{if $theme_config->social_vk}
-        <a href="https://vkontakte.ru/share.php?url={$http_scheme}://{$smarty.server.HTTP_HOST}{$smarty.server.REQUEST_URI}{if isset($current.derivatives.large)}&image={$http_scheme}://{$smarty.server.HTTP_HOST}{$smarty.server.REQUEST_URI}/../{$current.derivatives.large->get_url()}{/if}"
-           onclick="window.open(this.href, 'vk-share', 'width=490,height=530');return false;" title="Share on VK"{if $theme_config->social_buttons} class="btn btn-sm btn-social btn-raised btn-vk"{/if}>
-            <i class="fab fa-vk"></i>{if $theme_config->social_buttons} VK{/if}
+        <a href="https://www.pinterest.com/pin/create/button/?url={$http_scheme}://{$smarty.server.HTTP_HOST}{$smarty.server.REQUEST_URI}
+           {if isset($current.derivatives.large)}
+              &media={$http_scheme}://{$smarty.server.HTTP_HOST}{$smarty.server.REQUEST_URI}/../{$current.derivatives.large->get_url()}
+           {/if}"
+           target="_blank" 
+           title="{'Share on'|@translate}&nbsp;{'Pinterest'|@translate}"
+           {if $theme_config->social_buttons} class="btn btn-pinterest"{/if}>
+          <i class="fab fa-pinterest"></i>{if $theme_config->social_buttons} &nbsp; {'Pinterest'|@translate}{/if}
         </a>
 {/if}
     </section>

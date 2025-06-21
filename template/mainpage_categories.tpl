@@ -1,4 +1,7 @@
-{* Modified by Andrew Johnson for Dark Aperture theme *}
+{* 
+** Main page album thumbnails display
+** Modified by Andrew Johnson for Dark Aperture theme
+*}
 
 {footer_script}
     var error_icon = "{$ROOT_URL}{$themeconf.icon_dir}/errors_small.png", max_requests = {$maxRequests};
@@ -28,11 +31,9 @@
     {if $theme_config->cat_show_descriptions || $smarty.cookies.view == 'list'}
           <div class="card-body">
             <h5 class="card-title ellipsis {if !empty($cat.icon_ts)} recent{/if}">
-
             <a href="{$cat.URL}">{$cat.NAME}</a>
-
-            {if !empty($cat.icon_ts)}
-              <img title="{$cat.icon_ts.TITLE}" src="{$ROOT_URL}{$themeconf.icon_dir}/recent{if $cat.icon_ts.IS_CHILD_DATE}_by_child{/if}.png" alt="(!)">
+            {if !empty($cat.icon_ts) and $theme_config->category_show_recent}
+              <img title="{$cat.icon_ts.TITLE}" src="{$ROOT_URL}{$themeconf.icon_dir}/recent{if $cat.icon_ts.IS_CHILD_DATE}_by_child{/if}.png" alt="{$cat.icon_ts.TITLE}">
             {/if}
             </h5>
             <div class="card-text">
